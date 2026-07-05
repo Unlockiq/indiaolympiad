@@ -429,6 +429,7 @@ footer a:hover{color:var(--marigold)}
       <a href="directory.html">Directory</a>
       <a href="compare.html">Compare</a>
       <a href="school-planner.html">Schools</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span id="themeIcon">◐</span> <span id="themeLbl">Dark</span></button>
     </nav>
   </div>
 </header>
@@ -439,8 +440,8 @@ footer a:hover{color:var(--marigold)}
     <div class="hero-inner">
       <div>
         <p class="hero-kicker">The 2026–27 season, on the record</p>
-        <h1>Every school olympiad in India.<br><em>One honest calendar.</em></h1>
-        <p class="lede">Dates, fees, classes and formats — maths, science, English, reasoning and GK — compiled independently for parents and schools. No prep-course agenda. No pay-to-rank listings.</p>
+        <h1>Every school olympiad in India.<br><em>One calendar, honestly labelled.</em></h1>
+        <p class="lede">Dates, fees, classes and formats for the olympiads Indian schools actually run — with the source, so you can check us. We don't sell prep courses and no organiser has paid to appear here.</p>
         <div class="stat-row">
           <div class="stat"><span class="num">16</span><span class="lbl">Olympiads tracked</span></div>
           <div class="stat"><span class="num">1–12</span><span class="lbl">Classes covered</span></div>
@@ -450,15 +451,15 @@ footer a:hover{color:var(--marigold)}
       <div class="trust-card">
         <div class="tc-row">
           <div class="tc-icon">📅</div>
-          <div class="tc-text"><h4>Confirmed vs Expected — always labelled</h4><p>We never pass an estimate off as a confirmed date.</p></div>
+          <div class="tc-text"><h4>Confirmed vs Expected — always labelled</h4><p>If we haven't seen the organiser publish it, we say expected. No exceptions.</p></div>
         </div>
         <div class="tc-row">
           <div class="tc-icon">⚖️</div>
-          <div class="tc-text"><h4>No paid placements</h4><p>No organiser — including the publisher — pays to rank here.</p></div>
+          <div class="tc-text"><h4>No paid placements</h4><p>Nobody paid to appear. Including us.</p></div>
         </div>
         <div class="tc-row">
           <div class="tc-icon">🔒</div>
-          <div class="tc-text"><h4>No child data collected</h4><p>DPDP-compliant. We address parents only, with explicit consent.</p></div>
+          <div class="tc-text"><h4>No child data collected</h4><p>This site talks to adults. No child data collection anywhere on it.</p></div>
         </div>
       </div>
     </div>
@@ -471,8 +472,9 @@ footer a:hover{color:var(--marigold)}
     <div class="cal-head">
       <div class="cal-head-top">
         <h2>All-India Olympiad Calendar</h2>
-        <span class="season-badge">Academic Year 2026–27</span>
+        <span class="season-badge ay-tip" data-tip="Academic Year 2026–27 = the school year Apr 2026–Mar 2027. Olympiad windows in this year run Aug 2026 through May 2027.">Academic Year 2026–27</span>
       </div>
+      <p class="last-updated" style="margin:0;padding-bottom:8px"><b>Last updated:</b> 6 July 2026  &nbsp;·&nbsp;  Dates reviewed monthly. Updates applied within 48 hours of an organiser announcement.</p>
       <div class="filters" role="group" aria-label="Filter by subject">
         <button class="chip" aria-pressed="true" data-f="all">All</button>
         <button class="chip" aria-pressed="false" data-f="maths">Maths</button>
@@ -483,8 +485,8 @@ footer a:hover{color:var(--marigold)}
       </div>
     </div>
     <div class="legend">
-      <span><span class="dot dot-c"></span>Confirmed by organiser</span>
-      <span><span class="dot dot-e"></span>Expected — based on past seasons</span>
+      <span><span class="dot dot-c"></span>Confirmed</span>
+      <span><span class="dot dot-e"></span>Expected (from past seasons)</span>
     </div>
     <div class="tl" id="tl"></div>
   </div>
@@ -494,8 +496,8 @@ footer a:hover{color:var(--marigold)}
 <section class="reco-section" id="recommender">
   <div class="wrap">
     <p class="eyebrow">Find-your-olympiad</p>
-    <h2 class="sec">Three questions. A shortlist that fits.</h2>
-    <p class="sec-lede">Answer below and we'll match the right olympiads from the 2026–27 calendar — with the reason each one fits your child.</p>
+    <h2 class="sec">Three questions and a shortlist. That's it.</h2>
+    <p class="sec-lede">Pick your answers below. We'll suggest 2–3 olympiads and explain why each one fits.</p>
     <div class="reco-grid" style="margin-top:2rem">
       <div>
         <div class="q-block">
@@ -542,16 +544,16 @@ footer a:hover{color:var(--marigold)}
 <section id="parents">
   <div class="wrap">
     <p class="eyebrow">Two doors, one directory</p>
-    <h2 class="sec">Built for the adults who decide.</h2>
-    <p class="sec-lede">Parents choose the right exam. Schools plan the year's competition slate. Both find what they need here.</p>
+    <h2 class="sec">For the two people who actually decide: the parent and the coordinator.</h2>
+    <p class="sec-lede">Parents want the right exam, not every exam. Coordinators want the year mapped in one sitting. That's how the site is built.</p>
     <div class="doors-grid">
       <div class="door">
         <div class="door-header navy">
           <h3>For parents</h3>
-          <p class="door-sub">Choose the right exam, not every exam</p>
+          <p class="door-sub">Not every exam. The right one.</p>
         </div>
         <div class="door-body">
-          <p>Start with the season calendar, narrow with the recommender, and register directly with the organiser. No middleman, no upsell.</p>
+          <p>Calendar, recommender, then straight to the organiser. No middleman, no upsell.</p>
           <ul class="door-list">
             <li>Full calendar with confirmed vs expected dates, clearly labelled</li>
             <li>Fees and formats stated plainly, per olympiad</li>
@@ -564,10 +566,10 @@ footer a:hover{color:var(--marigold)}
       <div class="door" id="schools">
         <div class="door-header gold">
           <h3>For schools &amp; institutes</h3>
-          <p class="door-sub">Plan the annual competition slate</p>
+          <p class="door-sub">The year, in one sitting</p>
         </div>
         <div class="door-body">
-          <p>One sitting, the whole year — which olympiads to run, when they land in the term, and what each asks of your coordination team.</p>
+          <p>The whole year on one screen — what to run, when it lands, and what coordination it needs.</p>
           <ul class="door-list">
             <li>Year-planner view, term by term</li>
             <li>Format comparison: online, in-school, proctoring load</li>
@@ -585,23 +587,23 @@ footer a:hover{color:var(--marigold)}
 <section class="trust-section">
   <div class="wrap">
     <p class="eyebrow">Why trust this directory</p>
-    <h2 class="sec">Independence, stated in writing.</h2>
-    <p class="sec-lede" style="color:#8B94B4">The three principles every directory should publish — but most don't.</p>
+    <h2 class="sec">Independence, on paper.</h2>
+    <p class="sec-lede" style="color:#8B94B4">Three rules we've put in writing so you can hold us to them.</p>
     <div class="trust-grid">
       <div class="trust-item">
         <p class="t-num">01 / Labelling</p>
-        <h3>Every date is labelled</h3>
-        <p>Confirmed means the organiser has published it. Expected means our estimate from past seasons — clearly marked, never passed off as fact. You always know what you're reading.</p>
+        <h3>Dates are labelled honestly</h3>
+        <p>Confirmed = the organiser has published it. Expected = our estimate. You'll always know which one you're reading.</p>
       </div>
       <div class="trust-item">
         <p class="t-num">02 / Commerce</p>
-        <h3>Rankings can't be bought</h3>
-        <p>No olympiad pays to appear here or to rank higher. Calendar order follows the season, not a commercial arrangement. The same rule applies to the publisher's own programmes.</p>
+        <h3>No paid placements</h3>
+        <p>Nobody pays to appear here or to rank higher. Calendar order follows the season. This applies to our own programmes too.</p>
       </div>
       <div class="trust-item">
         <p class="t-num">03 / Privacy</p>
-        <h3>Adults only, by design</h3>
-        <p>This site addresses parents and educators. We collect no data from children. Reminder emails require explicit consent you can withdraw anytime. Compliant with India's DPDP Act.</p>
+        <h3>Adults only</h3>
+        <p>We talk to parents and educators. No data is collected from children anywhere. Reminders need explicit consent and you can withdraw it in one click. Compliant with India's DPDP Act.</p>
       </div>
     </div>
   </div>
@@ -613,8 +615,8 @@ footer a:hover{color:var(--marigold)}
     <div class="capture-inner">
       <div>
         <p class="eyebrow">Registration reminders</p>
-        <h2>Never miss a window.</h2>
-        <p style="margin-top:.6rem">One short email before each registration deadline for the olympiads that match your child's class — and nothing else. Unsubscribe in one click.</p>
+        <h2>Get told before the window closes.</h2>
+        <p style="margin-top:.6rem">One short email before each deadline for the olympiads matching your child's class. Nothing else, ever. One-click unsubscribe.</p>
       </div>
       <div>
         <form class="form-stack" id="remForm">
@@ -643,17 +645,17 @@ footer a:hover{color:var(--marigold)}
 <section>
   <div class="wrap">
     <p class="eyebrow">Straight answers</p>
-    <h2 class="sec">Olympiads in India — briefly explained.</h2>
+    <h2 class="sec">Olympiads in India, briefly.</h2>
     <div class="faq-grid">
       <div>
-        <details><summary>What is a school olympiad, and is it official?</summary><p>School olympiads are competitive exams run by private organisations, trusts and academic bodies for Classes 1–12. They are enrichment competitions — not conducted by CBSE, NCERT or any government body, and participation is entirely optional. Their value lies in building exam temperament, competitive benchmarking and structured practice at a level beyond the textbook.</p></details>
-        <details><summary>How many olympiads should a child attempt per year?</summary><p>For most children, one or two well-chosen olympiads beat five scattered ones. A common pattern: one subject olympiad in the child's strongest area plus one reasoning or diagnostic exam. That's enough exposure without crowding the school calendar or creating exam anxiety.</p></details>
-        <details><summary>What do olympiads cost?</summary><p>Registration fees for most school olympiads in India range from roughly ₹150 to ₹500 per exam. Fees are listed on each olympiad's entry in our directory so you can compare before registering — check the organiser's official site for the final fee before payment.</p></details>
+        <details><summary>What is a school olympiad, and is it official?</summary><p>School olympiads are competitive exams for Classes 1–12 run by private organisations and academic bodies. They're enrichment competitions, not conducted by CBSE or NCERT, and participation is optional. Done right, they build exam temperament and give a child structured practice beyond the textbook. Done wrong, they're just certificates for a fee.</p></details>
+        <details><summary>How many olympiads should a child attempt per year?</summary><p>One or two well-chosen olympiads beat five scattered ones. The pattern most families find sustainable: one subject olympiad in the child's strongest area plus one reasoning or diagnostic exam. Anything more crowds the calendar and adds anxiety without adding learning.</p></details>
+        <details><summary>What do olympiads cost?</summary><p>Most school olympiads cost between ₹150 and ₹500 per exam. International-format ones cost more. We list the ballpark on each entry, but check the organiser's official site before paying — fees change.</p></details>
       </div>
       <div>
-        <details><summary>Are online olympiads credible?</summary><p>Several well-established olympiads now run entirely online with proctoring — webcam monitoring and timed windows that maintain fairness. Credibility depends on the organiser's proctoring standards and result transparency, not on the mode itself. We note the format per listing.</p></details>
-        <details><summary>How do olympiads relate to NEP 2020 and competency-based learning?</summary><p>India's National Education Policy 2020 emphasises competency and application over rote recall. Olympiad-style questions — multi-step, applied, reasoning-heavy — sit naturally in that direction. Individual olympiads remain independent programmes by their respective organisers, not government initiatives, but the pedagogical alignment is real.</p></details>
-        <details><summary>How is this directory different from others?</summary><p>Most olympiad directories are prep-selling funnels that rank olympiads they have a commercial stake in. This directory is published by an organiser who also runs olympiads listed here — and applies the same neutral criteria to all listings. That conflict of interest is disclosed in writing in our footer. No listing pays for placement.</p></details>
+        <details><summary>Are online olympiads credible?</summary><p>Yes, several serious olympiads run entirely online now with webcam proctoring and timed windows. Online isn't the issue — how strictly the organiser proctors and reports results is. We note the format on every listing.</p></details>
+        <details><summary>How do olympiads relate to NEP 2020 and competency-based learning?</summary><p>NEP 2020 pushes competency and application over memorisation. Olympiad questions have always leaned that way — multi-step, applied, reasoning-heavy. So the alignment is real, but honestly: olympiads remain private programmes, none are prescribed by government, and no child needs one to progress.</p></details>
+        <details><summary>How is this directory different from others?</summary><p>Most Indian olympiad directories are prep-course funnels that rank the exams they have a commercial stake in. We're an organiser too — that's a real conflict, and we handle it two ways: identical criteria for every listing, and the conflict named openly in the footer. Nobody pays for placement.</p></details>
       </div>
     </div>
   </div>
@@ -780,6 +782,15 @@ document.getElementById('remForm').addEventListener('submit',e=>{
   document.getElementById('successMsg').style.display='block';
   e.target.querySelector('.btn-submit').style.display='none';
 });
+</script>
+<script>
+(function(){
+ const root=document.documentElement,btn=document.getElementById('themeToggle'),ic=document.getElementById('themeIcon'),lb=document.getElementById('themeLbl');
+ const set=(t)=>{root.setAttribute('data-theme',t);try{localStorage.setItem('iolympTheme',t)}catch(e){}if(ic)ic.textContent=t==='dark'?'☀':'◐';if(lb)lb.textContent=t==='dark'?'Light':'Dark'};
+ let saved='light';try{saved=localStorage.getItem('iolympTheme')||'light'}catch(e){}
+ if(saved==='dark')set('dark');
+ if(btn)btn.addEventListener('click',()=>set(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+})();
 </script>
 </body>
 </html>
