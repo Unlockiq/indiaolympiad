@@ -472,7 +472,7 @@ footer a:hover{color:var(--marigold)}
         <div class="stat-row">
           <div class="stat"><span class="num">41</span><span class="lbl">Olympiads tracked</span></div>
           <div class="stat"><span class="num">1–12</span><span class="lbl">Classes covered</span></div>
-          <div class="stat"><span class="num">14</span><span class="lbl">Confirmed 2026–27 dates</span></div>
+          <div class="stat"><span class="num">15</span><span class="lbl">Confirmed 2026–27 dates</span></div>
         </div>
       </div>
       <div class="trust-card">
@@ -735,6 +735,7 @@ const EVENTS=[
   {m:"Nov 2026",n:"IAPT NSEs — NSEP/NSEC/NSEB/NSEA/NSEJS",s:"science",d:"Nov 2026 · reg opens 1 Aug",st:"expected",sub:"Phy/Chem/Bio/Astro/JrSci · Cl 8–12"},
   {m:"Nov 2026",n:"UNITE Olympiad",s:"reasoning",d:"Nov 2026 – Jan 2027 · school-scheduled",st:"confirmed",sub:"Maths+Reasoning · Cl 1–11 · in-school"},
   {m:"Nov 2026",n:"SOF ICO",s:"gk",d:"30 Nov 2026 / 19 Jan 2027",st:"confirmed",sub:"Commerce · Cl 11–12"},
+  {m:"Dec 2026",n:"CREST Olympiads L1 — CMO/CSO/CEO",s:"gk",d:"1–19 Dec 2026 · per-subject dates",st:"confirmed",sub:"Multi-subject · online, slot-booked"},
   {m:"Dec 2026",n:"NSTSE — Unified Council",s:"science",d:"Dec 2026 (school) · Jan 2027 (online)",st:"expected",sub:"Science+Maths · Cl 2–12"},
   {m:"Dec 2026",n:"ASSET — Ei",s:"gk",d:"Nov – Dec 2026",st:"expected",sub:"Multi-subject diagnostic · Cl 3–10"},
   {m:"Jan 2027",n:"HBCSE INOs — INAO/INChO/INJSO/INPhO/INBO",s:"science",d:"Late Jan / early Feb 2027",st:"expected",sub:"Phy/Chem/Bio/Astro/JrSci nationals"},
@@ -807,10 +808,23 @@ function suggest(){
 }
 
 // ── FORM ──
-document.getElementById('remForm').addEventListener('submit',e=>{
+const W3F_KEY="YOUR_WEB3FORMS_ACCESS_KEY";
+document.getElementById('remForm').addEventListener('submit',async e=>{
   e.preventDefault();
-  document.getElementById('successMsg').style.display='block';
-  e.target.querySelector('.btn-submit').style.display='none';
+  const f=e.target,btn=f.querySelector('.btn-submit'),msg=document.getElementById('successMsg');
+  btn.textContent='Sending…';btn.disabled=true;
+  try{
+    const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({access_key:W3F_KEY,subject:'[indiaolympiad.com] Reminder sign-up',from_name:'indiaolympiad.com',
+        email:f.querySelector('input[type=email]').value,class_or_role:f.querySelector('select').value,form:'reminders'})});
+    const d=await r.json();
+    if(d.success){msg.style.display='block';btn.style.display='none';}
+    else{throw new Error('relay');}
+  }catch(err){
+    msg.style.display='block';msg.style.background='#FDF3E0';msg.style.borderColor='#C9880F';msg.style.color='#C9880F';
+    msg.textContent='Could not submit right now — please email contact@indiaolympiad.com and we will set your reminders manually.';
+    btn.textContent='Set reminders →';btn.disabled=false;
+  }
 });
 </script>
 <script>
