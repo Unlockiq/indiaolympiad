@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>School olympiad year-planner 2026–27 | India Olympiad</title><meta name="description" content="Plan your school's olympiad calendar for 2026–27 term by term — every window, format and coordination load in one view, with a printable planner."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles.css"></head><body><header class="topbar"><div class="wrap">
+<a class="wordmark" href="index.html">INDIA OLYMPIAD <span class="pipe">|</span> <span class="tag">Independent directory</span></a>
+<nav class="topnav" aria-label="Primary">
+<a href="index.html#calendar" >Calendar</a>
+<a href="directory.html" >Directory</a>
+<a href="compare.html" >Compare</a>
+<a href="school-planner.html" class="on">Schools</a>
+<a href="guides.html" >Guides</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span id="themeIcon">◐</span> <span id="themeLbl">Dark</span></button>
+</nav></div></header><div class="pagehead"><div class="wrap"><p class="eyebrow">For schools & institutes</p><h1>The year's competition slate, in one sitting.</h1><p class="lede">Term-by-term windows, honest coordination-load notes, and a printable planner for the staff room.</p></div></div><section><div class="wrap">
+<p class="sec-lede">The academic year has natural competition slots. Here is the 2026–27 season arranged the way a school coordinator actually plans it — term by term, with the coordination load stated honestly.</p>
+<div style="margin-top:1.8rem">
+<div class="term-band"><div class="term-head"><h3>Term 1 · August – October 2026</h3><span>Early season</span></div>
+<div class="term-body"><b>NMTC (Aug–Oct)</b> and <b>IOQM (Sep)</b> serve your strongest senior maths students — small cohorts, centre-based, low school load. <b>SEAMO (Sep)</b> suits schools wanting an international-format entry. <b>SOF IGKO / IEO</b> windows open from October. Coordination load: light, mostly nominations and notices.</div></div>
+<div class="term-band"><div class="term-head"><h3>Term 2 · November – January</h3><span>Peak season</span></div>
+<div class="term-body">The crowded quarter: <b>SOF NSO / IMO</b>, <b>SilverZone iOM</b>, <b>NSTSE</b>, <b>ASSET</b> all land here — each needs invigilation slots, answer-sheet handling and result distribution. This is also the window for an <b>in-school, self-scheduled olympiad (UNITE, Nov–Jan)</b> — the school picks its own date around its exam calendar rather than fitting the organiser's. Coordination load: heavy; plan invigilation rosters in October.</div></div>
+<div class="term-band"><div class="term-head"><h3>Term 3 · February – March 2027</h3><span>Board window</span></div>
+<div class="term-body">Boards and finals dominate; most organisers avoid this window. Use it to collect parent consent forms and plan the April season. Coordination load: nil by design.</div></div>
+<div class="term-band"><div class="term-head"><h3>Summer season · April – May 2027</h3><span>Online window</span></div>
+<div class="term-body"><b>REAL Olympiad (18 Apr)</b>, <b>AMO Level-1 (24–25 Apr)</b> and <b>Ramanujan Maths Quiz (1–7 May)</b> run online and proctored with flexible windows — students attempt from home, so the school's load is registration coordination only. A clean way to end the year with participation certificates that arrive before results day.</div></div>
+</div>
+<h3 class="sub">Get the printable year-planner</h3>
+<p class="sec-lede">A one-page A4 planner with every window, fee and coordination note — made for the staff-room noticeboard.</p>
+<form class="card" style="max-width:520px;margin-top:1rem" id="plannerForm">
+<input class="field" type="email" required placeholder="School email address" aria-label="School email">
+<label class="consent-row"><input type="checkbox" required> I am a school representative, 18 or older, and consent to receive the planner and olympiad window reminders by email. Details are used only for this and deletable on request.</label>
+<button class="btn-submit" type="submit">Email me the planner →</button>
+<div class="success-msg" id="plannerMsg">✓ Noted — and no need to wait: <a href="IndiaOlympiad_School_YearPlanner_2026-27.pdf" download style="color:inherit;font-weight:700;text-decoration:underline">download the planner PDF here</a>.</div>
+</form>
+</div></section>
+<script>const W3F_KEY="YOUR_WEB3FORMS_ACCESS_KEY";
+document.getElementById('plannerForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const f=e.target,btn=f.querySelector('.btn-submit'),msg=document.getElementById('plannerMsg');
+  btn.textContent='Sending…';btn.disabled=true;
+  try{
+    const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({access_key:W3F_KEY,subject:'[indiaolympiad.com] School planner request',from_name:'indiaolympiad.com',
+        email:f.querySelector('input[type=email]').value,form:'school-planner'})});
+    const d=await r.json();
+    if(d.success){msg.style.display='block';btn.style.display='none';}
+    else{throw new Error('relay');}
+  }catch(err){
+    msg.style.display='block';msg.style.background='#FDF3E0';msg.style.borderColor='#C9880F';msg.style.color='#C9880F';
+    msg.textContent='Could not submit right now — please email contact@indiaolympiad.com with subject "Planner" and we will send it manually.';
+    btn.textContent='Email me the planner →';btn.disabled=false;
+  }
+});</script><footer><div class="wrap">
+<div class="footer-grid">
+<div><span class="footer-wordmark">India Olympiad</span><h4>About this directory</h4>
+<p>An independent directory of school olympiads in India — the season calendar, honest comparisons and plain-language guidance for parents and schools. Published by Unlock IQ Institute Pvt. Ltd.</p></div>
+<div><h4>Directory</h4><ul>
+<li><a href="index.html#calendar">2026–27 Calendar</a></li>
+<li><a href="directory.html">All olympiads</a></li>
+<li><a href="compare.html">Compare</a></li>
+<li><a href="school-planner.html">School planner</a></li></ul></div>
+<div><h4>About</h4><ul>
+<li><a href="guides.html">Guides</a></li>
+<li><a href="policy-explainer.html">Policy &amp; NEP explainer</a></li>
+<li><a href="privacy.html">Privacy &amp; DPDP</a></li>
+<li><a href="contact.html">Contact / grievance</a></li>
+<li><a href="listing-policy.html">Listing policy</a></li></ul></div>
+</div>
+<p class="disc">Independence &amp; disclosure: indiaolympiad.com is published by Unlock IQ Institute Pvt. Ltd., which also organises olympiad programmes (AMO, REAL Olympiad, Ramanujan Maths Quiz Series, UNITE Olympiad) listed on this site. Listings, dates and comparisons are compiled on uniform criteria applied equally to all organisers; no organiser — including the publisher — pays for placement or ranking. All olympiads listed are independent academic enrichment programmes of their respective organisers. They are not conducted, prescribed, approved or endorsed by CBSE, NCERT, PARAKH or any government body. Dates marked "Expected" are estimates based on past seasons; verify all dates and fees on the organiser's official website before paying any registration fee. Data collected via this site is governed by our Privacy Policy and India's Digital Personal Data Protection Act 2023. © 2026 India Olympiad / Unlock IQ Institute Pvt. Ltd.</p>
+</div></footer><script>
+(function(){
+ const root=document.documentElement,btn=document.getElementById('themeToggle'),ic=document.getElementById('themeIcon'),lb=document.getElementById('themeLbl');
+ const set=(t)=>{root.setAttribute('data-theme',t);try{localStorage.setItem('iolympTheme',t)}catch(e){}if(ic)ic.textContent=t==='dark'?'☀':'◐';if(lb)lb.textContent=t==='dark'?'Light':'Dark'};
+ let saved='light';try{saved=localStorage.getItem('iolympTheme')||'light'}catch(e){}
+ if(saved==='dark')set('dark');
+ if(btn)btn.addEventListener('click',()=>set(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+})();
+</script>
+</body></html>
