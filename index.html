@@ -470,9 +470,9 @@ footer a:hover{color:var(--marigold)}
         <h1>Every school olympiad in India.<br><em>One calendar, honestly labelled.</em></h1>
         <p class="lede">Dates, fees, classes and formats for the olympiads Indian schools actually run — with the source, so you can check us. We don't sell prep courses and no organiser has paid to appear here.</p>
         <div class="stat-row">
-          <div class="stat"><span class="num">16</span><span class="lbl">Olympiads tracked</span></div>
+          <div class="stat"><span class="num">41</span><span class="lbl">Olympiads tracked</span></div>
           <div class="stat"><span class="num">1–12</span><span class="lbl">Classes covered</span></div>
-          <div class="stat"><span class="num">3</span><span class="lbl">Confirmed dates</span></div>
+          <div class="stat"><span class="num">14</span><span class="lbl">Confirmed 2026–27 dates</span></div>
         </div>
       </div>
       <div class="trust-card">
@@ -516,6 +516,7 @@ footer a:hover{color:var(--marigold)}
       <span><span class="dot dot-e"></span>Expected (from past seasons)</span>
     </div>
     <div class="tl" id="tl"></div>
+      <p style="padding:12px 28px 20px;font-size:.85rem;color:var(--ink-soft)">This calendar shows season highlights. The full field — <a href="directory.html" style="text-decoration:underline">41 olympiads with profiles</a> — and per-class lists (<a href="class-1-olympiads.html" style="text-decoration:underline">Class 1</a> … <a href="class-12-olympiads.html" style="text-decoration:underline">Class 12</a>) live in the directory.</p>
   </div>
 </div>
 
@@ -723,19 +724,21 @@ footer a:hover{color:var(--marigold)}
 <script>
 // ── CALENDAR DATA ──
 const EVENTS=[
-  {m:"Aug 2026",n:"NMTC — AMTI",s:"maths",d:"Aug – Oct 2026",st:"expected",sub:"Maths · Cl 5–12"},
-  {m:"Sep 2026",n:"IOQM — HBCSE",s:"maths",d:"Sep 2026",st:"expected",sub:"Maths · Cl 8–12"},
-  {m:"Sep 2026",n:"SEAMO",s:"maths",d:"Sep 2026",st:"expected",sub:"Maths · Cl 1–12"},
-  {m:"Oct 2026",n:"SOF IGKO",s:"gk",d:"Oct – Nov 2026",st:"expected",sub:"GK · Cl 1–10"},
-  {m:"Oct 2026",n:"SOF IEO",s:"english",d:"Oct – Dec 2026",st:"expected",sub:"English · Cl 1–12"},
-  {m:"Nov 2026",n:"SOF NSO",s:"science",d:"Nov – Dec 2026",st:"expected",sub:"Science · Cl 1–12"},
-  {m:"Nov 2026",n:"Unified Council NSTSE",s:"science",d:"Nov – Dec 2026",st:"expected",sub:"Science+Maths · Cl 1–10"},
-  {m:"Nov 2026",n:"UNITE Olympiad",s:"reasoning",d:"Nov 2026 – Jan 2027",st:"confirmed",sub:"Maths+Reasoning · Cl 1–11 · in-school"},
-  {m:"Dec 2026",n:"SOF IMO",s:"maths",d:"Nov – Dec 2026",st:"expected",sub:"Maths · Cl 1–12"},
-  {m:"Dec 2026",n:"SilverZone iOM",s:"maths",d:"Nov – Dec 2026",st:"expected",sub:"Maths · Cl 1–12"},
+  {m:"Aug 2026",n:"NMTC Stage 1 — AMTI",s:"maths",d:"Aug–Sep 2026 · reg closes Jul",st:"expected",sub:"Maths · Cl 5–12"},
+  {m:"Sep 2026",n:"IOQM — MTA / HBCSE",s:"maths",d:"6 Sep 2026 (Sun)",st:"confirmed",sub:"Maths · Cl 8–12 · IMO pathway"},
+  {m:"Sep 2026",n:"SOF IGKO",s:"gk",d:"22 Sep / 6 Oct / 3 Nov 2026",st:"confirmed",sub:"GK · Cl 1–10"},
+  {m:"Sep 2026",n:"SOF IEO",s:"english",d:"30 Sep / 27 Oct / 17 Nov 2026",st:"confirmed",sub:"English · Cl 1–12 · now 2-level"},
+  {m:"Sep 2026",n:"SEAMO",s:"maths",d:"Sep 2026",st:"expected",sub:"Maths · Cl 1–12 · international"},
+  {m:"Oct 2026",n:"SilverZone iOM",s:"maths",d:"8 Oct / 18 Nov / 7 Dec 2026",st:"confirmed",sub:"Maths · Cl 1–12 · reg by 31 Aug"},
+  {m:"Oct 2026",n:"SOF IMO",s:"maths",d:"23 Oct / 26 Nov / 10 Dec 2026",st:"confirmed",sub:"Maths · Cl 1–12"},
+  {m:"Oct 2026",n:"SOF ISO (formerly NSO)",s:"science",d:"30 Oct / 19 Nov / 3 Dec 2026",st:"confirmed",sub:"Science · Cl 1–12"},
+  {m:"Nov 2026",n:"IAPT NSEs — NSEP/NSEC/NSEB/NSEA/NSEJS",s:"science",d:"Nov 2026 · reg opens 1 Aug",st:"expected",sub:"Phy/Chem/Bio/Astro/JrSci · Cl 8–12"},
+  {m:"Nov 2026",n:"UNITE Olympiad",s:"reasoning",d:"Nov 2026 – Jan 2027 · school-scheduled",st:"confirmed",sub:"Maths+Reasoning · Cl 1–11 · in-school"},
+  {m:"Nov 2026",n:"SOF ICO",s:"gk",d:"30 Nov 2026 / 19 Jan 2027",st:"confirmed",sub:"Commerce · Cl 11–12"},
+  {m:"Dec 2026",n:"NSTSE — Unified Council",s:"science",d:"Dec 2026 (school) · Jan 2027 (online)",st:"expected",sub:"Science+Maths · Cl 2–12"},
   {m:"Dec 2026",n:"ASSET — Ei",s:"gk",d:"Nov – Dec 2026",st:"expected",sub:"Multi-subject diagnostic · Cl 3–10"},
-  {m:"Jan 2027",n:"CREST Olympiads",s:"science",d:"Dec 2026 – Jan 2027",st:"expected",sub:"Multi-subject · Cl 1–10"},
-  {m:"Feb 2027",n:"Technothlon (prelims)",s:"reasoning",d:"Window varies",st:"expected",sub:"Logic · Cl 9–12"},
+  {m:"Jan 2027",n:"HBCSE INOs — INAO/INChO/INJSO/INPhO/INBO",s:"science",d:"Late Jan / early Feb 2027",st:"expected",sub:"Phy/Chem/Bio/Astro/JrSci nationals"},
+  {m:"Feb 2027",n:"SOF Level-2 — IMO/ISO/IEO",s:"maths",d:"2nd/3rd Sun of Feb 2027 (tentative)",st:"expected",sub:"Qualifiers Cl 3–12"},
   {m:"Apr 2027",n:"REAL Olympiad",s:"reasoning",d:"18 Apr 2027",st:"confirmed",sub:"Reasoning · Cl 1–11 · online, proctored"},
   {m:"Apr 2027",n:"AMO Level-1",s:"maths",d:"24–25 Apr 2027",st:"confirmed",sub:"Maths · Cl 1–11 · online, proctored"},
   {m:"May 2027",n:"Ramanujan Maths Quiz",s:"maths",d:"1–7 May 2027",st:"confirmed",sub:"Maths diagnostic · Cl 1–11 · online"},
