@@ -130,3 +130,37 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 .ay-tip{position:relative;border-bottom:1px dotted var(--marigold);cursor:help}
 .ay-tip::after{content:attr(data-tip);position:absolute;top:calc(100% + 8px);bottom:auto;left:auto;right:0;transform:none;background:var(--navy);color:var(--paper);padding:.6rem .8rem;border-radius:4px;font-family:var(--sans);font-size:.75rem;letter-spacing:0;text-transform:none;font-weight:400;line-height:1.5;white-space:normal;width:260px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:20;box-shadow:0 6px 16px rgba(0,0,0,.25)}
 .ay-tip:hover::after,.ay-tip:focus::after{opacity:1}
+
+/* v1.2: dark-mode readability — navy-bg components get fixed light text */
+:root[data-theme="dark"] .topbar .wordmark,
+:root[data-theme="dark"] .hero,
+:root[data-theme="dark"] .hero h1,
+:root[data-theme="dark"] .pagehead h1,
+:root[data-theme="dark"] .trust-card .tc-text h4,
+:root[data-theme="dark"] .reco-result-head,
+:root[data-theme="dark"] .door-header.navy,
+:root[data-theme="dark"] .door-header.navy h3,
+:root[data-theme="dark"] .trust-section h2.sec,
+:root[data-theme="dark"] .trust-item h3,
+:root[data-theme="dark"] .term-head h3,
+:root[data-theme="dark"] table.cmp th,
+:root[data-theme="dark"] .footer-wordmark{color:#F2F4F8}
+:root[data-theme="dark"] .door-header.gold,
+:root[data-theme="dark"] .door-header.gold h3,
+:root[data-theme="dark"] .door-header.gold .door-sub{color:#1E2438}
+/* v1.2: news ticker */
+.ticker{background:var(--navy);border-bottom:2px solid var(--marigold);overflow:hidden;position:relative}
+.ticker .wrap{display:flex;align-items:center;gap:1rem;height:34px;overflow:hidden}
+.ticker-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;color:var(--marigold);text-transform:uppercase;white-space:nowrap;flex-shrink:0}
+.ticker-track{display:flex;gap:3rem;white-space:nowrap;animation:tick 40s linear infinite}
+.ticker-track span{font-size:.78rem;color:#C4C9DC;font-family:var(--sans)}
+.ticker-track b{color:#F2F4F8;font-weight:600}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+/* v1.2: registration badges */
+.reg{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:.14rem .4rem;border-radius:3px;display:inline-block}
+.reg.open{background:var(--green-pale);color:var(--green);border:1px solid var(--green)}
+.reg.soon{background:#FDF3E0;color:#C9880F;border:1px solid #C9880F}
+.reg.via{background:transparent;color:var(--ink-mute);border:1px solid var(--line)}
+:root[data-theme="dark"] .reg.soon{background:#3A2E15}

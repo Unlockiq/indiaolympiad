@@ -439,6 +439,41 @@ footer a:hover{color:var(--marigold)}
 .ay-tip::after{content:attr(data-tip);position:absolute;top:calc(100% + 8px);bottom:auto;left:auto;right:0;transform:none;background:var(--navy);color:var(--paper);padding:.6rem .8rem;border-radius:4px;font-family:var(--sans);font-size:.75rem;letter-spacing:0;text-transform:none;font-weight:400;line-height:1.5;white-space:normal;width:260px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:20;box-shadow:0 6px 16px rgba(0,0,0,.25)}
 .ay-tip:hover::after,.ay-tip:focus::after{opacity:1}
 
+
+/* v1.2: dark-mode readability — navy-bg components get fixed light text */
+:root[data-theme="dark"] .topbar .wordmark,
+:root[data-theme="dark"] .hero,
+:root[data-theme="dark"] .hero h1,
+:root[data-theme="dark"] .pagehead h1,
+:root[data-theme="dark"] .trust-card .tc-text h4,
+:root[data-theme="dark"] .reco-result-head,
+:root[data-theme="dark"] .door-header.navy,
+:root[data-theme="dark"] .door-header.navy h3,
+:root[data-theme="dark"] .trust-section h2.sec,
+:root[data-theme="dark"] .trust-item h3,
+:root[data-theme="dark"] .term-head h3,
+:root[data-theme="dark"] table.cmp th,
+:root[data-theme="dark"] .footer-wordmark{color:#F2F4F8}
+:root[data-theme="dark"] .door-header.gold,
+:root[data-theme="dark"] .door-header.gold h3,
+:root[data-theme="dark"] .door-header.gold .door-sub{color:#1E2438}
+/* v1.2: news ticker */
+.ticker{background:var(--navy);border-bottom:2px solid var(--marigold);overflow:hidden;position:relative}
+.ticker .wrap{display:flex;align-items:center;gap:1rem;height:34px;overflow:hidden}
+.ticker-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;color:var(--marigold);text-transform:uppercase;white-space:nowrap;flex-shrink:0}
+.ticker-track{display:flex;gap:3rem;white-space:nowrap;animation:tick 40s linear infinite}
+.ticker-track span{font-size:.78rem;color:#C4C9DC;font-family:var(--sans)}
+.ticker-track b{color:#F2F4F8;font-weight:600}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+/* v1.2: registration badges */
+.reg{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:.14rem .4rem;border-radius:3px;display:inline-block}
+.reg.open{background:var(--green-pale);color:var(--green);border:1px solid var(--green)}
+.reg.soon{background:#FDF3E0;color:#C9880F;border:1px solid #C9880F}
+.reg.via{background:transparent;color:var(--ink-mute);border:1px solid var(--line)}
+:root[data-theme="dark"] .reg.soon{background:#3A2E15}
+
 </style>
 </head>
 <body>
@@ -462,6 +497,23 @@ footer a:hover{color:var(--marigold)}
 </header>
 
 <!-- HERO -->
+<div class="ticker" aria-label="Latest olympiad updates">
+  <div class="wrap">
+    <span class="ticker-label">Updates · 6 Jul</span>
+    <div class="ticker-track">
+      <span><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</span>
+      <span><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO · IEO now two-level</span>
+      <span><b>IAPT NSEs:</b> Physics/Chem/Bio/Astro/Jr Science registration opens 1 Aug</span>
+      <span><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</span>
+      <span><b>CREST:</b> full per-subject date sheet published · Mental Maths &amp; Spell Bee L1 this month</span>
+      <span><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</span>
+      <span><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO · IEO now two-level</span>
+      <span><b>IAPT NSEs:</b> Physics/Chem/Bio/Astro/Jr Science registration opens 1 Aug</span>
+      <span><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</span>
+      <span><b>CREST:</b> full per-subject date sheet published · Mental Maths &amp; Spell Bee L1 this month</span>
+    </div>
+  </div>
+</div>
 <section class="hero">
   <div class="wrap">
     <div class="hero-inner">
@@ -788,9 +840,8 @@ function suggest(){
     if(goal.includes("Diagnostic")){
       picks=[["Ramanujan Maths Quiz Series","Multi-test series producing a topic-wise competency report. Diagnosis first, competition second — exactly right for insight-focused goals.","Confirmed · 1–7 May 2027"],["ASSET — Ei","Skill-based diagnostic used widely by schools. Strong cross-subject benchmarking.","Expected · Nov–Dec 2026"]];
     }else if(goal.includes("Serious")){
-      picks=[["Aryabhatta Maths Olympiad (AMO)","Two-stage format with proctored online exams, national ranks and study support. The serious maths competition for Classes 1–11.","Confirmed · AMO L1: 24–25 Apr 2027"]];
-      if(senior)picks.push(["IOQM — HBCSE","The national gateway to the International Mathematical Olympiad. For strong senior maths students only.","Expected · Sep 2026"]);
-      else picks.push(["SOF IMO","The broadest-participation maths olympiad in India — a useful national benchmark.","Expected · Nov–Dec 2026"]);
+      if(senior){picks=[["IOQM — MTA/HBCSE","The national gateway toward the International Mathematical Olympiad — the most meaningful maths exam for serious senior students. Registration closes 25 Jul 2026.","Confirmed · 6 Sep 2026"],["Aryabhatta Maths Olympiad (AMO)","Two-stage proctored online format with national ranks and study support — the strong all-rounder alongside the IOQM pathway.","Confirmed · AMO L1: 24–25 Apr 2027"]];}
+      else{picks=[["Aryabhatta Maths Olympiad (AMO)","Two-stage format with proctored online exams, national ranks and study support. The serious maths competition for Classes 1–11.","Confirmed · AMO L1: 24–25 Apr 2027"],["SOF IMO","The broadest-participation maths olympiad in India — a useful national benchmark.","Confirmed · 23 Oct / 26 Nov / 10 Dec 2026"]];}
     }else{
       picks=[["Ramanujan Maths Quiz Series","Grade-level questions and a gentle multi-test format with a feedback report. An ideal first maths olympiad.","Confirmed · 1–7 May 2027"],["SEAMO","Friendly international-format paper, open to all classes, lower-pressure entry point.","Expected · Sep 2026"]];
     }
