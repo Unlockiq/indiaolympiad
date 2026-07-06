@@ -7,7 +7,7 @@
 <meta name="description" content="Every school olympiad in India on one calendar — maths, science, English, reasoning and GK olympiads for Classes 1–12, with dates, fees and formats for 2026–27. Independent and neutral."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0E1A3D;--navy-2:#1B2A5B;--navy-3:#253470;
@@ -457,16 +457,21 @@ footer a:hover{color:var(--marigold)}
 :root[data-theme="dark"] .door-header.gold,
 :root[data-theme="dark"] .door-header.gold h3,
 :root[data-theme="dark"] .door-header.gold .door-sub{color:#1E2438}
-/* v1.2: news ticker */
-.ticker{background:var(--navy);border-bottom:2px solid var(--marigold);overflow:hidden;position:relative}
-.ticker .wrap{display:flex;align-items:center;gap:1rem;height:34px;overflow:hidden}
-.ticker-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;color:var(--marigold);text-transform:uppercase;white-space:nowrap;flex-shrink:0}
-.ticker-track{display:flex;gap:3rem;white-space:nowrap;animation:tick 40s linear infinite}
-.ticker-track span{font-size:.78rem;color:#C4C9DC;font-family:var(--sans)}
-.ticker-track b{color:#F2F4F8;font-weight:600}
+
+/* v1.3 ticker rebuild: seamless two-half marquee */
+.ticker{background:var(--navy);border-bottom:2px solid var(--marigold);overflow:hidden;position:relative;z-index:5}
+.ticker-inner{display:flex;align-items:center;height:34px;max-width:1140px;margin:0 auto;padding:0 24px}
+.ticker-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;color:var(--marigold);text-transform:uppercase;white-space:nowrap;flex-shrink:0;padding-right:1.2rem}
+.ticker-view{overflow:hidden;flex:1;position:relative}
+.ticker-track{display:flex;width:max-content;animation:tick 48s linear infinite}
+.t-half{display:flex;gap:3rem;padding-right:3rem;white-space:nowrap}
+.t-half a{font-size:.78rem;color:#C4C9DC;font-family:var(--sans);text-decoration:none}
+.t-half a b{color:#F2F4F8;font-weight:600}
+.t-half a:hover{color:var(--marigold)}.t-half a:hover b{color:var(--marigold)}
 .ticker:hover .ticker-track{animation-play-state:paused}
-@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes tick{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
 /* v1.2: registration badges */
 .reg{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:.14rem .4rem;border-radius:3px;display:inline-block}
 .reg.open{background:var(--green-pale);color:var(--green);border:1px solid var(--green)}
@@ -498,19 +503,21 @@ footer a:hover{color:var(--marigold)}
 
 <!-- HERO -->
 <div class="ticker" aria-label="Latest olympiad updates">
-  <div class="wrap">
+  <div class="ticker-inner">
     <span class="ticker-label">Updates · 6 Jul</span>
-    <div class="ticker-track">
-      <span><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</span>
-      <span><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO · IEO now two-level</span>
-      <span><b>IAPT NSEs:</b> Physics/Chem/Bio/Astro/Jr Science registration opens 1 Aug</span>
-      <span><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</span>
-      <span><b>CREST:</b> full per-subject date sheet published · Mental Maths &amp; Spell Bee L1 this month</span>
-      <span><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</span>
-      <span><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO · IEO now two-level</span>
-      <span><b>IAPT NSEs:</b> Physics/Chem/Bio/Astro/Jr Science registration opens 1 Aug</span>
-      <span><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</span>
-      <span><b>CREST:</b> full per-subject date sheet published · Mental Maths &amp; Spell Bee L1 this month</span>
+    <div class="ticker-view">
+      <div class="ticker-track">
+        <div class="t-half"><a href="olympiads/ioqm.html"><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</a>
+<a href="olympiads/sof-imo.html"><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO</a>
+<a href="olympiads/nsep.html"><b>IAPT NSEs:</b> Phy/Chem/Bio/Astro/Jr Science registration opens 1 Aug</a>
+<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</a>
+<a href="olympiads/crest.html"><b>CREST:</b> full per-subject date sheet published · L1 rounds from 1 Dec</a></div>
+        <div class="t-half" aria-hidden="true"><a href="olympiads/ioqm.html"><b>IOQM 2026:</b> registration closes 25 Jul — exam confirmed 6 Sep</a>
+<a href="olympiads/sof-imo.html"><b>SOF 2026-27 schedule out:</b> IMO 23 Oct / 26 Nov / 10 Dec · NSO renamed ISO</a>
+<a href="olympiads/nsep.html"><b>IAPT NSEs:</b> Phy/Chem/Bio/Astro/Jr Science registration opens 1 Aug</a>
+<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> registration closes 31 Aug · exams 8 Oct / 18 Nov / 7 Dec</a>
+<a href="olympiads/crest.html"><b>CREST:</b> full per-subject date sheet published · L1 rounds from 1 Dec</a></div>
+      </div>
     </div>
   </div>
 </div>
