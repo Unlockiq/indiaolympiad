@@ -176,3 +176,6 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 /* v1.6: profile sidebar card headings in marigold */
 .card h3.sub{color:var(--marigold-deep)}
 :root[data-theme="dark"] .card h3.sub{color:var(--marigold)}
+
+/* v1.7: recommender selected option visibility */
+.opt[aria-pressed="true"]{background:var(--marigold);color:#0E1A3D;border-color:var(--marigold);font-weight:700}

@@ -247,7 +247,7 @@ h2.sec{
   transition:all .15s;color:var(--ink-soft);
 }
 .opt:hover{border-color:var(--navy);color:var(--navy)}
-.opt[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.opt[aria-pressed="true"]{background:var(--marigold);color:#0E1A3D;border-color:var(--marigold);font-weight:700}
 /* result card */
 .reco-result{
   background:var(--white);border:1px solid var(--line);
@@ -868,7 +868,7 @@ function suggest(){
 }
 
 // ── FORM ──
-const W3F_KEY="YOUR_WEB3FORMS_ACCESS_KEY";
+const W3F_KEY="443292b6-a341-4b19-9d87-927b41a80350";
 document.getElementById('remForm').addEventListener('submit',async e=>{
   e.preventDefault();
   const f=e.target,btn=f.querySelector('.btn-submit'),msg=document.getElementById('successMsg');
@@ -896,5 +896,6 @@ document.getElementById('remForm').addEventListener('submit',async e=>{
  if(btn)btn.addEventListener('click',()=>set(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 })();
 </script>
+<script data-goatcounter="https://indiaolympiad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
