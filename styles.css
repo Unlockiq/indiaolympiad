@@ -68,7 +68,7 @@ footer a:hover{color:var(--marigold)}
 .filters{display:flex;gap:.45rem;flex-wrap:wrap;margin:1.2rem 0}
 .chip{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--line);background:var(--white);padding:.4rem .8rem;cursor:pointer;border-radius:20px;transition:all .15s;color:var(--ink-soft);font-weight:500}
 .chip:hover{background:var(--paper-2);color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--navy);color:var(--marigold);border-color:var(--navy)}
+.chip[aria-pressed="true"]{background:var(--marigold);color:#0E1A3D;border-color:var(--marigold);font-weight:700}
 .dir-card{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:1.1rem 1.3rem;position:relative;overflow:hidden;transition:box-shadow .15s}
 .dir-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}
 .dir-card.c::before{background:var(--green)}.dir-card.e::before{background:var(--marigold)}
@@ -169,3 +169,10 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 .reg.soon{background:#FDF3E0;color:#C9880F;border:1px solid #C9880F}
 .reg.via{background:transparent;color:var(--ink-mute);border:1px solid var(--line)}
 :root[data-theme="dark"] .reg.soon{background:#3A2E15}
+
+/* v1.4: anchors clear the sticky header */
+[id]{scroll-margin-top:88px}
+
+/* v1.6: profile sidebar card headings in marigold */
+.card h3.sub{color:var(--marigold-deep)}
+:root[data-theme="dark"] .card h3.sub{color:var(--marigold)}
