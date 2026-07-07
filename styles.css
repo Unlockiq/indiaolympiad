@@ -179,3 +179,7 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 
 /* v1.7: recommender selected option visibility */
 .opt[aria-pressed="true"]{background:var(--marigold);color:#0E1A3D;border-color:var(--marigold);font-weight:700}
+
+/* v1.10: ghost buttons visible in dark mode */
+:root[data-theme="dark"] .btn-ghost{border-color:var(--marigold);color:var(--marigold)}
+:root[data-theme="dark"] .btn-ghost:hover{background:var(--marigold);color:#0E1A3D}
