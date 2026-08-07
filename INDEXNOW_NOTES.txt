@@ -1,0 +1,19 @@
+INDEXNOW SETUP - India Olympiad
+Key: a7f2b9c4e8d3f1a6b5c9e2f7a4b8c3d6
+Key file: /a7f2b9c4e8d3f1a6b5c9e2f7a4b8c3d6.txt (must be at site root, uploaded)
+
+TO NOTIFY search engines when a page changes, GET this URL:
+https://api.indexnow.org/indexnow?url=https://www.indiaolympiad.com/PAGE.html&key=a7f2b9c4e8d3f1a6b5c9e2f7a4b8c3d6
+
+Or POST a batch:
+POST https://api.indexnow.org/indexnow
+Content-Type: application/json
+{
+  "host": "www.indiaolympiad.com",
+  "key": "a7f2b9c4e8d3f1a6b5c9e2f7a4b8c3d6",
+  "keyLocation": "https://www.indiaolympiad.com/a7f2b9c4e8d3f1a6b5c9e2f7a4b8c3d6.txt",
+  "urlList": ["https://www.indiaolympiad.com/results.html", ...]
+}
+
+This is picked up by: Bing, Yandex, Seznam, Naver.
+Google does NOT use IndexNow (yet) - Google still needs Search Console.
