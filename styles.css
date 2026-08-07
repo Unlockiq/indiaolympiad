@@ -183,3 +183,11 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 /* v1.10: ghost buttons visible in dark mode */
 :root[data-theme="dark"] .btn-ghost{border-color:var(--marigold);color:var(--marigold)}
 :root[data-theme="dark"] .btn-ghost:hover{background:var(--marigold);color:#0E1A3D}
+
+/* v2.2: cream-gradient result boxes stay readable in dark mode */
+:root[data-theme="dark"] div[style*="linear-gradient(180deg,#FDF3E0"] p,
+:root[data-theme="dark"] div[style*="linear-gradient(180deg,#FDF3E0"] b,
+:root[data-theme="dark"] div[style*="linear-gradient(180deg,#FDF3E0"] span{color:#1E2438 !important}
+:root[data-theme="dark"] div[style*="background:#F6F7F3"] span,
+:root[data-theme="dark"] div[style*="background:#F6F7F3"] b,
+:root[data-theme="dark"] div[style*="background:#F6F7F3"] p{color:#1E2438 !important}
