@@ -611,6 +611,32 @@ footer a:hover{color:var(--marigold)}
 .qotd-body{padding:1.4rem 1.8rem 1.6rem !important}
 .qotd-yesterday{margin-bottom:0 !important;padding-bottom:.3rem}
 .qotd-yesterday-body{margin-bottom:.5rem}
+
+/* v2.8.5: distinct calendar section separation from QOTD */
+.calendar-section{background:#F6F7F3;padding:2.4rem 0 3rem;position:relative;border-top:3px solid #E8A020}
+:root[data-theme="dark"] .calendar-section{background:#0d1428;border-top-color:#E8A020}
+.calendar-section::before{content:"";position:absolute;top:-1px;left:0;right:0;height:1px;background:#0E1A3D;opacity:.15}
+.qotd-section{padding-bottom:2rem !important}
+
+/* v2.8.6: more space after QOTD + fully closed golden border */
+.qotd-section{padding-bottom:4rem !important}
+.qotd-card{
+  border:2px solid #E8A020 !important;
+  border-radius:10px !important;
+  box-sizing:border-box !important;
+  box-shadow:0 0 0 4px rgba(232,160,32,.12), 0 6px 20px rgba(14,26,61,.10) !important;
+  overflow:hidden !important;
+  background:#FFFFFF !important;
+  margin-bottom:0
+}
+:root[data-theme="dark"] .qotd-card{background:#141c34 !important}
+/* body must sit inside the border cleanly — no negative margins */
+.qotd-body{padding:1.4rem 1.8rem 1.6rem !important;margin:0}
+/* banner top corners must match card corners */
+.qotd-banner{border-top-left-radius:8px;border-top-right-radius:8px;margin:0}
+/* yesterday reveal body must not push out */
+.qotd-yesterday{margin-bottom:0}
+.qotd-yesterday-body{margin-bottom:0}
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -765,6 +791,7 @@ footer a:hover{color:var(--marigold)}
   </div>
 </section>
 <!-- CALENDAR -->
+<section class="calendar-section" aria-labelledby="cal-heading">
 <div class="almanac-wrap wrap" id="calendar">
   <div class="cal-panel">
     <div class="cal-head">
@@ -790,6 +817,8 @@ footer a:hover{color:var(--marigold)}
       <p style="padding:12px 28px 20px;font-size:.85rem;color:var(--ink-soft)">This calendar shows season highlights. The full field — <a href="directory.html" style="text-decoration:underline">41 olympiads with profiles</a> — and per-class lists (<a href="class-1-olympiads.html" style="text-decoration:underline">Class 1</a> … <a href="class-12-olympiads.html" style="text-decoration:underline">Class 12</a>) live in the directory.</p>
   </div>
 </div>
+
+</section>
 
 <!-- RECOMMENDER -->
 <section class="reco-section" id="recommender">
