@@ -574,13 +574,14 @@ footer a:hover{color:var(--marigold)}
       <span class="tag">Independent directory</span>
     </a>
     <nav class="topnav" aria-label="Primary">
-      <a href="#calendar">Calendar</a>
-      <a href="directory.html">Directory</a>
-      <a href="compare.html">Compare</a>
-      <a href="results.html">Results</a>
+<a href="index.html#calendar">Calendar</a>
+<a href="directory.html">Directory</a>
+<a href="compare.html">Compare</a>
+<a href="results.html">Results</a>
 <a href="school-planner.html">Schools</a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span id="themeIcon">◐</span> <span id="themeLbl">Dark</span></button>
-    </nav>
+<a href="guides.html">Guides</a>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span id="themeIcon">◐</span> <span id="themeLbl">Dark</span></button>
+</nav>
   </div>
 </header>
 
@@ -608,6 +609,11 @@ footer a:hover{color:var(--marigold)}
 <a href="olympiads/crest.html"><b>CREST:</b> L1 rounds from 1 Dec · online slot booking open</a></div>
       </div>
     </div>
+  </div>
+</div>
+<div class="countdown" aria-label="Upcoming olympiad exams">
+  <div class="wrap" id="cdWrap">
+    <span class="cd-item"><span class="cd-lbl">Days to</span></span>
   </div>
 </div>
 <section class="hero">
@@ -639,6 +645,35 @@ footer a:hover{color:var(--marigold)}
           <div class="tc-text"><h4>No child data collected</h4><p>This site talks to adults. No child data collection anywhere on it.</p></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="qotd-section" id="qotd" aria-label="Question of the day">
+  <div class="wrap">
+    <div class="qotd-card">
+      <div class="qotd-head">
+        <div>
+          <div class="qotd-eyebrow">🏆 Question of the Day</div>
+          <div class="qotd-date" id="qotdDate">—</div>
+        </div>
+        <div class="qotd-streak" id="qotdStreak" title="Your daily streak">Day 1</div>
+      </div>
+      <div class="qotd-bands" role="tablist" aria-label="Difficulty band">
+        <button class="qotd-band on" data-b="junior" role="tab">Junior · Cl 1–5</button>
+        <button class="qotd-band" data-b="middle" role="tab">Middle · Cl 6–8</button>
+        <button class="qotd-band" data-b="senior" role="tab">Senior · Cl 9–12</button>
+      </div>
+      <p class="qotd-q" id="qotdQ">Loading today’s question…</p>
+      <div class="qotd-choices" id="qotdChoices"></div>
+      <div class="qotd-solution" id="qotdSol"></div>
+      <div class="qotd-actions">
+        <button class="qotd-btn" id="qotdShowSol">Show solution</button>
+        <a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener" class="qotd-btn">📲 Get daily on WhatsApp</a>
+        <a href="directory.html" class="qotd-btn">Explore olympiads →</a>
+      </div>
+      <p style="font-size:.7rem;color:#5C6278;margin-top:.9rem;font-family:var(--mono)">Original olympiad-style problems, free to use. A new question every day.</p>
     </div>
   </div>
 </section>
@@ -843,30 +878,24 @@ footer a:hover{color:var(--marigold)}
 <footer>
   <div class="wrap">
     <div class="footer-grid">
-      <div class="footer-about">
-        <span class="footer-wordmark">India Olympiad</span>
-        <h4>About this directory</h4>
-        <p>An independent directory of school olympiads in India — the season calendar, honest comparisons and plain-language guidance for parents and schools. Published by Unlock IQ Institute Pvt. Ltd.</p>
-      </div>
-      <div>
-        <h4>Directory</h4>
-        <ul>
-          <li><a href="#calendar">2026–27 Calendar</a></li>
-          <li><a href="directory.html">All olympiads</a></li>
-          <li><a href="school-planner.html">School planner</a></li>
-          <li><a href="compare.html">Compare</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>About</h4>
-        <ul>
-          <li><a href="#capture">Reminders</a></li>
-          <li><a href="privacy.html">Privacy &amp; DPDP</a></li>
-          <li><a href="contact.html">Grievance officer</a></li>
-          <li><a href="listing-policy.html">Listing policy</a></li>
-        </ul>
-      </div>
-    </div>
+<div><span class="footer-wordmark">India Olympiad</span><h4>About this directory</h4>
+<p>An independent directory of school olympiads in India — the season calendar, honest comparisons and plain-language guidance for parents and schools. Published by Unlock IQ Institute Pvt. Ltd.</p></div>
+<div><h4>Directory</h4><ul>
+<li><a href="index.html#calendar">2026–27 Calendar</a></li>
+<li><a href="directory.html">All olympiads</a></li>
+<li><a href="compare.html">Compare</a></li>
+<li><a href="results.html">Results 2025-26</a></li>
+<li><a href="school-planner.html">School planner</a></li>
+</ul></div>
+<div><h4>About</h4><ul>
+<li><a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener">📲 WhatsApp Channel</a></li>
+<li><a href="guides.html">Guides</a></li>
+<li><a href="policy-explainer.html">Policy explainer</a></li>
+<li><a href="privacy.html">Privacy &amp; DPDP</a></li>
+<li><a href="contact.html">Grievance officer</a></li>
+<li><a href="listing-policy.html">Listing policy</a></li>
+</ul></div>
+</div>
     <p class="disc">Independence &amp; disclosure: indiaolympiad.com is published by Unlock IQ Institute Pvt. Ltd., which also organises olympiad programmes (AMO, REAL Olympiad, Ramanujan Maths Quiz Series, UNITE Olympiad) listed on this site. Listings, dates and comparisons are compiled on uniform criteria applied equally to all organisers; no organiser — including the publisher — pays for placement or ranking. All olympiads listed are independent academic enrichment programmes of their respective organisers. They are not conducted, prescribed, approved or endorsed by CBSE, NCERT, PARAKH or any government body. Dates marked "Expected" are estimates based on past seasons; verify all dates and fees on the organiser's official website before paying any registration fee. Data collected via this site is governed by our Privacy Policy and India's Digital Personal Data Protection Act 2023. © 2026 India Olympiad / Unlock IQ Institute Pvt. Ltd.</p>
   </div>
 </footer>
@@ -1097,5 +1126,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 </script>
+<a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener" class="wa-float" aria-label="Follow India Olympiad Updates on WhatsApp">
+<span class="wa-icon" aria-hidden="true">📲</span>
+<span class="wa-txt">Get updates on <b>WhatsApp</b></span>
+</a>
 </body>
 </html>
