@@ -191,3 +191,21 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] span,
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] b,
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] p{color:#1E2438 !important}
+
+/* v2.6: WhatsApp channel follow — floating pill + ticker inline chip */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;display:inline-flex;align-items:center;gap:.55rem;
+ background:#25D366;color:#0E1A3D;font-family:var(--sans);font-size:.82rem;font-weight:600;
+ padding:.7rem 1.05rem .7rem .85rem;border-radius:999px;text-decoration:none;
+ box-shadow:0 8px 22px rgba(14,26,61,.28),0 2px 6px rgba(14,26,61,.18);
+ transition:transform .15s ease,box-shadow .15s ease}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(14,26,61,.35),0 3px 8px rgba(14,26,61,.22)}
+.wa-float .wa-icon{font-size:1.05rem;line-height:1}
+.wa-float .wa-txt b{font-weight:700}
+@media (max-width:560px){.wa-float{bottom:14px;right:14px;padding:.6rem .9rem .6rem .75rem;font-size:.75rem}
+ .wa-float .wa-txt{max-width:11ch}}
+/* header inline follow chip (desktop only, next to nav) */
+.wa-chip{display:inline-flex;align-items:center;gap:.35rem;background:transparent;border:1px solid #25D366;color:#25D366;
+ font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+ padding:.28rem .55rem;border-radius:999px;text-decoration:none;margin-left:.35rem}
+.wa-chip:hover{background:#25D366;color:#0E1A3D}
+@media (max-width:900px){.wa-chip{display:none}}

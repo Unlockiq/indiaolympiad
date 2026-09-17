@@ -489,6 +489,25 @@ footer a:hover{color:var(--marigold)}
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] span,
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] b,
 :root[data-theme="dark"] div[style*="background:#F6F7F3"] p{color:#1E2438 !important}
+
+/* v2.6: WhatsApp channel follow — floating pill + ticker inline chip */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;display:inline-flex;align-items:center;gap:.55rem;
+ background:#25D366;color:#0E1A3D;font-family:var(--sans);font-size:.82rem;font-weight:600;
+ padding:.7rem 1.05rem .7rem .85rem;border-radius:999px;text-decoration:none;
+ box-shadow:0 8px 22px rgba(14,26,61,.28),0 2px 6px rgba(14,26,61,.18);
+ transition:transform .15s ease,box-shadow .15s ease}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(14,26,61,.35),0 3px 8px rgba(14,26,61,.22)}
+.wa-float .wa-icon{font-size:1.05rem;line-height:1}
+.wa-float .wa-txt b{font-weight:700}
+@media (max-width:560px){.wa-float{bottom:14px;right:14px;padding:.6rem .9rem .6rem .75rem;font-size:.75rem}
+ .wa-float .wa-txt{max-width:11ch}}
+/* header inline follow chip (desktop only, next to nav) */
+.wa-chip{display:inline-flex;align-items:center;gap:.35rem;background:transparent;border:1px solid #25D366;color:#25D366;
+ font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+ padding:.28rem .55rem;border-radius:999px;text-decoration:none;margin-left:.35rem}
+.wa-chip:hover{background:#25D366;color:#0E1A3D}
+@media (max-width:900px){.wa-chip{display:none}}
+
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -521,14 +540,16 @@ footer a:hover{color:var(--marigold)}
     <span class="ticker-label">Updates · 17 Sep</span>
     <div class="ticker-view">
       <div class="ticker-track">
-        <div class="t-half"><a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
+        <div class="t-half"><a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener"><b>📲 New:</b> follow the India Olympiad WhatsApp Channel for date alerts</a>
+<a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
 <a href="olympiads/sof-igko.html"><b>SOF season opens:</b> IGKO first date Tue 22 Sep · IMO 23 Oct / 26 Nov / 10 Dec</a>
 <a href="olympiads/nsep.html"><b>IAPT NSEs confirmed:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
 <a href="olympiads/ioqm.html"><b>IOQM 2026:</b> held 6 Sep — RMO stage next (Oct–Nov)</a>
 <a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> first exam date 8 Oct · then 18 Nov / 7 Dec</a>
 <a href="olympiads/aryabhatta-maths-olympiad.html"><b>AMO 2026-27:</b> registrations open · L1 exam 24–25 Apr 2027</a>
 <a href="olympiads/crest.html"><b>CREST:</b> L1 rounds from 1 Dec · online slot booking open</a></div>
-        <div class="t-half" aria-hidden="true"><a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
+        <div class="t-half" aria-hidden="true"><a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener"><b>📲 New:</b> follow the India Olympiad WhatsApp Channel for date alerts</a>
+<a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
 <a href="olympiads/sof-igko.html"><b>SOF season opens:</b> IGKO first date Tue 22 Sep · IMO 23 Oct / 26 Nov / 10 Dec</a>
 <a href="olympiads/nsep.html"><b>IAPT NSEs confirmed:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
 <a href="olympiads/ioqm.html"><b>IOQM 2026:</b> held 6 Sep — RMO stage next (Oct–Nov)</a>
@@ -550,7 +571,9 @@ footer a:hover{color:var(--marigold)}
           <div class="stat"><span class="num">41</span><span class="lbl">Olympiads tracked</span></div>
           <div class="stat"><span class="num">1–12</span><span class="lbl">Classes covered</span></div>
           <div class="stat"><span class="num">20</span><span class="lbl">Confirmed 2026–27 dates</span></div>
-        </div>
+        </div><p style="margin-top:1rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--marigold);text-transform:uppercase">
+📲 <a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener" style="color:var(--marigold);text-decoration:underline;font-weight:600">Follow the India Olympiad WhatsApp Channel</a> — date alerts, deadlines, results
+</p>
       </div>
       <div class="trust-card">
         <div class="tc-row">
