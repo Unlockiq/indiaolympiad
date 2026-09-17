@@ -1026,82 +1026,76 @@ document.getElementById('remForm').addEventListener('submit',async e=>{
 }
 </script>
 <script>
-(function(){
-  var BANK=JSON.parse(document.getElementById('qotdBank').textContent);
-  var band='junior';
-  try{band=localStorage.getItem('qotdBand')||'junior'}catch(e){}
-  // day index since a fixed epoch — same question worldwide per day
-  var EPOCH=new Date('2026-09-17T00:00:00Z').getTime();
-  var today=new Date();
-  var dayIdx=Math.floor((today.getTime()-EPOCH)/86400000);
-
-  function render(){
-    var pool=BANK[band]||BANK.junior;
-    var q=pool[((dayIdx%pool.length)+pool.length)%pool.length];
-    document.getElementById('qotdQ').textContent=q.q;
-    var fmt=today.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-    document.getElementById('qotdDate').textContent=fmt;
-    var c=document.getElementById('qotdChoices'); c.innerHTML='';
-    q.choices.forEach(function(ch){
-      var b=document.createElement('button');
-      b.className='qotd-choice';b.textContent=ch;
-      b.addEventListener('click',function(){grade(b,ch,q)});
-      c.appendChild(b);
-    });
-    document.getElementById('qotdSol').innerHTML='<b>Answer:</b> '+q.a+' — '+q.s;
-    document.getElementById('qotdSol').classList.remove('show');
-    document.querySelectorAll('.qotd-band').forEach(function(x){
-      x.classList.toggle('on', x.dataset.b===band);
-      x.setAttribute('aria-selected', x.dataset.b===band?'true':'false');
-    });
-  }
-  function grade(btn,ch,q){
-    var buttons=document.querySelectorAll('.qotd-choice');
-    buttons.forEach(function(b){b.disabled=true; if(b.textContent===q.a) b.classList.add('correct');});
-    if(ch!==q.a) btn.classList.add('wrong');
-    document.getElementById('qotdSol').classList.add('show');
-    updateStreak();
-  }
-  function updateStreak(){
-    var last=null,streak=0;
-    try{last=localStorage.getItem('qotdLastDay');streak=parseInt(localStorage.getItem('qotdStreak')||'0',10)||0}catch(e){}
-    if(last!=String(dayIdx)){
-      if(last==String(dayIdx-1)) streak+=1; else streak=1;
-      try{localStorage.setItem('qotdLastDay',String(dayIdx));localStorage.setItem('qotdStreak',String(streak))}catch(e){}
+document.addEventListener("DOMContentLoaded", function(){
+  var bankEl=document.getElementById("qotdBank"); if(!bankEl){return;}
+  var BANK; try{BANK=JSON.parse(bankEl.textContent);}catch(e){return;}
+  var qEl=document.getElementById("qotdQ"),
+      dateEl=document.getElementById("qotdDate"),
+      choicesEl=document.getElementById("qotdChoices"),
+      solEl=document.getElementById("qotdSol"),
+      streakEl=document.getElementById("qotdStreak"),
+      showSolBtn=document.getElementById("qotdShowSol"),
+      cdWrap=document.getElementById("cdWrap");
+  if(qEl && choicesEl && solEl){
+    var band="junior"; try{band=localStorage.getItem("qotdBand")||"junior"}catch(e){}
+    var EPOCH=new Date("2026-09-17T00:00:00Z").getTime();
+    var today=new Date();
+    var dayIdx=Math.floor((today.getTime()-EPOCH)/86400000);
+    function render(){
+      var pool=BANK[band]||BANK.junior;
+      var q=pool[((dayIdx%pool.length)+pool.length)%pool.length];
+      qEl.textContent=q.q;
+      if(dateEl){try{dateEl.textContent=today.toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long",year:"numeric"});}catch(e){dateEl.textContent=today.toDateString();}}
+      choicesEl.innerHTML="";
+      q.choices.forEach(function(ch){
+        var b=document.createElement("button");
+        b.className="qotd-choice";b.textContent=ch;
+        b.addEventListener("click",function(){grade(b,ch,q)});
+        choicesEl.appendChild(b);
+      });
+      solEl.innerHTML="<b>Answer:</b> "+q.a+" — "+q.s;
+      solEl.classList.remove("show");
+      document.querySelectorAll(".qotd-band").forEach(function(x){x.classList.toggle("on", x.dataset.b===band);});
     }
-    document.getElementById('qotdStreak').textContent='🔥 Day '+streak;
+    function grade(btn,ch,q){
+      document.querySelectorAll(".qotd-choice").forEach(function(b){b.disabled=true; if(b.textContent===q.a) b.classList.add("correct");});
+      if(ch!==q.a) btn.classList.add("wrong");
+      solEl.classList.add("show"); updateStreak();
+    }
+    function updateStreak(){
+      if(!streakEl) return;
+      var last=null,streak=0;
+      try{last=localStorage.getItem("qotdLastDay");streak=parseInt(localStorage.getItem("qotdStreak")||"0",10)||0}catch(e){}
+      if(last!=String(dayIdx)){
+        if(last==String(dayIdx-1)) streak+=1; else streak=1;
+        try{localStorage.setItem("qotdLastDay",String(dayIdx));localStorage.setItem("qotdStreak",String(streak))}catch(e){}
+      }
+      streakEl.textContent="Day "+streak;
+    }
+    if(streakEl){var s=1;try{s=parseInt(localStorage.getItem("qotdStreak")||"1",10)||1}catch(e){}streakEl.textContent="Day "+s;}
+    document.querySelectorAll(".qotd-band").forEach(function(b){b.addEventListener("click",function(){band=b.dataset.b;try{localStorage.setItem("qotdBand",band)}catch(e){}render()});});
+    if(showSolBtn){showSolBtn.addEventListener("click",function(){solEl.classList.add("show")});}
+    render();
   }
-  // init streak display
-  var s=1;try{s=parseInt(localStorage.getItem('qotdStreak')||'1',10)||1}catch(e){}
-  document.getElementById('qotdStreak').textContent='🔥 Day '+s;
-
-  document.querySelectorAll('.qotd-band').forEach(function(b){
-    b.addEventListener('click',function(){band=b.dataset.b;try{localStorage.setItem('qotdBand',band)}catch(e){}render()});
-  });
-  document.getElementById('qotdShowSol').addEventListener('click',function(){document.getElementById('qotdSol').classList.add('show')});
-  render();
-
-  // ---- COUNTDOWN ----
-  var EXAMS=[
-    {name:"SOF IGKO",date:"2026-09-22",url:"olympiads/sof-igko.html"},
-    {name:"SOF IEO",date:"2026-09-30",url:"olympiads/sof-ieo.html"},
-    {name:"SilverZone iOM",date:"2026-10-08",url:"olympiads/silverzone-iom.html"},
-    {name:"SOF IMO",date:"2026-10-23",url:"olympiads/sof-imo.html"},
-    {name:"NSEA",date:"2026-11-21",url:"olympiads/nsea.html"},
-    {name:"NSEP",date:"2026-11-22",url:"olympiads/nsep.html"},
-    {name:"CREST L1",date:"2026-12-01",url:"olympiads/crest.html"}
-  ];
-  var now=new Date();now.setHours(0,0,0,0);
-  var upcoming=EXAMS.map(function(e){var d=new Date(e.date+'T00:00:00');e.days=Math.round((d-now)/86400000);return e}).filter(function(e){return e.days>=0}).slice(0,5);
-  var w=document.getElementById('cdWrap');
-  if(w && upcoming.length){
+  if(cdWrap){
+    var EXAMS=[
+      {name:"SOF IGKO",date:"2026-09-22",url:"olympiads/sof-igko.html"},
+      {name:"SOF IEO",date:"2026-09-30",url:"olympiads/sof-ieo.html"},
+      {name:"SilverZone iOM",date:"2026-10-08",url:"olympiads/silverzone-iom.html"},
+      {name:"SOF IMO",date:"2026-10-23",url:"olympiads/sof-imo.html"},
+      {name:"NSEA",date:"2026-11-21",url:"olympiads/nsea.html"},
+      {name:"NSEP",date:"2026-11-22",url:"olympiads/nsep.html"},
+      {name:"CREST L1",date:"2026-12-01",url:"olympiads/crest.html"}
+    ];
+    var now=new Date();now.setHours(0,0,0,0);
+    var upcoming=EXAMS.map(function(e){var d=new Date(e.date+"T00:00:00");e.days=Math.round((d-now)/86400000);return e;}).filter(function(e){return e.days>=0;}).slice(0,5);
     upcoming.forEach(function(e){
-      var s=document.createElement('span');s.className='cd-item';
-      s.innerHTML='<span class="cd-num">'+e.days+'</span> <span class="cd-lbl"><a href="'+e.url+'">'+e.name+'</a></span>';
-      w.appendChild(s);
+      var s=document.createElement("span");s.className="cd-item";
+      s.innerHTML="<span class=\"cd-num\">"+e.days+"</span> <span class=\"cd-lbl\"><a href=\""+e.url+"\">"+e.name+"</a></span>";
+      cdWrap.appendChild(s);
     });
   }
-})();
+});
 </script>
 </body>
 </html>
