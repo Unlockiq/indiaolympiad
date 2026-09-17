@@ -602,6 +602,15 @@ footer a:hover{color:var(--marigold)}
 .qotd-teaser-strip .qotd-teaser{margin-bottom:0;background:rgba(232,160,32,.15);border-color:rgba(232,160,32,.5)}
 .qotd-teaser-strip .qotd-teaser .qt-title{color:#F6F7F3}
 .qotd-teaser-strip .qotd-teaser:hover{background:rgba(232,160,32,.25)}
+
+/* v2.8.4: card containment + strip alignment */
+.countdown .wrap{justify-content:flex-start !important;padding-left:1rem}
+@media (max-width:640px){.countdown .wrap{justify-content:center !important;padding-left:0}}
+.qotd-card{background:#FFFFFF !important;overflow:visible !important;padding-bottom:.1rem}
+:root[data-theme="dark"] .qotd-card{background:#141c34 !important}
+.qotd-body{padding:1.4rem 1.8rem 1.6rem !important}
+.qotd-yesterday{margin-bottom:0 !important;padding-bottom:.3rem}
+.qotd-yesterday-body{margin-bottom:.5rem}
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -660,7 +669,7 @@ footer a:hover{color:var(--marigold)}
 </div>
 <div class="countdown" aria-label="Upcoming olympiad exams">
   <div class="wrap" id="cdWrap">
-    <span class="cd-item"><span class="cd-lbl">Days to</span></span>
+    <span class="cd-item"><span class="cd-lbl">Days to next exams:</span></span>
   </div>
 </div>
 <div class="qotd-teaser-strip"><div class="wrap">
@@ -751,8 +760,7 @@ footer a:hover{color:var(--marigold)}
             <p><span class="qy-a">Answer: </span><span id="qotdYestA">—</span></p>
           </div>
         </div>
-        <p style="font-size:.7rem;color:#5C6278;margin-top:.9rem;font-family:var(--mono)">Original olympiad-style problems, free to use. Solutions verified. A new question every day.</p>
-      </div>
+        </div>
     </div>
   </div>
 </section>
