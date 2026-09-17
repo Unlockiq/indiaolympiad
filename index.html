@@ -508,6 +508,56 @@ footer a:hover{color:var(--marigold)}
 .wa-chip:hover{background:#25D366;color:#0E1A3D}
 @media (max-width:900px){.wa-chip{display:none}}
 
+
+/* v2.7: countdown strip + QOTD widget */
+.countdown{background:#0E1A3D;border-bottom:1px solid #E8A020;padding:.75rem 0;color:#F6F7F3;font-family:var(--sans);font-size:.85rem}
+.countdown .wrap{display:flex;gap:1.8rem;flex-wrap:wrap;justify-content:center;align-items:center}
+.countdown .cd-item{display:inline-flex;align-items:center;gap:.4rem}
+.countdown .cd-num{font-family:var(--serif);font-weight:700;color:#E8A020;font-size:1.05rem}
+.countdown .cd-lbl{color:#C4C9DC;font-size:.72rem;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.countdown .cd-item a{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,160,32,.4)}
+.countdown .cd-item a:hover{color:#E8A020}
+@media (max-width:640px){.countdown{padding:.6rem 0;font-size:.75rem}.countdown .wrap{gap:1rem}.countdown .cd-num{font-size:.9rem}}
+
+/* QOTD widget */
+.qotd-section{padding:2.4rem 0;background:linear-gradient(180deg,#F6F7F3 0%,#EAECDF 100%)}
+:root[data-theme="dark"] .qotd-section{background:linear-gradient(180deg,#0f1a35 0%,#0a1226 100%)}
+.qotd-card{max-width:820px;margin:0 auto;background:#FFFFFF;border:1px solid #D5D8CF;border-radius:10px;padding:1.6rem 1.8rem;box-shadow:0 4px 14px rgba(14,26,61,.06)}
+:root[data-theme="dark"] .qotd-card{background:#141c34;border-color:#2a3350;color:#E5E8F0}
+.qotd-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px dashed #D5D8CF}
+:root[data-theme="dark"] .qotd-head{border-color:#2a3350}
+.qotd-eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:#C9880F;text-transform:uppercase;font-weight:600}
+.qotd-date{font-family:var(--mono);font-size:.7rem;color:#5C6278}
+:root[data-theme="dark"] .qotd-date{color:#8b93ad}
+.qotd-streak{display:inline-flex;align-items:center;gap:.3rem;font-family:var(--mono);font-size:.72rem;background:#FDF3E0;color:#C9880F;padding:.25rem .55rem;border-radius:999px;border:1px solid #E8A020}
+:root[data-theme="dark"] .qotd-streak{background:#3a2e15;color:#E8A020}
+.qotd-bands{display:inline-flex;gap:.4rem;margin-bottom:1rem}
+.qotd-band{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px;border:1px solid #D5D8CF;background:transparent;color:#5C6278;cursor:pointer;font-weight:500}
+.qotd-band:hover{border-color:#E8A020;color:#C9880F}
+.qotd-band.on{background:#E8A020;color:#0E1A3D;border-color:#E8A020;font-weight:700}
+:root[data-theme="dark"] .qotd-band{color:#8b93ad;border-color:#2a3350}
+.qotd-q{font-family:var(--serif);font-size:1.15rem;line-height:1.5;color:#1E2438;margin:.6rem 0 1.2rem}
+:root[data-theme="dark"] .qotd-q{color:#E5E8F0}
+.qotd-choices{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1rem}
+@media (max-width:520px){.qotd-choices{grid-template-columns:1fr}}
+.qotd-choice{text-align:left;padding:.75rem 1rem;background:#F6F7F3;border:1px solid #D5D8CF;border-radius:6px;font-family:var(--sans);font-size:.92rem;color:#1E2438;cursor:pointer;transition:all .12s}
+.qotd-choice:hover{border-color:#E8A020;background:#FDF3E0}
+.qotd-choice.correct{background:#E8F5EC;border-color:#1A6B45;color:#1A6B45;font-weight:600}
+.qotd-choice.wrong{background:#FBE9E9;border-color:#B94A48;color:#B94A48}
+.qotd-choice:disabled{cursor:default;opacity:.75}
+:root[data-theme="dark"] .qotd-choice{background:#1a2340;border-color:#2a3350;color:#E5E8F0}
+:root[data-theme="dark"] .qotd-choice:hover{background:#22305a;border-color:#E8A020}
+.qotd-solution{display:none;background:#FDF3E0;border-left:3px solid #E8A020;padding:.9rem 1.1rem;border-radius:4px;font-size:.9rem;line-height:1.5;color:#1E2438;margin-top:.8rem}
+:root[data-theme="dark"] .qotd-solution{background:#2a2210;color:#E5E8F0}
+.qotd-solution.show{display:block}
+.qotd-solution b{color:#1A6B45}
+.qotd-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem;padding-top:.9rem;border-top:1px dashed #D5D8CF}
+:root[data-theme="dark"] .qotd-actions{border-color:#2a3350}
+.qotd-btn{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.5rem .95rem;border:1px solid #0E1A3D;background:transparent;color:#0E1A3D;border-radius:4px;cursor:pointer;text-decoration:none;font-weight:600}
+.qotd-btn:hover{background:#0E1A3D;color:#F6F7F3}
+:root[data-theme="dark"] .qotd-btn{border-color:#E8A020;color:#E8A020}
+:root[data-theme="dark"] .qotd-btn:hover{background:#E8A020;color:#0E1A3D}
+
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -936,5 +986,122 @@ document.getElementById('remForm').addEventListener('submit',async e=>{
 })();
 </script>
 <script data-goatcounter="https://indiaolympiad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="qotdBank" type="application/json">{
+  "junior": [
+    {"q":"There are 4 flower pots in a row. Each pot has 3 flowers. How many flowers are there in total?","choices":["7","12","16","20"],"a":"12","s":"4 pots × 3 flowers each = 12 flowers."},
+    {"q":"What comes next in this pattern? 2, 4, 6, 8, __","choices":["9","10","11","12"],"a":"10","s":"Each number is 2 more than the one before. 8 + 2 = 10."},
+    {"q":"A clock shows 3 o'clock. What angle is between the hour and minute hands?","choices":["45°","90°","180°","360°"],"a":"90°","s":"At 3 o'clock the hands make a right angle — a quarter of a full turn."},
+    {"q":"If today is Wednesday, what day will it be after 10 days?","choices":["Friday","Saturday","Sunday","Monday"],"a":"Saturday","s":"10 days = 1 week + 3 days. Wednesday + 3 days = Saturday."},
+    {"q":"A rectangle has length 5 cm and width 3 cm. What is its perimeter?","choices":["8 cm","15 cm","16 cm","20 cm"],"a":"16 cm","s":"Perimeter = 2 × (length + width) = 2 × (5 + 3) = 16 cm."},
+    {"q":"Which number is the smallest? 108, 180, 81, 18","choices":["108","180","81","18"],"a":"18","s":"18 has only two digits; the others have three. Two-digit numbers are smaller than three-digit numbers."},
+    {"q":"Ravi has 24 marbles. He shares them equally among 6 friends. How many marbles does each friend get?","choices":["3","4","5","6"],"a":"4","s":"24 ÷ 6 = 4 marbles per friend."},
+    {"q":"How many sides does a hexagon have?","choices":["4","5","6","7"],"a":"6","s":"'Hex' means six — a hexagon has 6 sides."},
+    {"q":"A jug holds 2 litres of water. How many millilitres is that?","choices":["20 ml","200 ml","2000 ml","20000 ml"],"a":"2000 ml","s":"1 litre = 1000 ml, so 2 litres = 2000 ml."},
+    {"q":"Which number is even? 15, 22, 37, 49","choices":["15","22","37","49"],"a":"22","s":"An even number ends in 0, 2, 4, 6 or 8. Only 22 does."}
+  ],
+  "middle": [
+    {"q":"The average of five numbers is 20. What is their sum?","choices":["25","80","100","120"],"a":"100","s":"Sum = average × count = 20 × 5 = 100."},
+    {"q":"If 3x + 5 = 20, what is the value of x?","choices":["3","5","6","8"],"a":"5","s":"3x = 20 − 5 = 15, so x = 5."},
+    {"q":"What is the HCF of 24 and 36?","choices":["6","8","12","18"],"a":"12","s":"24 = 2³ × 3, 36 = 2² × 3². Common factors: 2² × 3 = 12."},
+    {"q":"A shop sells a book for ₹250 after a 20% discount. What was the original price?","choices":["₹270","₹300","₹312.50","₹350"],"a":"₹312.50","s":"After 20% off, ₹250 = 80% of original. Original = 250 ÷ 0.80 = ₹312.50."},
+    {"q":"The interior angles of a triangle add up to how many degrees?","choices":["90°","180°","270°","360°"],"a":"180°","s":"The three interior angles of any triangle always sum to 180°."},
+    {"q":"What is 2³ × 3²?","choices":["36","54","72","108"],"a":"72","s":"2³ = 8, 3² = 9. So 8 × 9 = 72."},
+    {"q":"A train travels 180 km in 3 hours. What is its average speed?","choices":["30 km/h","45 km/h","60 km/h","90 km/h"],"a":"60 km/h","s":"Speed = distance ÷ time = 180 ÷ 3 = 60 km/h."},
+    {"q":"Simplify: 3/4 + 1/6","choices":["7/12","11/12","4/10","1/2"],"a":"11/12","s":"LCM of 4 and 6 is 12. 3/4 = 9/12; 1/6 = 2/12. Sum = 11/12."},
+    {"q":"How many prime numbers are there between 10 and 20?","choices":["2","3","4","5"],"a":"4","s":"The primes between 10 and 20 are 11, 13, 17, 19 — four in total."},
+    {"q":"A square has area 49 cm². What is its perimeter?","choices":["7 cm","14 cm","21 cm","28 cm"],"a":"28 cm","s":"Side = √49 = 7 cm. Perimeter = 4 × 7 = 28 cm."}
+  ],
+  "senior": [
+    {"q":"If log₁₀ 2 ≈ 0.301, then log₁₀ 5 is approximately:","choices":["0.301","0.477","0.602","0.699"],"a":"0.699","s":"log 5 = log(10/2) = log 10 − log 2 = 1 − 0.301 = 0.699."},
+    {"q":"The sum of the roots of x² − 7x + 10 = 0 is:","choices":["−10","−7","7","10"],"a":"7","s":"For ax² + bx + c = 0, sum of roots = −b/a = 7/1 = 7."},
+    {"q":"How many diagonals does a regular hexagon have?","choices":["6","9","12","15"],"a":"9","s":"Diagonals = n(n−3)/2 = 6 × 3 / 2 = 9."},
+    {"q":"If sin θ = 3/5 and θ is acute, then cos θ is:","choices":["3/5","4/5","5/3","5/4"],"a":"4/5","s":"cos²θ = 1 − sin²θ = 1 − 9/25 = 16/25. Since θ is acute, cos θ = 4/5."},
+    {"q":"The nth term of the arithmetic progression 5, 8, 11, 14, ... is:","choices":["3n + 2","3n + 5","2n + 3","5n + 3"],"a":"3n + 2","s":"First term a = 5, common difference d = 3. Tₙ = a + (n−1)d = 5 + 3(n−1) = 3n + 2."},
+    {"q":"How many ways can the letters of the word 'MATHS' be arranged?","choices":["24","60","120","720"],"a":"120","s":"5 distinct letters → 5! = 120 arrangements."},
+    {"q":"The derivative of x³ − 4x + 7 with respect to x is:","choices":["3x² − 4","3x² + 4","x² − 4","3x² − 4x"],"a":"3x² − 4","s":"d/dx(x³) = 3x²; d/dx(4x) = 4; d/dx(7) = 0. Result: 3x² − 4."},
+    {"q":"If a fair coin is tossed 3 times, what is the probability of getting exactly 2 heads?","choices":["1/8","1/4","3/8","1/2"],"a":"3/8","s":"C(3,2) × (1/2)³ = 3 × 1/8 = 3/8."},
+    {"q":"In triangle ABC, if ∠A = 60° and sides AB = AC, then ∠B is:","choices":["30°","60°","90°","120°"],"a":"60°","s":"Isosceles triangle with vertex angle 60° → the other two angles are (180−60)/2 = 60° each. So the triangle is equilateral."},
+    {"q":"The value of i²⁰²⁶ where i = √(−1) is:","choices":["1","−1","i","−i"],"a":"−1","s":"i⁴ = 1, so i²⁰²⁶ = i^(2024+2) = 1 × i² = −1."}
+  ]
+}
+</script>
+<script>
+(function(){
+  var BANK=JSON.parse(document.getElementById('qotdBank').textContent);
+  var band='junior';
+  try{band=localStorage.getItem('qotdBand')||'junior'}catch(e){}
+  // day index since a fixed epoch — same question worldwide per day
+  var EPOCH=new Date('2026-09-17T00:00:00Z').getTime();
+  var today=new Date();
+  var dayIdx=Math.floor((today.getTime()-EPOCH)/86400000);
+
+  function render(){
+    var pool=BANK[band]||BANK.junior;
+    var q=pool[((dayIdx%pool.length)+pool.length)%pool.length];
+    document.getElementById('qotdQ').textContent=q.q;
+    var fmt=today.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    document.getElementById('qotdDate').textContent=fmt;
+    var c=document.getElementById('qotdChoices'); c.innerHTML='';
+    q.choices.forEach(function(ch){
+      var b=document.createElement('button');
+      b.className='qotd-choice';b.textContent=ch;
+      b.addEventListener('click',function(){grade(b,ch,q)});
+      c.appendChild(b);
+    });
+    document.getElementById('qotdSol').innerHTML='<b>Answer:</b> '+q.a+' — '+q.s;
+    document.getElementById('qotdSol').classList.remove('show');
+    document.querySelectorAll('.qotd-band').forEach(function(x){
+      x.classList.toggle('on', x.dataset.b===band);
+      x.setAttribute('aria-selected', x.dataset.b===band?'true':'false');
+    });
+  }
+  function grade(btn,ch,q){
+    var buttons=document.querySelectorAll('.qotd-choice');
+    buttons.forEach(function(b){b.disabled=true; if(b.textContent===q.a) b.classList.add('correct');});
+    if(ch!==q.a) btn.classList.add('wrong');
+    document.getElementById('qotdSol').classList.add('show');
+    updateStreak();
+  }
+  function updateStreak(){
+    var last=null,streak=0;
+    try{last=localStorage.getItem('qotdLastDay');streak=parseInt(localStorage.getItem('qotdStreak')||'0',10)||0}catch(e){}
+    if(last!=String(dayIdx)){
+      if(last==String(dayIdx-1)) streak+=1; else streak=1;
+      try{localStorage.setItem('qotdLastDay',String(dayIdx));localStorage.setItem('qotdStreak',String(streak))}catch(e){}
+    }
+    document.getElementById('qotdStreak').textContent='🔥 Day '+streak;
+  }
+  // init streak display
+  var s=1;try{s=parseInt(localStorage.getItem('qotdStreak')||'1',10)||1}catch(e){}
+  document.getElementById('qotdStreak').textContent='🔥 Day '+s;
+
+  document.querySelectorAll('.qotd-band').forEach(function(b){
+    b.addEventListener('click',function(){band=b.dataset.b;try{localStorage.setItem('qotdBand',band)}catch(e){}render()});
+  });
+  document.getElementById('qotdShowSol').addEventListener('click',function(){document.getElementById('qotdSol').classList.add('show')});
+  render();
+
+  // ---- COUNTDOWN ----
+  var EXAMS=[
+    {name:"SOF IGKO",date:"2026-09-22",url:"olympiads/sof-igko.html"},
+    {name:"SOF IEO",date:"2026-09-30",url:"olympiads/sof-ieo.html"},
+    {name:"SilverZone iOM",date:"2026-10-08",url:"olympiads/silverzone-iom.html"},
+    {name:"SOF IMO",date:"2026-10-23",url:"olympiads/sof-imo.html"},
+    {name:"NSEA",date:"2026-11-21",url:"olympiads/nsea.html"},
+    {name:"NSEP",date:"2026-11-22",url:"olympiads/nsep.html"},
+    {name:"CREST L1",date:"2026-12-01",url:"olympiads/crest.html"}
+  ];
+  var now=new Date();now.setHours(0,0,0,0);
+  var upcoming=EXAMS.map(function(e){var d=new Date(e.date+'T00:00:00');e.days=Math.round((d-now)/86400000);return e}).filter(function(e){return e.days>=0}).slice(0,5);
+  var w=document.getElementById('cdWrap');
+  if(w && upcoming.length){
+    upcoming.forEach(function(e){
+      var s=document.createElement('span');s.className='cd-item';
+      s.innerHTML='<span class="cd-num">'+e.days+'</span> <span class="cd-lbl"><a href="'+e.url+'">'+e.name+'</a></span>';
+      w.appendChild(s);
+    });
+  }
+})();
+</script>
 </body>
 </html>
