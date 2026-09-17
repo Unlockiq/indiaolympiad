@@ -594,6 +594,14 @@ footer a:hover{color:var(--marigold)}
 .qotd-teaser .qt-title{font-family:var(--serif);font-size:.95rem;font-weight:600;color:#0E1A3D;line-height:1.1}
 :root[data-theme="dark"] .qotd-teaser .qt-title{color:#F6F7F3}
 .qotd-teaser .qt-sub{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;color:#C9880F;text-transform:uppercase;margin-top:.15rem}
+
+/* v2.8.3: fix teaser placement + QOTD card border containment */
+.qotd-card{overflow:visible !important}
+.qotd-teaser-strip{background:linear-gradient(180deg,#0E1A3D 0%,#0f1a35 100%);padding:1rem 0;border-bottom:1px solid rgba(232,160,32,.3)}
+.qotd-teaser-strip .wrap{display:flex;justify-content:center;align-items:center}
+.qotd-teaser-strip .qotd-teaser{margin-bottom:0;background:rgba(232,160,32,.15);border-color:rgba(232,160,32,.5)}
+.qotd-teaser-strip .qotd-teaser .qt-title{color:#F6F7F3}
+.qotd-teaser-strip .qotd-teaser:hover{background:rgba(232,160,32,.25)}
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -655,9 +663,7 @@ footer a:hover{color:var(--marigold)}
     <span class="cd-item"><span class="cd-lbl">Days to</span></span>
   </div>
 </div>
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-inner">
+<div class="qotd-teaser-strip"><div class="wrap">
 <a href="#qotd" class="qotd-teaser" aria-label="Jump to today's Question of the Day">
 <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="qt-icon" aria-hidden="true">
   <circle cx="24" cy="24" r="22" fill="#E8A020"/>
@@ -669,7 +675,12 @@ footer a:hover{color:var(--marigold)}
 <div class="qt-sub">Question of the Day — try it below ↓</div>
 </div>
 </a>
-      <div>
+      
+</div></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+<div>
         <p class="hero-kicker">The 2026–27 season, on the record</p>
         <h1>Every school olympiad in India.<br><em>One calendar, honestly labelled.</em></h1>
         <p class="lede">Dates, fees, classes and formats for the olympiads Indian schools actually run — with the source, so you can check us. We don't sell prep courses and no organiser has paid to appear here.</p>

@@ -333,3 +333,11 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 .qotd-teaser .qt-title{font-family:var(--serif);font-size:.95rem;font-weight:600;color:#0E1A3D;line-height:1.1}
 :root[data-theme="dark"] .qotd-teaser .qt-title{color:#F6F7F3}
 .qotd-teaser .qt-sub{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;color:#C9880F;text-transform:uppercase;margin-top:.15rem}
+
+/* v2.8.3: fix teaser placement + QOTD card border containment */
+.qotd-card{overflow:visible !important}
+.qotd-teaser-strip{background:linear-gradient(180deg,#0E1A3D 0%,#0f1a35 100%);padding:1rem 0;border-bottom:1px solid rgba(232,160,32,.3)}
+.qotd-teaser-strip .wrap{display:flex;justify-content:center;align-items:center}
+.qotd-teaser-strip .qotd-teaser{margin-bottom:0;background:rgba(232,160,32,.15);border-color:rgba(232,160,32,.5)}
+.qotd-teaser-strip .qotd-teaser .qt-title{color:#F6F7F3}
+.qotd-teaser-strip .qotd-teaser:hover{background:rgba(232,160,32,.25)}
