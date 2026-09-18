@@ -637,6 +637,42 @@ footer a:hover{color:var(--marigold)}
 /* yesterday reveal body must not push out */
 .qotd-yesterday{margin-bottom:0}
 .qotd-yesterday-body{margin-bottom:0}
+
+/* v2.9.1: selected-band contrast + wider card + bigger fonts */
+.qotd-card{max-width:1140px !important}
+.qotd-teaser{max-width:none !important}
+.qotd-teaser-strip .qotd-teaser{padding:.75rem 1.4rem}
+.qotd-teaser-strip .qotd-teaser .qt-title{font-size:1.1rem}
+.qotd-teaser-strip .qotd-teaser .qt-sub{font-size:.72rem}
+.qotd-teaser-strip .qotd-teaser .qt-icon{width:44px;height:44px}
+
+/* Selected band: solid navy with white text — unmistakable in both themes */
+.qotd-band.on{background:#0E1A3D !important;color:#F6F7F3 !important;border-color:#0E1A3D !important;font-weight:700}
+:root[data-theme="dark"] .qotd-band.on{background:#E8A020 !important;color:#0E1A3D !important;border-color:#E8A020 !important}
+
+/* Bigger, more presence */
+.qotd-banner{padding:1.15rem 1.6rem}
+.qotd-banner .qb-svg{width:48px;height:48px}
+.qotd-banner .qb-title{font-size:1.4rem}
+.qotd-banner .qb-sub{font-size:.72rem}
+.qotd-banner .qb-streak{font-size:.78rem;padding:.4rem .85rem}
+.qotd-body{padding:1.6rem 2rem 1.8rem !important}
+.qotd-date{font-size:.78rem;margin-bottom:1.1rem}
+.qotd-band{font-size:.72rem !important;padding:.5rem .85rem !important}
+.qotd-q{font-size:1.35rem !important;line-height:1.5;margin:.8rem 0 1.4rem !important}
+.qotd-choices{grid-template-columns:1fr 1fr;gap:.75rem !important}
+.qotd-choice{font-size:1.05rem !important;padding:.9rem 1.15rem !important}
+.qotd-solution{font-size:1rem !important;padding:1rem 1.25rem !important;line-height:1.55}
+.qotd-btn{font-size:.78rem !important;padding:.6rem 1.1rem !important}
+.qotd-yesterday-toggle{font-size:.78rem}
+.qotd-yesterday-body{font-size:.98rem;padding:1rem 1.2rem}
+.qotd-yesterday-body .qy-q{font-size:1.1rem}
+@media (max-width:640px){
+  .qotd-q{font-size:1.15rem !important}
+  .qotd-choice{font-size:.95rem !important;padding:.75rem 1rem !important}
+  .qotd-banner .qb-title{font-size:1.15rem}
+  .qotd-body{padding:1.3rem 1.4rem 1.5rem !important}
+}
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
