@@ -1132,79 +1132,1338 @@ document.getElementById('remForm').addEventListener('submit',async e=>{
 <script data-goatcounter="https://indiaolympiad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script id="qotdBank" type="application/json">{
   "b1_2": [
-    {"q":"Ravi has 3 red balls and 4 blue balls. How many balls does he have in total?","choices":["6","7","8","9"],"a":"7","s":"3 + 4 = 7. Add red and blue together."},
-    {"q":"What number comes just after 19?","choices":["18","20","21","29"],"a":"20","s":"Counting forward: 18, 19, 20. So 20 comes right after 19."},
-    {"q":"How many sides does a triangle have?","choices":["2","3","4","5"],"a":"3","s":"A triangle always has 3 straight sides."},
-    {"q":"If you have 10 laddus and eat 4, how many are left?","choices":["4","5","6","14"],"a":"6","s":"10 − 4 = 6 laddus are left."},
-    {"q":"Which is the smallest? 5, 8, 3, 6","choices":["3","5","6","8"],"a":"3","s":"3 is the smallest — the others are all larger."},
-    {"q":"Two children share 8 chocolates equally. How many does each get?","choices":["2","3","4","6"],"a":"4","s":"8 ÷ 2 = 4 chocolates each."},
-    {"q":"Which shape has no corners?","choices":["Square","Triangle","Circle","Rectangle"],"a":"Circle","s":"A circle is round — it has no corners at all."},
-    {"q":"Count by twos: 2, 4, 6, __","choices":["7","8","9","10"],"a":"8","s":"Each number is 2 more than the one before. 6 + 2 = 8."},
-    {"q":"Which is heaviest?","choices":["A feather","A book","An elephant","A pencil"],"a":"An elephant","s":"An elephant is the heaviest by far — the others are all light."},
-    {"q":"How many fingers on both hands together?","choices":["5","8","10","12"],"a":"10","s":"Each hand has 5 fingers. 5 + 5 = 10."}
+    {
+      "q": "Ravi has 3 red balls and 4 blue balls. How many balls does he have in total?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "a": "7",
+      "s": "3 + 4 = 7. Add red and blue together."
+    },
+    {
+      "q": "What number comes just after 19?",
+      "choices": [
+        "18",
+        "20",
+        "21",
+        "29"
+      ],
+      "a": "20",
+      "s": "Counting forward: 18, 19, 20. So 20 comes right after 19."
+    },
+    {
+      "q": "How many sides does a triangle have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "a": "3",
+      "s": "A triangle always has 3 straight sides."
+    },
+    {
+      "q": "If you have 10 laddus and eat 4, how many are left?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "14"
+      ],
+      "a": "6",
+      "s": "10 − 4 = 6 laddus are left."
+    },
+    {
+      "q": "Which is the smallest? 5, 8, 3, 6",
+      "choices": [
+        "3",
+        "5",
+        "6",
+        "8"
+      ],
+      "a": "3",
+      "s": "3 is the smallest — the others are all larger."
+    },
+    {
+      "q": "Two children share 8 chocolates equally. How many does each get?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "a": "4",
+      "s": "8 ÷ 2 = 4 chocolates each."
+    },
+    {
+      "q": "Which shape has no corners?",
+      "choices": [
+        "Square",
+        "Triangle",
+        "Circle",
+        "Rectangle"
+      ],
+      "a": "Circle",
+      "s": "A circle is round — it has no corners at all."
+    },
+    {
+      "q": "Count by twos: 2, 4, 6, __",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "a": "8",
+      "s": "Each number is 2 more than the one before. 6 + 2 = 8."
+    },
+    {
+      "q": "Which is heaviest?",
+      "choices": [
+        "A feather",
+        "A book",
+        "An elephant",
+        "A pencil"
+      ],
+      "a": "An elephant",
+      "s": "An elephant is the heaviest by far — the others are all light."
+    },
+    {
+      "q": "How many fingers on both hands together?",
+      "choices": [
+        "5",
+        "8",
+        "10",
+        "12"
+      ],
+      "a": "10",
+      "s": "Each hand has 5 fingers. 5 + 5 = 10."
+    },
+    {
+      "q": "Riya has 2 red flowers, 3 yellow flowers, and 4 white flowers. How many flowers in total?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "a": "9",
+      "s": "2 + 3 + 4 = 9 flowers."
+    },
+    {
+      "q": "Which shape does NOT belong: circle, square, triangle, ball?",
+      "choices": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Ball"
+      ],
+      "a": "Ball",
+      "s": "A ball is 3D (solid). Circle, square, and triangle are flat shapes."
+    },
+    {
+      "q": "Look at the pattern: 1, 3, 5, 7, __. What comes next?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "a": "9",
+      "s": "Odd numbers, each 2 more than the last: 7 + 2 = 9."
+    },
+    {
+      "q": "Amma buys 3 packets of biscuits. Each packet has 6 biscuits. How many biscuits in all?",
+      "choices": [
+        "9",
+        "12",
+        "15",
+        "18"
+      ],
+      "a": "18",
+      "s": "3 × 6 = 18 biscuits."
+    },
+    {
+      "q": "Which is longer? A 25 cm ruler or a 3 dm stick?",
+      "choices": [
+        "25 cm ruler",
+        "3 dm stick",
+        "Both same",
+        "Cannot say"
+      ],
+      "a": "3 dm stick",
+      "s": "1 dm = 10 cm, so 3 dm = 30 cm. 30 cm is longer than 25 cm."
+    },
+    {
+      "q": "Sunny has ₹18. He spends ₹9 on a pencil box. How much is left?",
+      "choices": [
+        "₹7",
+        "₹8",
+        "₹9",
+        "₹10"
+      ],
+      "a": "₹9",
+      "s": "18 − 9 = ₹9 left."
+    },
+    {
+      "q": "How many days are there from Monday to Friday, counting both?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "a": "5",
+      "s": "Mon, Tue, Wed, Thu, Fri — that is 5 days."
+    },
+    {
+      "q": "Which number is between 47 and 53?",
+      "choices": [
+        "46",
+        "50",
+        "54",
+        "57"
+      ],
+      "a": "50",
+      "s": "50 is greater than 47 and less than 53."
+    },
+    {
+      "q": "Meera has 12 stickers. She gives half to her brother. How many does she keep?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "a": "6",
+      "s": "Half of 12 = 6. She keeps 6 stickers."
+    },
+    {
+      "q": "Which number has 5 tens and 3 ones?",
+      "choices": [
+        "35",
+        "53",
+        "305",
+        "530"
+      ],
+      "a": "53",
+      "s": "5 tens = 50, plus 3 ones = 53."
+    }
   ],
   "b3_4": [
-    {"q":"What is 24 × 3?","choices":["62","72","74","82"],"a":"72","s":"24 × 3 = 20 × 3 + 4 × 3 = 60 + 12 = 72."},
-    {"q":"Which number is a multiple of 5? 22, 34, 45, 51","choices":["22","34","45","51"],"a":"45","s":"Multiples of 5 end in 0 or 5. Only 45 does."},
-    {"q":"A rectangle is 6 cm long and 4 cm wide. What is its perimeter?","choices":["10 cm","20 cm","24 cm","28 cm"],"a":"20 cm","s":"Perimeter = 2 × (length + width) = 2 × (6 + 4) = 20 cm."},
-    {"q":"Which fraction is bigger: 1/2 or 1/4?","choices":["1/2","1/4","Both equal","Cannot tell"],"a":"1/2","s":"1/2 means one of two equal parts; 1/4 means one of four smaller parts. 1/2 is bigger."},
-    {"q":"A shopkeeper sold 15 pens in the morning and 27 pens in the afternoon. How many in all?","choices":["32","42","45","52"],"a":"42","s":"15 + 27 = 42 pens sold in total."},
-    {"q":"What is 100 − 37?","choices":["57","63","67","73"],"a":"63","s":"100 − 37 = 63. Or: 100 − 30 − 7 = 70 − 7 = 63."},
-    {"q":"How many minutes are there in 2 hours?","choices":["60","90","100","120"],"a":"120","s":"1 hour = 60 minutes, so 2 hours = 120 minutes."},
-    {"q":"Which of these is an even number? 11, 24, 37, 49","choices":["11","24","37","49"],"a":"24","s":"Even numbers end in 0, 2, 4, 6 or 8. Only 24 does."},
-    {"q":"There are 3 shelves with 8 books on each. How many books in total?","choices":["11","21","24","32"],"a":"24","s":"3 × 8 = 24 books."},
-    {"q":"What is the place value of 7 in 3745?","choices":["7","70","700","7000"],"a":"700","s":"In 3745, the 7 sits in the hundreds place, so its value is 700."}
+    {
+      "q": "What is 24 × 3?",
+      "choices": [
+        "62",
+        "72",
+        "74",
+        "82"
+      ],
+      "a": "72",
+      "s": "24 × 3 = 20 × 3 + 4 × 3 = 60 + 12 = 72."
+    },
+    {
+      "q": "Which number is a multiple of 5? 22, 34, 45, 51",
+      "choices": [
+        "22",
+        "34",
+        "45",
+        "51"
+      ],
+      "a": "45",
+      "s": "Multiples of 5 end in 0 or 5. Only 45 does."
+    },
+    {
+      "q": "A rectangle is 6 cm long and 4 cm wide. What is its perimeter?",
+      "choices": [
+        "10 cm",
+        "20 cm",
+        "24 cm",
+        "28 cm"
+      ],
+      "a": "20 cm",
+      "s": "Perimeter = 2 × (length + width) = 2 × (6 + 4) = 20 cm."
+    },
+    {
+      "q": "Which fraction is bigger: 1/2 or 1/4?",
+      "choices": [
+        "1/2",
+        "1/4",
+        "Both equal",
+        "Cannot tell"
+      ],
+      "a": "1/2",
+      "s": "1/2 means one of two equal parts; 1/4 means one of four smaller parts. 1/2 is bigger."
+    },
+    {
+      "q": "A shopkeeper sold 15 pens in the morning and 27 pens in the afternoon. How many in all?",
+      "choices": [
+        "32",
+        "42",
+        "45",
+        "52"
+      ],
+      "a": "42",
+      "s": "15 + 27 = 42 pens sold in total."
+    },
+    {
+      "q": "What is 100 − 37?",
+      "choices": [
+        "57",
+        "63",
+        "67",
+        "73"
+      ],
+      "a": "63",
+      "s": "100 − 37 = 63. Or: 100 − 30 − 7 = 70 − 7 = 63."
+    },
+    {
+      "q": "How many minutes are there in 2 hours?",
+      "choices": [
+        "60",
+        "90",
+        "100",
+        "120"
+      ],
+      "a": "120",
+      "s": "1 hour = 60 minutes, so 2 hours = 120 minutes."
+    },
+    {
+      "q": "Which of these is an even number? 11, 24, 37, 49",
+      "choices": [
+        "11",
+        "24",
+        "37",
+        "49"
+      ],
+      "a": "24",
+      "s": "Even numbers end in 0, 2, 4, 6 or 8. Only 24 does."
+    },
+    {
+      "q": "There are 3 shelves with 8 books on each. How many books in total?",
+      "choices": [
+        "11",
+        "21",
+        "24",
+        "32"
+      ],
+      "a": "24",
+      "s": "3 × 8 = 24 books."
+    },
+    {
+      "q": "What is the place value of 7 in 3745?",
+      "choices": [
+        "7",
+        "70",
+        "700",
+        "7000"
+      ],
+      "a": "700",
+      "s": "In 3745, the 7 sits in the hundreds place, so its value is 700."
+    },
+    {
+      "q": "A book has 96 pages. Ravi reads 12 pages a day. How many days to finish?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "a": "8",
+      "s": "96 ÷ 12 = 8 days."
+    },
+    {
+      "q": "What is the smallest 4-digit number using digits 3, 0, 5, 1 (each once)?",
+      "choices": [
+        "1035",
+        "1305",
+        "1350",
+        "1053"
+      ],
+      "a": "1035",
+      "s": "Smallest 4-digit needs the smallest non-zero digit first (1), then remaining smallest to largest: 0, 3, 5. So 1035."
+    },
+    {
+      "q": "A tank fills at 8 litres per minute. How long to fill 120 litres?",
+      "choices": [
+        "12 min",
+        "14 min",
+        "15 min",
+        "20 min"
+      ],
+      "a": "15 min",
+      "s": "120 ÷ 8 = 15 minutes."
+    },
+    {
+      "q": "What is 3/8 of 64?",
+      "choices": [
+        "16",
+        "20",
+        "24",
+        "32"
+      ],
+      "a": "24",
+      "s": "(64 ÷ 8) × 3 = 8 × 3 = 24."
+    },
+    {
+      "q": "If today is Tuesday, what day was 15 days ago?",
+      "choices": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "a": "Monday",
+      "s": "15 days = 2 weeks + 1 day. 2 weeks ago was Tuesday; 1 more day back is Monday."
+    },
+    {
+      "q": "The digit in the thousands place of 47,832 is:",
+      "choices": [
+        "4",
+        "7",
+        "8",
+        "3"
+      ],
+      "a": "7",
+      "s": "Reading right to left: 2 (ones), 3 (tens), 8 (hundreds), 7 (thousands), 4 (ten-thousands)."
+    },
+    {
+      "q": "A watermelon weighs 3 kg 250 g. What is its weight in grams?",
+      "choices": [
+        "3025 g",
+        "3205 g",
+        "3250 g",
+        "3520 g"
+      ],
+      "a": "3250 g",
+      "s": "3 kg = 3000 g. Plus 250 g = 3250 g."
+    },
+    {
+      "q": "How many small squares of side 2 cm fit inside a big square of side 8 cm?",
+      "choices": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "a": "16",
+      "s": "Big square area = 64 cm². Small square area = 4 cm². 64 ÷ 4 = 16 squares."
+    },
+    {
+      "q": "Priya has twice as many marbles as Sam. Sam has 24 marbles. How many do they have together?",
+      "choices": [
+        "48",
+        "60",
+        "72",
+        "96"
+      ],
+      "a": "72",
+      "s": "Priya has 2 × 24 = 48. Together: 48 + 24 = 72 marbles."
+    },
+    {
+      "q": "The perimeter of a regular pentagon of side 9 cm is:",
+      "choices": [
+        "36 cm",
+        "45 cm",
+        "54 cm",
+        "81 cm"
+      ],
+      "a": "45 cm",
+      "s": "Regular pentagon has 5 equal sides. Perimeter = 5 × 9 = 45 cm."
+    }
   ],
   "b5_6": [
-    {"q":"What is 3/4 of 60?","choices":["30","40","45","50"],"a":"45","s":"3/4 × 60 = (60 ÷ 4) × 3 = 15 × 3 = 45."},
-    {"q":"The LCM of 4 and 6 is:","choices":["10","12","18","24"],"a":"12","s":"Multiples of 4: 4, 8, 12... Multiples of 6: 6, 12... The smallest common multiple is 12."},
-    {"q":"A shirt costs ₹450. After a 10% discount, its price is:","choices":["₹405","₹410","₹440","₹445"],"a":"₹405","s":"10% of 450 = 45. Discounted price = 450 − 45 = ₹405."},
-    {"q":"What is 0.25 as a fraction in lowest terms?","choices":["1/2","1/3","1/4","1/5"],"a":"1/4","s":"0.25 = 25/100 = 1/4 after dividing both by 25."},
-    {"q":"The angles of a triangle add up to:","choices":["90°","180°","270°","360°"],"a":"180°","s":"The three interior angles of any triangle always add to 180°."},
-    {"q":"If a car travels 60 km in 1 hour, how far in 3.5 hours at the same speed?","choices":["180 km","200 km","210 km","240 km"],"a":"210 km","s":"Distance = speed × time = 60 × 3.5 = 210 km."},
-    {"q":"Which of these is a prime number?","choices":["15","21","23","27"],"a":"23","s":"A prime has exactly two factors: 1 and itself. 23 is only divisible by 1 and 23."},
-    {"q":"The area of a square with side 9 cm is:","choices":["18 cm²","27 cm²","36 cm²","81 cm²"],"a":"81 cm²","s":"Area of square = side × side = 9 × 9 = 81 cm²."},
-    {"q":"Convert 5/8 to a decimal.","choices":["0.375","0.5","0.625","0.75"],"a":"0.625","s":"5 ÷ 8 = 0.625."},
-    {"q":"The ratio 12 : 18 in simplest form is:","choices":["1 : 2","2 : 3","3 : 4","4 : 5"],"a":"2 : 3","s":"Divide both by their HCF (6): 12/6 = 2, 18/6 = 3. So 2 : 3."}
+    {
+      "q": "What is 3/4 of 60?",
+      "choices": [
+        "30",
+        "40",
+        "45",
+        "50"
+      ],
+      "a": "45",
+      "s": "3/4 × 60 = (60 ÷ 4) × 3 = 15 × 3 = 45."
+    },
+    {
+      "q": "The LCM of 4 and 6 is:",
+      "choices": [
+        "10",
+        "12",
+        "18",
+        "24"
+      ],
+      "a": "12",
+      "s": "Multiples of 4: 4, 8, 12... Multiples of 6: 6, 12... The smallest common multiple is 12."
+    },
+    {
+      "q": "A shirt costs ₹450. After a 10% discount, its price is:",
+      "choices": [
+        "₹405",
+        "₹410",
+        "₹440",
+        "₹445"
+      ],
+      "a": "₹405",
+      "s": "10% of 450 = 45. Discounted price = 450 − 45 = ₹405."
+    },
+    {
+      "q": "What is 0.25 as a fraction in lowest terms?",
+      "choices": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "a": "1/4",
+      "s": "0.25 = 25/100 = 1/4 after dividing both by 25."
+    },
+    {
+      "q": "The angles of a triangle add up to:",
+      "choices": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "a": "180°",
+      "s": "The three interior angles of any triangle always add to 180°."
+    },
+    {
+      "q": "If a car travels 60 km in 1 hour, how far in 3.5 hours at the same speed?",
+      "choices": [
+        "180 km",
+        "200 km",
+        "210 km",
+        "240 km"
+      ],
+      "a": "210 km",
+      "s": "Distance = speed × time = 60 × 3.5 = 210 km."
+    },
+    {
+      "q": "Which of these is a prime number?",
+      "choices": [
+        "15",
+        "21",
+        "23",
+        "27"
+      ],
+      "a": "23",
+      "s": "A prime has exactly two factors: 1 and itself. 23 is only divisible by 1 and 23."
+    },
+    {
+      "q": "The area of a square with side 9 cm is:",
+      "choices": [
+        "18 cm²",
+        "27 cm²",
+        "36 cm²",
+        "81 cm²"
+      ],
+      "a": "81 cm²",
+      "s": "Area of square = side × side = 9 × 9 = 81 cm²."
+    },
+    {
+      "q": "Convert 5/8 to a decimal.",
+      "choices": [
+        "0.375",
+        "0.5",
+        "0.625",
+        "0.75"
+      ],
+      "a": "0.625",
+      "s": "5 ÷ 8 = 0.625."
+    },
+    {
+      "q": "The ratio 12 : 18 in simplest form is:",
+      "choices": [
+        "1 : 2",
+        "2 : 3",
+        "3 : 4",
+        "4 : 5"
+      ],
+      "a": "2 : 3",
+      "s": "Divide both by their HCF (6): 12/6 = 2, 18/6 = 3. So 2 : 3."
+    },
+    {
+      "q": "The sum of the smallest 3-digit number and the largest 3-digit number is:",
+      "choices": [
+        "999",
+        "1000",
+        "1099",
+        "1100"
+      ],
+      "a": "1099",
+      "s": "Smallest 3-digit = 100. Largest = 999. Sum = 100 + 999 = 1099."
+    },
+    {
+      "q": "What is the smallest number that when divided by 4, 6, or 8 leaves remainder 3?",
+      "choices": [
+        "23",
+        "24",
+        "27",
+        "51"
+      ],
+      "a": "27",
+      "s": "LCM(4,6,8) = 24. So the number is 24k + 3. For k=1: 27. Check: 27 = 4(6)+3 ✓, 6(4)+3 ✓, 8(3)+3 ✓."
+    },
+    {
+      "q": "The sum of two numbers is 45 and their ratio is 4 : 5. The larger number is:",
+      "choices": [
+        "20",
+        "25",
+        "27",
+        "30"
+      ],
+      "a": "25",
+      "s": "Total parts = 4 + 5 = 9. Each part = 45 ÷ 9 = 5. Larger = 5 × 5 = 25."
+    },
+    {
+      "q": "If a : b = 3 : 4 and b : c = 5 : 6, then a : c =",
+      "choices": [
+        "5 : 8",
+        "1 : 2",
+        "5 : 12",
+        "15 : 24"
+      ],
+      "a": "5 : 8",
+      "s": "Make b common: multiply first by 5, second by 4. a : b = 15 : 20; b : c = 20 : 24. So a : c = 15 : 24 = 5 : 8."
+    },
+    {
+      "q": "A rectangle has length 15 cm and diagonal 17 cm. Its width is:",
+      "choices": [
+        "6 cm",
+        "8 cm",
+        "10 cm",
+        "12 cm"
+      ],
+      "a": "8 cm",
+      "s": "By Pythagoras: width² = 17² − 15² = 289 − 225 = 64. Width = 8 cm."
+    },
+    {
+      "q": "A shopkeeper marks a shirt ₹800 and gives 15% discount. Selling price is:",
+      "choices": [
+        "₹640",
+        "₹680",
+        "₹720",
+        "₹760"
+      ],
+      "a": "₹680",
+      "s": "Discount = 15% of 800 = 120. SP = 800 − 120 = ₹680."
+    },
+    {
+      "q": "The average of first 10 odd natural numbers is:",
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "15"
+      ],
+      "a": "10",
+      "s": "Odd numbers 1, 3, 5, …, 19. Sum = 10² = 100. Average = 100 ÷ 10 = 10."
+    },
+    {
+      "q": "A cube has surface area 96 cm². Its volume is:",
+      "choices": [
+        "16 cm³",
+        "24 cm³",
+        "48 cm³",
+        "64 cm³"
+      ],
+      "a": "64 cm³",
+      "s": "Surface area = 6s² = 96, so s² = 16, s = 4 cm. Volume = 4³ = 64 cm³."
+    },
+    {
+      "q": "The number of factors of 60 is:",
+      "choices": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "a": "12",
+      "s": "60 = 2² × 3 × 5. Number of factors = (2+1)(1+1)(1+1) = 3 × 2 × 2 = 12."
+    },
+    {
+      "q": "A train 240 m long crosses a pole in 12 seconds. Its speed is:",
+      "choices": [
+        "18 km/h",
+        "54 km/h",
+        "60 km/h",
+        "72 km/h"
+      ],
+      "a": "72 km/h",
+      "s": "Speed = 240 ÷ 12 = 20 m/s = 20 × 18/5 = 72 km/h."
+    }
   ],
   "b7_8": [
-    {"q":"If 5x − 3 = 22, then x =","choices":["3","4","5","6"],"a":"5","s":"5x = 22 + 3 = 25, so x = 5."},
-    {"q":"The value of (−3)² + (−2)³ is:","choices":["−17","−1","1","17"],"a":"1","s":"(−3)² = 9; (−2)³ = −8. Sum = 9 + (−8) = 1."},
-    {"q":"The area of a circle with radius 7 cm is: (use π = 22/7)","choices":["44 cm²","132 cm²","154 cm²","308 cm²"],"a":"154 cm²","s":"Area = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 cm²."},
-    {"q":"Simplify: (2x + 3) + (5x − 7)","choices":["7x − 4","7x + 4","3x − 4","3x + 10"],"a":"7x − 4","s":"Combine like terms: 2x + 5x = 7x; 3 + (−7) = −4. Result: 7x − 4."},
-    {"q":"A cuboid has length 5 cm, width 4 cm, height 3 cm. Its volume is:","choices":["12 cm³","24 cm³","47 cm³","60 cm³"],"a":"60 cm³","s":"Volume = l × w × h = 5 × 4 × 3 = 60 cm³."},
-    {"q":"What is the compound interest on ₹1000 at 10% per year for 2 years?","choices":["₹200","₹210","₹220","₹231"],"a":"₹210","s":"Year 1 interest: 100. New principal: 1100. Year 2 interest: 110. Total = 100 + 110 = ₹210."},
-    {"q":"The sum of angles in a quadrilateral is:","choices":["180°","270°","360°","540°"],"a":"360°","s":"A quadrilateral splits into 2 triangles: 2 × 180° = 360°."},
-    {"q":"If a : b = 2 : 3 and b : c = 4 : 5, then a : b : c is:","choices":["2 : 3 : 5","8 : 12 : 15","6 : 12 : 15","2 : 4 : 5"],"a":"8 : 12 : 15","s":"Make b common: a : b = 8 : 12 (× 4); b : c = 12 : 15 (× 3). So a : b : c = 8 : 12 : 15."},
-    {"q":"√144 + √25 =","choices":["13","17","19","23"],"a":"17","s":"√144 = 12; √25 = 5. Sum = 12 + 5 = 17."},
-    {"q":"A pair of dice is thrown. The probability of getting a sum of 7 is:","choices":["1/12","1/9","1/6","1/4"],"a":"1/6","s":"Favorable pairs summing to 7: (1,6)(2,5)(3,4)(4,3)(5,2)(6,1) = 6. Total outcomes = 36. Probability = 6/36 = 1/6."}
+    {
+      "q": "If 5x − 3 = 22, then x =",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "a": "5",
+      "s": "5x = 22 + 3 = 25, so x = 5."
+    },
+    {
+      "q": "The value of (−3)² + (−2)³ is:",
+      "choices": [
+        "−17",
+        "−1",
+        "1",
+        "17"
+      ],
+      "a": "1",
+      "s": "(−3)² = 9; (−2)³ = −8. Sum = 9 + (−8) = 1."
+    },
+    {
+      "q": "The area of a circle with radius 7 cm is: (use π = 22/7)",
+      "choices": [
+        "44 cm²",
+        "132 cm²",
+        "154 cm²",
+        "308 cm²"
+      ],
+      "a": "154 cm²",
+      "s": "Area = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 cm²."
+    },
+    {
+      "q": "Simplify: (2x + 3) + (5x − 7)",
+      "choices": [
+        "7x − 4",
+        "7x + 4",
+        "3x − 4",
+        "3x + 10"
+      ],
+      "a": "7x − 4",
+      "s": "Combine like terms: 2x + 5x = 7x; 3 + (−7) = −4. Result: 7x − 4."
+    },
+    {
+      "q": "A cuboid has length 5 cm, width 4 cm, height 3 cm. Its volume is:",
+      "choices": [
+        "12 cm³",
+        "24 cm³",
+        "47 cm³",
+        "60 cm³"
+      ],
+      "a": "60 cm³",
+      "s": "Volume = l × w × h = 5 × 4 × 3 = 60 cm³."
+    },
+    {
+      "q": "What is the compound interest on ₹1000 at 10% per year for 2 years?",
+      "choices": [
+        "₹200",
+        "₹210",
+        "₹220",
+        "₹231"
+      ],
+      "a": "₹210",
+      "s": "Year 1 interest: 100. New principal: 1100. Year 2 interest: 110. Total = 100 + 110 = ₹210."
+    },
+    {
+      "q": "The sum of angles in a quadrilateral is:",
+      "choices": [
+        "180°",
+        "270°",
+        "360°",
+        "540°"
+      ],
+      "a": "360°",
+      "s": "A quadrilateral splits into 2 triangles: 2 × 180° = 360°."
+    },
+    {
+      "q": "If a : b = 2 : 3 and b : c = 4 : 5, then a : b : c is:",
+      "choices": [
+        "2 : 3 : 5",
+        "8 : 12 : 15",
+        "6 : 12 : 15",
+        "2 : 4 : 5"
+      ],
+      "a": "8 : 12 : 15",
+      "s": "Make b common: a : b = 8 : 12 (× 4); b : c = 12 : 15 (× 3). So a : b : c = 8 : 12 : 15."
+    },
+    {
+      "q": "√144 + √25 =",
+      "choices": [
+        "13",
+        "17",
+        "19",
+        "23"
+      ],
+      "a": "17",
+      "s": "√144 = 12; √25 = 5. Sum = 12 + 5 = 17."
+    },
+    {
+      "q": "A pair of dice is thrown. The probability of getting a sum of 7 is:",
+      "choices": [
+        "1/12",
+        "1/9",
+        "1/6",
+        "1/4"
+      ],
+      "a": "1/6",
+      "s": "Favorable pairs summing to 7: (1,6)(2,5)(3,4)(4,3)(5,2)(6,1) = 6. Total outcomes = 36. Probability = 6/36 = 1/6."
+    },
+    {
+      "q": "If x + 1/x = 3, then x² + 1/x² =",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "a": "7",
+      "s": "Square both sides: (x + 1/x)² = 9. Expand: x² + 2 + 1/x² = 9. So x² + 1/x² = 7."
+    },
+    {
+      "q": "The angles of a triangle are in ratio 2 : 3 : 4. The largest angle is:",
+      "choices": [
+        "60°",
+        "72°",
+        "80°",
+        "90°"
+      ],
+      "a": "80°",
+      "s": "Total = 180°. Parts = 2+3+4 = 9. Each part = 20°. Largest = 4 × 20° = 80°."
+    },
+    {
+      "q": "If 2ˣ = 32, then x =",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "a": "5",
+      "s": "32 = 2⁵, so x = 5."
+    },
+    {
+      "q": "A shopkeeper marks his goods 40% above cost and gives 25% discount. His profit percentage is:",
+      "choices": [
+        "5%",
+        "10%",
+        "12%",
+        "15%"
+      ],
+      "a": "5%",
+      "s": "Let CP = 100. MP = 140. SP = 140 × 0.75 = 105. Profit = 5, so 5%."
+    },
+    {
+      "q": "How many two-digit numbers are divisible by both 4 and 6?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "a": "8",
+      "s": "LCM(4,6) = 12. Two-digit multiples of 12: 12, 24, 36, 48, 60, 72, 84, 96 — that's 8 numbers."
+    },
+    {
+      "q": "If √(x + 5) = 8, then x =",
+      "choices": [
+        "3",
+        "9",
+        "59",
+        "64"
+      ],
+      "a": "59",
+      "s": "Square both sides: x + 5 = 64. So x = 59."
+    },
+    {
+      "q": "The area of a rhombus with diagonals 12 cm and 16 cm is:",
+      "choices": [
+        "48 cm²",
+        "96 cm²",
+        "192 cm²",
+        "144 cm²"
+      ],
+      "a": "96 cm²",
+      "s": "Area of rhombus = (1/2) × d₁ × d₂ = (1/2) × 12 × 16 = 96 cm²."
+    },
+    {
+      "q": "A can do a job in 12 days and B in 15 days. Working together, how many days to finish?",
+      "choices": [
+        "6",
+        "6.67",
+        "7.5",
+        "8"
+      ],
+      "a": "6.67",
+      "s": "Combined rate = 1/12 + 1/15 = 5/60 + 4/60 = 9/60 = 3/20. Time = 20/3 ≈ 6.67 days."
+    },
+    {
+      "q": "The value of (999)² is:",
+      "choices": [
+        "997001",
+        "998001",
+        "999001",
+        "999801"
+      ],
+      "a": "998001",
+      "s": "(1000 − 1)² = 1000² − 2×1000 + 1 = 1000000 − 2000 + 1 = 998001."
+    },
+    {
+      "q": "Three consecutive integers sum to 66. The smallest is:",
+      "choices": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "a": "21",
+      "s": "Let integers be n, n+1, n+2. Sum = 3n + 3 = 66. So n = 21."
+    }
   ],
   "b9_10": [
-    {"q":"If x² − 5x + 6 = 0, the roots are:","choices":["1 and 6","2 and 3","−2 and −3","−1 and −6"],"a":"2 and 3","s":"Factorise: (x − 2)(x − 3) = 0. So x = 2 or x = 3."},
-    {"q":"The distance between points (3, 4) and (0, 0) is:","choices":["3","4","5","7"],"a":"5","s":"Distance = √(3² + 4²) = √(9 + 16) = √25 = 5."},
-    {"q":"If sin θ = 4/5 and θ is acute, then cos θ =","choices":["3/5","4/5","5/3","5/4"],"a":"3/5","s":"cos²θ = 1 − sin²θ = 1 − 16/25 = 9/25. Since θ is acute, cos θ = 3/5."},
-    {"q":"The HCF of 84 and 120 is:","choices":["6","12","24","36"],"a":"12","s":"84 = 2² × 3 × 7; 120 = 2³ × 3 × 5. HCF = 2² × 3 = 12."},
-    {"q":"A cylinder has radius 7 cm and height 10 cm. Its volume (π = 22/7) is:","choices":["154 cm³","440 cm³","1540 cm³","2200 cm³"],"a":"1540 cm³","s":"V = πr²h = (22/7) × 49 × 10 = 22 × 70 = 1540 cm³."},
-    {"q":"The 15th term of the arithmetic progression 3, 7, 11, 15, … is:","choices":["55","59","63","67"],"a":"59","s":"a = 3, d = 4. T₁₅ = a + 14d = 3 + 56 = 59."},
-    {"q":"If log₁₀ 2 = 0.301, then log₁₀ 8 is:","choices":["0.602","0.903","0.301","0.699"],"a":"0.903","s":"log 8 = log 2³ = 3 × log 2 = 3 × 0.301 = 0.903."},
-    {"q":"The probability of drawing a king from a standard deck of 52 cards is:","choices":["1/13","1/26","1/52","4/13"],"a":"1/13","s":"There are 4 kings in 52 cards. Probability = 4/52 = 1/13."},
-    {"q":"A tangent to a circle is perpendicular to the radius at the point of contact. If the radius is 8 cm and the tangent from an external point is 15 cm, the distance from the point to the centre is:","choices":["7 cm","17 cm","23 cm","√161 cm"],"a":"17 cm","s":"Right triangle: distance² = 8² + 15² = 64 + 225 = 289. Distance = √289 = 17 cm."},
-    {"q":"The mean of 5 numbers is 12. If a sixth number 18 is added, the new mean is:","choices":["13","14","15","16"],"a":"13","s":"Sum of 5 numbers = 60. New sum = 78. New mean = 78 ÷ 6 = 13."}
+    {
+      "q": "If x² − 5x + 6 = 0, the roots are:",
+      "choices": [
+        "1 and 6",
+        "2 and 3",
+        "−2 and −3",
+        "−1 and −6"
+      ],
+      "a": "2 and 3",
+      "s": "Factorise: (x − 2)(x − 3) = 0. So x = 2 or x = 3."
+    },
+    {
+      "q": "The distance between points (3, 4) and (0, 0) is:",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "a": "5",
+      "s": "Distance = √(3² + 4²) = √(9 + 16) = √25 = 5."
+    },
+    {
+      "q": "If sin θ = 4/5 and θ is acute, then cos θ =",
+      "choices": [
+        "3/5",
+        "4/5",
+        "5/3",
+        "5/4"
+      ],
+      "a": "3/5",
+      "s": "cos²θ = 1 − sin²θ = 1 − 16/25 = 9/25. Since θ is acute, cos θ = 3/5."
+    },
+    {
+      "q": "The HCF of 84 and 120 is:",
+      "choices": [
+        "6",
+        "12",
+        "24",
+        "36"
+      ],
+      "a": "12",
+      "s": "84 = 2² × 3 × 7; 120 = 2³ × 3 × 5. HCF = 2² × 3 = 12."
+    },
+    {
+      "q": "A cylinder has radius 7 cm and height 10 cm. Its volume (π = 22/7) is:",
+      "choices": [
+        "154 cm³",
+        "440 cm³",
+        "1540 cm³",
+        "2200 cm³"
+      ],
+      "a": "1540 cm³",
+      "s": "V = πr²h = (22/7) × 49 × 10 = 22 × 70 = 1540 cm³."
+    },
+    {
+      "q": "The 15th term of the arithmetic progression 3, 7, 11, 15, … is:",
+      "choices": [
+        "55",
+        "59",
+        "63",
+        "67"
+      ],
+      "a": "59",
+      "s": "a = 3, d = 4. T₁₅ = a + 14d = 3 + 56 = 59."
+    },
+    {
+      "q": "If log₁₀ 2 = 0.301, then log₁₀ 8 is:",
+      "choices": [
+        "0.602",
+        "0.903",
+        "0.301",
+        "0.699"
+      ],
+      "a": "0.903",
+      "s": "log 8 = log 2³ = 3 × log 2 = 3 × 0.301 = 0.903."
+    },
+    {
+      "q": "The probability of drawing a king from a standard deck of 52 cards is:",
+      "choices": [
+        "1/13",
+        "1/26",
+        "1/52",
+        "4/13"
+      ],
+      "a": "1/13",
+      "s": "There are 4 kings in 52 cards. Probability = 4/52 = 1/13."
+    },
+    {
+      "q": "A tangent to a circle is perpendicular to the radius at the point of contact. If the radius is 8 cm and the tangent from an external point is 15 cm, the distance from the point to the centre is:",
+      "choices": [
+        "7 cm",
+        "17 cm",
+        "23 cm",
+        "√161 cm"
+      ],
+      "a": "17 cm",
+      "s": "Right triangle: distance² = 8² + 15² = 64 + 225 = 289. Distance = √289 = 17 cm."
+    },
+    {
+      "q": "The mean of 5 numbers is 12. If a sixth number 18 is added, the new mean is:",
+      "choices": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "a": "13",
+      "s": "Sum of 5 numbers = 60. New sum = 78. New mean = 78 ÷ 6 = 13."
+    },
+    {
+      "q": "If the roots of x² − px + 12 = 0 are consecutive integers, then p =",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "a": "7",
+      "s": "Consecutive integers with product 12: 3 and 4. Sum = 7 = p."
+    },
+    {
+      "q": "In an AP, the 5th term is 17 and the 12th term is 38. The common difference is:",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "a": "3",
+      "s": "T₁₂ − T₅ = 7d. So 38 − 17 = 21 = 7d, giving d = 3."
+    },
+    {
+      "q": "If sin θ + cos θ = √2, then sin θ · cos θ =",
+      "choices": [
+        "0",
+        "1/2",
+        "√2/2",
+        "1"
+      ],
+      "a": "1/2",
+      "s": "Square: (sinθ + cosθ)² = 2. Expand: sin²θ + 2sinθcosθ + cos²θ = 2. Since sin²θ + cos²θ = 1: 1 + 2sinθcosθ = 2. So sinθcosθ = 1/2."
+    },
+    {
+      "q": "The distance between points (a, 0) and (0, b) is:",
+      "choices": [
+        "a + b",
+        "√(a² + b²)",
+        "√(a² − b²)",
+        "a² + b²"
+      ],
+      "a": "√(a² + b²)",
+      "s": "Distance = √((a − 0)² + (0 − b)²) = √(a² + b²)."
+    },
+    {
+      "q": "In a circle, a chord of length 8 cm is 3 cm from the centre. The radius is:",
+      "choices": [
+        "4 cm",
+        "5 cm",
+        "√73 cm",
+        "√55 cm"
+      ],
+      "a": "5 cm",
+      "s": "The perpendicular from centre bisects the chord. Half-chord = 4 cm. By Pythagoras: r² = 3² + 4² = 25. Radius = 5 cm."
+    },
+    {
+      "q": "A number is chosen at random from 1 to 100. Probability it is a perfect square is:",
+      "choices": [
+        "1/10",
+        "1/20",
+        "1/25",
+        "3/50"
+      ],
+      "a": "1/10",
+      "s": "Perfect squares from 1 to 100: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — that is 10 numbers. Probability = 10/100 = 1/10."
+    },
+    {
+      "q": "If log₁₀ 2 = 0.301 and log₁₀ 3 = 0.477, then log₁₀ 6 =",
+      "choices": [
+        "0.176",
+        "0.699",
+        "0.778",
+        "0.903"
+      ],
+      "a": "0.778",
+      "s": "log 6 = log(2 × 3) = log 2 + log 3 = 0.301 + 0.477 = 0.778."
+    },
+    {
+      "q": "The volume of a cone with radius 6 cm and height 7 cm is: (π = 22/7)",
+      "choices": [
+        "176 cm³",
+        "264 cm³",
+        "352 cm³",
+        "792 cm³"
+      ],
+      "a": "264 cm³",
+      "s": "V = (1/3)πr²h = (1/3)(22/7)(36)(7) = (1/3)(22)(36) = 22 × 12 = 264 cm³."
+    },
+    {
+      "q": "The sum of first n odd natural numbers is:",
+      "choices": [
+        "n(n+1)/2",
+        "n²",
+        "n(n+1)",
+        "2n − 1"
+      ],
+      "a": "n²",
+      "s": "1 + 3 + 5 + … + (2n−1) = n². Standard identity, verified: n=3 gives 1+3+5 = 9 = 3² ✓."
+    },
+    {
+      "q": "If a two-digit number is 4 times the sum of its digits, and reversing it gives a number 27 more, the original number is:",
+      "choices": [
+        "24",
+        "36",
+        "48",
+        "63"
+      ],
+      "a": "36",
+      "s": "Let number = 10a + b. Then 10a + b = 4(a + b) → 6a = 3b → b = 2a. Also 10b + a = 10a + b + 27 → 9b − 9a = 27 → b − a = 3. Solving: b = 2a and b − a = 3 gives a = 3, b = 6. Number = 36."
+    }
   ],
   "b11_12": [
-    {"q":"The derivative of x³ − 4x² + 7x with respect to x is:","choices":["3x² − 8x + 7","3x² − 4x + 7","x² − 8x + 7","3x − 8 + 7"],"a":"3x² − 8x + 7","s":"d/dx(xⁿ) = n·xⁿ⁻¹. So d/dx(x³) = 3x², d/dx(4x²) = 8x, d/dx(7x) = 7. Result: 3x² − 8x + 7."},
-    {"q":"The value of i²⁰²⁶ where i = √(−1) is:","choices":["1","−1","i","−i"],"a":"−1","s":"i has cycle 4: i, −1, −i, 1. 2026 mod 4 = 2, so i²⁰²⁶ = i² = −1."},
-    {"q":"How many ways can the letters of 'MATHEMATICS' be arranged?","choices":["11!","11! / 2","11! / (2! × 2! × 2!)","11! / (2! × 2!)"],"a":"11! / (2! × 2! × 2!)","s":"11 letters with M repeated twice, A repeated twice, T repeated twice. Arrangements = 11! / (2! × 2! × 2!)."},
-    {"q":"∫ (2x + 3) dx =","choices":["x² + 3x + C","2x² + 3x + C","x² + 3 + C","2x² + 3 + C"],"a":"x² + 3x + C","s":"∫ 2x dx = x²; ∫ 3 dx = 3x. Add constant C. Result: x² + 3x + C."},
-    {"q":"If A and B are independent events with P(A) = 0.4 and P(B) = 0.5, then P(A ∩ B) =","choices":["0.1","0.2","0.5","0.9"],"a":"0.2","s":"For independent events, P(A ∩ B) = P(A) × P(B) = 0.4 × 0.5 = 0.2."},
-    {"q":"The equation of a line passing through (2, 3) with slope 4 is:","choices":["y = 4x − 5","y = 4x + 5","y = 4x − 11","y = 4x + 11"],"a":"y = 4x − 5","s":"Point-slope: y − 3 = 4(x − 2), so y = 4x − 8 + 3 = 4x − 5."},
-    {"q":"lim(x→0) sin(x)/x =","choices":["0","1","∞","undefined"],"a":"1","s":"This is a standard limit: lim(x→0) sin(x)/x = 1."},
-    {"q":"The eccentricity of the ellipse x²/25 + y²/9 = 1 is:","choices":["3/5","4/5","5/4","5/3"],"a":"4/5","s":"a² = 25, b² = 9. c² = a² − b² = 16, c = 4. e = c/a = 4/5."},
-    {"q":"If y = e^(2x), then dy/dx =","choices":["e^(2x)","2e^(2x)","2xe^(2x−1)","e^(2x) / 2"],"a":"2e^(2x)","s":"d/dx(e^(f(x))) = f'(x) × e^(f(x)). Here f(x) = 2x, f'(x) = 2. So dy/dx = 2e^(2x)."},
-    {"q":"The number of ways to choose 3 students from a class of 8 is:","choices":["24","56","168","336"],"a":"56","s":"C(8,3) = 8! / (3! × 5!) = (8 × 7 × 6) / (3 × 2 × 1) = 336/6 = 56."}
+    {
+      "q": "The derivative of x³ − 4x² + 7x with respect to x is:",
+      "choices": [
+        "3x² − 8x + 7",
+        "3x² − 4x + 7",
+        "x² − 8x + 7",
+        "3x − 8 + 7"
+      ],
+      "a": "3x² − 8x + 7",
+      "s": "d/dx(xⁿ) = n·xⁿ⁻¹. So d/dx(x³) = 3x², d/dx(4x²) = 8x, d/dx(7x) = 7. Result: 3x² − 8x + 7."
+    },
+    {
+      "q": "The value of i²⁰²⁶ where i = √(−1) is:",
+      "choices": [
+        "1",
+        "−1",
+        "i",
+        "−i"
+      ],
+      "a": "−1",
+      "s": "i has cycle 4: i, −1, −i, 1. 2026 mod 4 = 2, so i²⁰²⁶ = i² = −1."
+    },
+    {
+      "q": "How many ways can the letters of 'MATHEMATICS' be arranged?",
+      "choices": [
+        "11!",
+        "11! / 2",
+        "11! / (2! × 2! × 2!)",
+        "11! / (2! × 2!)"
+      ],
+      "a": "11! / (2! × 2! × 2!)",
+      "s": "11 letters with M repeated twice, A repeated twice, T repeated twice. Arrangements = 11! / (2! × 2! × 2!)."
+    },
+    {
+      "q": "∫ (2x + 3) dx =",
+      "choices": [
+        "x² + 3x + C",
+        "2x² + 3x + C",
+        "x² + 3 + C",
+        "2x² + 3 + C"
+      ],
+      "a": "x² + 3x + C",
+      "s": "∫ 2x dx = x²; ∫ 3 dx = 3x. Add constant C. Result: x² + 3x + C."
+    },
+    {
+      "q": "If A and B are independent events with P(A) = 0.4 and P(B) = 0.5, then P(A ∩ B) =",
+      "choices": [
+        "0.1",
+        "0.2",
+        "0.5",
+        "0.9"
+      ],
+      "a": "0.2",
+      "s": "For independent events, P(A ∩ B) = P(A) × P(B) = 0.4 × 0.5 = 0.2."
+    },
+    {
+      "q": "The equation of a line passing through (2, 3) with slope 4 is:",
+      "choices": [
+        "y = 4x − 5",
+        "y = 4x + 5",
+        "y = 4x − 11",
+        "y = 4x + 11"
+      ],
+      "a": "y = 4x − 5",
+      "s": "Point-slope: y − 3 = 4(x − 2), so y = 4x − 8 + 3 = 4x − 5."
+    },
+    {
+      "q": "lim(x→0) sin(x)/x =",
+      "choices": [
+        "0",
+        "1",
+        "∞",
+        "undefined"
+      ],
+      "a": "1",
+      "s": "This is a standard limit: lim(x→0) sin(x)/x = 1."
+    },
+    {
+      "q": "The eccentricity of the ellipse x²/25 + y²/9 = 1 is:",
+      "choices": [
+        "3/5",
+        "4/5",
+        "5/4",
+        "5/3"
+      ],
+      "a": "4/5",
+      "s": "a² = 25, b² = 9. c² = a² − b² = 16, c = 4. e = c/a = 4/5."
+    },
+    {
+      "q": "If y = e^(2x), then dy/dx =",
+      "choices": [
+        "e^(2x)",
+        "2e^(2x)",
+        "2xe^(2x−1)",
+        "e^(2x) / 2"
+      ],
+      "a": "2e^(2x)",
+      "s": "d/dx(e^(f(x))) = f'(x) × e^(f(x)). Here f(x) = 2x, f'(x) = 2. So dy/dx = 2e^(2x)."
+    },
+    {
+      "q": "The number of ways to choose 3 students from a class of 8 is:",
+      "choices": [
+        "24",
+        "56",
+        "168",
+        "336"
+      ],
+      "a": "56",
+      "s": "C(8,3) = 8! / (3! × 5!) = (8 × 7 × 6) / (3 × 2 × 1) = 336/6 = 56."
+    },
+    {
+      "q": "The value of lim(x→0) (1 − cos x)/x² is:",
+      "choices": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
+      "a": "1/2",
+      "s": "Use identity: 1 − cos x = 2sin²(x/2). Then (2sin²(x/2))/x² = (1/2)(sin(x/2)/(x/2))² → (1/2)(1)² = 1/2 as x→0."
+    },
+    {
+      "q": "The number of arrangements of the letters of 'SUCCESS' is:",
+      "choices": [
+        "420",
+        "840",
+        "1260",
+        "2520"
+      ],
+      "a": "420",
+      "s": "7 letters with S repeated 3 times, C repeated 2 times. Count = 7! / (3! × 2!) = 5040/12 = 420."
+    },
+    {
+      "q": "If f(x) = x² and g(x) = 2x + 1, then f(g(2)) =",
+      "choices": [
+        "9",
+        "16",
+        "25",
+        "36"
+      ],
+      "a": "25",
+      "s": "g(2) = 2(2) + 1 = 5. f(5) = 5² = 25."
+    },
+    {
+      "q": "∫₀¹ (3x² + 2x) dx =",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": "2",
+      "s": "Antiderivative: x³ + x². Evaluate: (1 + 1) − (0 + 0) = 2."
+    },
+    {
+      "q": "If P(A) = 0.6, P(B) = 0.5, and P(A ∪ B) = 0.8, then P(A ∩ B) =",
+      "choices": [
+        "0.1",
+        "0.2",
+        "0.3",
+        "0.4"
+      ],
+      "a": "0.3",
+      "s": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B). So 0.8 = 0.6 + 0.5 − P(A ∩ B), giving P(A ∩ B) = 0.3."
+    },
+    {
+      "q": "The modulus of the complex number (3 + 4i)/(1 − i) is:",
+      "choices": [
+        "√5",
+        "5/√2",
+        "5/2",
+        "5/√2"
+      ],
+      "a": "5/√2",
+      "s": "|3 + 4i| = 5. |1 − i| = √2. Modulus of quotient = 5/√2."
+    },
+    {
+      "q": "The slope of the tangent to y = x³ − 3x at x = 2 is:",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "a": "9",
+      "s": "dy/dx = 3x² − 3. At x = 2: 3(4) − 3 = 12 − 3 = 9."
+    },
+    {
+      "q": "If the vectors a = 2i + 3j + k and b = i − j + 2k, then a · b =",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": "1",
+      "s": "a · b = (2)(1) + (3)(−1) + (1)(2) = 2 − 3 + 2 = 1."
+    },
+    {
+      "q": "The equation of the tangent to the parabola y² = 8x at the point (2, 4) is:",
+      "choices": [
+        "x − y + 2 = 0",
+        "x + y − 6 = 0",
+        "y = x + 2",
+        "y = 2x"
+      ],
+      "a": "x − y + 2 = 0",
+      "s": "For y² = 4ax with a = 2, tangent at (x₁, y₁) is yy₁ = 2a(x + x₁). At (2, 4): 4y = 4(x + 2), so y = x + 2, i.e. x − y + 2 = 0."
+    },
+    {
+      "q": "The area enclosed between y = x² and y = x is:",
+      "choices": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "a": "1/6",
+      "s": "Intersection at x = 0 and x = 1. Area = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6."
+    }
   ]
-}
-</script>
+}</script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
   var bankEl=document.getElementById("qotdBank"); if(!bankEl){return;}

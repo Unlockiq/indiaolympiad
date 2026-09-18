@@ -350,3 +350,29 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 .qotd-body{padding:1.4rem 1.8rem 1.6rem !important}
 .qotd-yesterday{margin-bottom:0 !important;padding-bottom:.3rem}
 .qotd-yesterday-body{margin-bottom:.5rem}
+
+/* v2.8.5: distinct calendar section separation from QOTD */
+.calendar-section{background:#F6F7F3;padding:2.4rem 0 3rem;position:relative;border-top:3px solid #E8A020}
+:root[data-theme="dark"] .calendar-section{background:#0d1428;border-top-color:#E8A020}
+.calendar-section::before{content:"";position:absolute;top:-1px;left:0;right:0;height:1px;background:#0E1A3D;opacity:.15}
+.qotd-section{padding-bottom:2rem !important}
+
+/* v2.8.6: more space after QOTD + fully closed golden border */
+.qotd-section{padding-bottom:4rem !important}
+.qotd-card{
+  border:2px solid #E8A020 !important;
+  border-radius:10px !important;
+  box-sizing:border-box !important;
+  box-shadow:0 0 0 4px rgba(232,160,32,.12), 0 6px 20px rgba(14,26,61,.10) !important;
+  overflow:hidden !important;
+  background:#FFFFFF !important;
+  margin-bottom:0
+}
+:root[data-theme="dark"] .qotd-card{background:#141c34 !important}
+/* body must sit inside the border cleanly — no negative margins */
+.qotd-body{padding:1.4rem 1.8rem 1.6rem !important;margin:0}
+/* banner top corners must match card corners */
+.qotd-banner{border-top-left-radius:8px;border-top-right-radius:8px;margin:0}
+/* yesterday reveal body must not push out */
+.qotd-yesterday{margin-bottom:0}
+.qotd-yesterday-body{margin-bottom:0}
