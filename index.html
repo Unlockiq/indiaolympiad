@@ -673,6 +673,28 @@ footer a:hover{color:var(--marigold)}
   .qotd-banner .qb-title{font-size:1.15rem}
   .qotd-body{padding:1.3rem 1.4rem 1.5rem !important}
 }
+
+/* v3.1: labelled publisher resources rail */
+.pub-rail{padding:2.2rem 0 2.6rem;background:#F6F7F3;border-top:1px solid #D5D8CF}
+:root[data-theme="dark"] .pub-rail{background:#0d1428;border-top-color:#2a3350}
+.pub-rail .pub-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.pub-rail .pub-tag{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#C9880F;border:1px solid #E8A020;padding:.25rem .6rem;border-radius:999px;font-weight:700}
+.pub-rail h3{font-family:var(--serif,'IBM Plex Serif',Georgia,serif);font-size:1.3rem;margin:.3rem 0 0;color:#0E1A3D}
+:root[data-theme="dark"] .pub-rail h3{color:#F6F7F3}
+.pub-rail .pub-note{font-size:.78rem;color:#5C6278;max-width:620px}
+:root[data-theme="dark"] .pub-rail .pub-note{color:#8b93ad}
+.pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media (max-width:860px){.pub-grid{grid-template-columns:1fr}}
+.pub-card{display:block;background:#FFFFFF;border:1px solid #D5D8CF;border-top:3px solid #E8A020;border-radius:8px;padding:1.15rem 1.25rem 1.2rem;text-decoration:none;color:#1E2438;transition:transform .12s,box-shadow .12s}
+.pub-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(14,26,61,.10);text-decoration:none}
+:root[data-theme="dark"] .pub-card{background:#141c34;border-color:#2a3350;border-top-color:#E8A020;color:#E5E8F0}
+.pub-card .pc-kicker{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#C9880F;margin-bottom:.4rem}
+.pub-card .pc-title{font-family:var(--serif,'IBM Plex Serif',Georgia,serif);font-size:1.08rem;font-weight:600;line-height:1.25;margin-bottom:.4rem}
+.pub-card .pc-desc{font-size:.88rem;line-height:1.5;color:#5C6278;margin-bottom:.7rem}
+:root[data-theme="dark"] .pub-card .pc-desc{color:#b4bace}
+.pub-card .pc-price{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.74rem;letter-spacing:.06em;color:#0E1A3D;font-weight:700}
+:root[data-theme="dark"] .pub-card .pc-price{color:#E8A020}
+.pub-card .pc-cta{display:inline-block;margin-top:.5rem;font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#C9880F;font-weight:700}
 </style>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.indiaolympiad.com/#publisher","name":"India Olympiad","alternateName":"indiaolympiad.com","url":"https://www.indiaolympiad.com","logo":"https://www.indiaolympiad.com/apple-touch-icon.png","description":"Independent directory of school olympiads in India — the 2026-27 season calendar with confirmed dates, fees and registration status.","publisher":{"@type":"Organization","name":"Unlock IQ Institute Pvt. Ltd.","url":"https://www.unlockiqinstitute.com"},"sameAs":["https://www.unlockiqinstitute.com","https://www.aryabhattamathsolympiad.com"]}</script>
 <script type="application/ld+json" data-tag="iolymp">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.indiaolympiad.com/#website","url":"https://www.indiaolympiad.com","name":"India Olympiad — Independent directory","description":"Every school olympiad in India — one honest calendar for 2026-27.","publisher":{"@id":"https://www.indiaolympiad.com/#publisher"},"inLanguage":"en-IN"}</script>
@@ -707,25 +729,25 @@ footer a:hover{color:var(--marigold)}
 <!-- HERO -->
 <div class="ticker" aria-label="Latest olympiad updates">
   <div class="ticker-inner">
-    <span class="ticker-label">Updates · 17 Sep</span>
+    <span class="ticker-label">Updates · 31 Oct</span>
     <div class="ticker-view">
       <div class="ticker-track">
-        <div class="t-half"><a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener"><b>📲 New:</b> follow the India Olympiad WhatsApp Channel for date alerts</a>
-<a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
-<a href="olympiads/sof-igko.html"><b>SOF season opens:</b> IGKO first date Tue 22 Sep · IMO 23 Oct / 26 Nov / 10 Dec</a>
-<a href="olympiads/nsep.html"><b>IAPT NSEs confirmed:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
-<a href="olympiads/ioqm.html"><b>IOQM 2026:</b> held 6 Sep — RMO stage next (Oct–Nov)</a>
-<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> first exam date 8 Oct · then 18 Nov / 7 Dec</a>
-<a href="olympiads/aryabhatta-maths-olympiad.html"><b>AMO 2026-27:</b> registrations open · L1 exam 24–25 Apr 2027</a>
-<a href="olympiads/crest.html"><b>CREST:</b> L1 rounds from 1 Dec · online slot booking open</a></div>
-        <div class="t-half" aria-hidden="true"><a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener"><b>📲 New:</b> follow the India Olympiad WhatsApp Channel for date alerts</a>
-<a href="results.html"><b>Results 2025-26 out:</b> AMO L2, REAL &amp; RMQ · 1000+ medals · 122 Champions of Champions</a>
-<a href="olympiads/sof-igko.html"><b>SOF season opens:</b> IGKO first date Tue 22 Sep · IMO 23 Oct / 26 Nov / 10 Dec</a>
-<a href="olympiads/nsep.html"><b>IAPT NSEs confirmed:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
-<a href="olympiads/ioqm.html"><b>IOQM 2026:</b> held 6 Sep — RMO stage next (Oct–Nov)</a>
-<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> first exam date 8 Oct · then 18 Nov / 7 Dec</a>
-<a href="olympiads/aryabhatta-maths-olympiad.html"><b>AMO 2026-27:</b> registrations open · L1 exam 24–25 Apr 2027</a>
-<a href="olympiads/crest.html"><b>CREST:</b> L1 rounds from 1 Dec · online slot booking open</a></div>
+        <div class="t-half"><a href="olympiads/rmo.html"><b>RMO 2026 confirmed:</b> Sun 15 Nov · 1–4 PM · IOQM qualifiers register via HBCSE</a>
+<a href="olympiads/nsep.html"><b>IAPT NSEs in 3 weeks:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
+<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> next dates 18 Nov &amp; 7 Dec</a>
+<a href="olympiads/sof-imo.html"><b>SOF IMO:</b> next dates 26 Nov &amp; 10 Dec · NSO / IEO windows running</a>
+<a href="olympiads/crest.html"><b>CREST:</b> Level-1 rounds from 1 Dec · slot booking open</a>
+<a href="olympiads/inmo.html"><b>INMO 2027 confirmed:</b> Sun 17 Jan 2027</a>
+<a href="olympiads/aryabhatta-maths-olympiad.html"><b>AMO 2026-27:</b> registrations open · L1 exam 24–25 Apr 2027 · practice papers now available</a>
+<a href="results.html"><b>Results 2025-26:</b> AMO L2, REAL &amp; RMQ · 122 Champions of Champions</a></div>
+        <div class="t-half" aria-hidden="true"><a href="olympiads/rmo.html"><b>RMO 2026 confirmed:</b> Sun 15 Nov · 1–4 PM · IOQM qualifiers register via HBCSE</a>
+<a href="olympiads/nsep.html"><b>IAPT NSEs in 3 weeks:</b> NSEA Sat 21 Nov · NSEP / NSEC / NSEB / Jr Science Sun 22 Nov</a>
+<a href="olympiads/silverzone-iom.html"><b>SilverZone iOM:</b> next dates 18 Nov &amp; 7 Dec</a>
+<a href="olympiads/sof-imo.html"><b>SOF IMO:</b> next dates 26 Nov &amp; 10 Dec · NSO / IEO windows running</a>
+<a href="olympiads/crest.html"><b>CREST:</b> Level-1 rounds from 1 Dec · slot booking open</a>
+<a href="olympiads/inmo.html"><b>INMO 2027 confirmed:</b> Sun 17 Jan 2027</a>
+<a href="olympiads/aryabhatta-maths-olympiad.html"><b>AMO 2026-27:</b> registrations open · L1 exam 24–25 Apr 2027 · practice papers now available</a>
+<a href="results.html"><b>Results 2025-26:</b> AMO L2, REAL &amp; RMQ · 122 Champions of Champions</a></div>
       </div>
     </div>
   </div>
@@ -759,7 +781,7 @@ footer a:hover{color:var(--marigold)}
         <div class="stat-row">
           <div class="stat"><span class="num">41</span><span class="lbl">Olympiads tracked</span></div>
           <div class="stat"><span class="num">1–12</span><span class="lbl">Classes covered</span></div>
-          <div class="stat"><span class="num">20</span><span class="lbl">Confirmed 2026–27 dates</span></div>
+          <div class="stat"><span class="num">22</span><span class="lbl">Confirmed 2026–27 dates</span></div>
         </div><p style="margin-top:1rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--marigold);text-transform:uppercase">
 <svg style="width:14px;height:14px;vertical-align:-2px;fill:#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.88 11.9L4 20l4.2-1.1a7.94 7.94 0 0 0 3.84 1h.01a7.93 7.93 0 0 0 5.55-13.58zM12.06 18.5h-.01a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.49.65.67-2.43-.16-.25a6.6 6.6 0 1 1 12.24-3.51 6.6 6.6 0 0 1-6.65 6.6zm3.62-4.95c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.44.1-.13.2-.51.64-.62.77-.11.13-.23.15-.42.05a5.4 5.4 0 0 1-1.6-.99 6 6 0 0 1-1.1-1.37c-.11-.2 0-.3.09-.4.1-.1.2-.24.3-.36.1-.12.13-.2.2-.34.06-.13.03-.25-.02-.35-.05-.1-.44-1.07-.6-1.46-.16-.38-.32-.33-.44-.34l-.38-.01a.73.73 0 0 0-.53.25 2.24 2.24 0 0 0-.7 1.67c0 .98.72 1.94.82 2.07.1.13 1.42 2.16 3.44 3.03.48.21.86.33 1.15.42.48.15.92.13 1.27.08.39-.06 1.17-.48 1.34-.94.16-.47.16-.87.12-.95-.05-.09-.19-.14-.39-.24z"/></svg> <a href="https://whatsapp.com/channel/0029VbDx0YHAe5VxZFhq1i1I" target="_blank" rel="noopener" style="color:var(--marigold);text-decoration:underline;font-weight:600">Follow the India Olympiad WhatsApp Channel</a> — date alerts, deadlines, results
 </p>
@@ -837,7 +859,7 @@ footer a:hover{color:var(--marigold)}
         <h2>All-India Olympiad Calendar</h2>
         <span class="season-badge ay-tip" data-tip="Academic Year 2026–27 = the school year Apr 2026–Mar 2027. Olympiad windows in this year run Aug 2026 through May 2027.">Academic Year 2026–27</span>
       </div>
-      <p class="last-updated" style="margin:0;padding-bottom:8px"><b>Last updated:</b> 17 September 2026  &nbsp;·&nbsp;  Dates reviewed monthly. Updates applied within 48 hours of an organiser announcement.</p>
+      <p class="last-updated" style="margin:0;padding-bottom:8px"><b>Last updated:</b> 31 October 2026  &nbsp;·&nbsp;  Dates reviewed monthly. Updates applied within 48 hours of an organiser announcement.</p>
       <div class="filters" role="group" aria-label="Filter by subject">
         <button class="chip" aria-pressed="true" data-f="all">All</button>
         <button class="chip" aria-pressed="false" data-f="maths">Maths</button>
@@ -859,6 +881,38 @@ footer a:hover{color:var(--marigold)}
 </section>
 
 <!-- RECOMMENDER -->
+<section class="pub-rail" aria-label="Books and practice material from the publisher">
+  <div class="wrap">
+    <div class="pub-head">
+      <div><span class="pub-tag">From the publisher · Unlock IQ Institute</span>
+        <h3>Books &amp; practice material</h3></div>
+      <p class="pub-note">Clearly labelled: these are the publisher's own products. They never affect which olympiads are listed, their dates, or their order.</p>
+    </div>
+    <div class="pub-grid">
+      <a class="pub-card" href="https://www.unlockiqinstitute.com/books?utm_source=indiaolympiad&utm_medium=publisher-rail&utm_campaign=home-papers" target="_blank" rel="noopener">
+        <div class="pc-kicker">Practice papers · Classes 1–11</div>
+        <div class="pc-title">AMO Level-1 &amp; REAL Olympiad practice papers</div>
+        <div class="pc-desc">10 full papers per set, personalised PDF with answers. Pick AMO, REAL, or both.</div>
+        <div class="pc-price">₹220 per set · ₹400 for both</div>
+        <span class="pc-cta">Get the papers →</span>
+      </a>
+      <a class="pub-card" href="https://www.unlockiqinstitute.com/books?utm_source=indiaolympiad&utm_medium=publisher-rail&utm_campaign=home-ebooks" target="_blank" rel="noopener">
+        <div class="pc-kicker">Ebooks · KG to Class 2</div>
+        <div class="pc-title">Unlock IQ Kids maths &amp; logic activity books</div>
+        <div class="pc-desc">Printable ebooks on numbers, patterns, picture Sudoku and logic — early-years maths with no screen time.</div>
+        <div class="pc-price">Digital · instant download</div>
+        <span class="pc-cta">Browse ebooks →</span>
+      </a>
+      <a class="pub-card" href="https://www.unlockiqinstitute.com/books?utm_source=indiaolympiad&utm_medium=publisher-rail&utm_campaign=home-books" target="_blank" rel="noopener">
+        <div class="pc-kicker">Study material · Classes 1–11</div>
+        <div class="pc-title">AMO &amp; REAL Olympiad books · Mathemagica</div>
+        <div class="pc-desc">Olympiad textbooks aligned to the AMO and REAL syllabi, and the Vedic-maths title Mathemagica. REAL books open for pre-order.</div>
+        <div class="pc-price">Printed · pre-order</div>
+        <span class="pc-cta">See all books →</span>
+      </a>
+    </div>
+  </div>
+</section>
 <section class="reco-section" id="recommender">
   <div class="wrap">
     <p class="eyebrow">Find-your-olympiad</p>
@@ -1049,7 +1103,7 @@ footer a:hover{color:var(--marigold)}
 <li><a href="listing-policy.html">Listing policy</a></li>
 </ul></div>
 </div>
-    <p class="disc">Independence &amp; disclosure: indiaolympiad.com is published by Unlock IQ Institute Pvt. Ltd., which also organises olympiad programmes (AMO, REAL Olympiad, Ramanujan Maths Quiz Series, UNITE Olympiad) listed on this site. Listings, dates and comparisons are compiled on uniform criteria applied equally to all organisers; no organiser — including the publisher — pays for placement or ranking. All olympiads listed are independent academic enrichment programmes of their respective organisers. They are not conducted, prescribed, approved or endorsed by CBSE, NCERT, PARAKH or any government body. Dates marked "Expected" are estimates based on past seasons; verify all dates and fees on the organiser's official website before paying any registration fee. Data collected via this site is governed by our Privacy Policy and India's Digital Personal Data Protection Act 2023. © 2026 India Olympiad / Unlock IQ Institute Pvt. Ltd.</p>
+    <p class="disc">Independence &amp; disclosure: indiaolympiad.com is published by Unlock IQ Institute Pvt. Ltd., which also organises olympiad programmes (AMO, REAL Olympiad, Ramanujan Maths Quiz Series, UNITE Olympiad) listed on this site. Listings, dates and comparisons are compiled on uniform criteria applied equally to all organisers; no organiser — including the publisher — pays for placement or ranking. Books and practice material shown under "From the publisher" are Unlock IQ Institute products, clearly labelled; they never influence listings, dates or ordering. All olympiads listed are independent academic enrichment programmes of their respective organisers. They are not conducted, prescribed, approved or endorsed by CBSE, NCERT, PARAKH or any government body. Dates marked "Expected" are estimates based on past seasons; verify all dates and fees on the organiser's official website before paying any registration fee. Data collected via this site is governed by our Privacy Policy and India's Digital Personal Data Protection Act 2023. © 2026 India Olympiad / Unlock IQ Institute Pvt. Ltd.</p>
   </div>
 </footer>
 
@@ -2584,13 +2638,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
   if(cdWrap){
     var EXAMS=[
-      {name:"SOF IGKO",date:"2026-09-22",url:"olympiads/sof-igko.html"},
-      {name:"SOF IEO",date:"2026-09-30",url:"olympiads/sof-ieo.html"},
-      {name:"SilverZone iOM",date:"2026-10-08",url:"olympiads/silverzone-iom.html"},
-      {name:"SOF IMO",date:"2026-10-23",url:"olympiads/sof-imo.html"},
+      {name:"RMO",date:"2026-11-15",url:"olympiads/rmo.html"},
+      {name:"SilverZone iOM",date:"2026-11-18",url:"olympiads/silverzone-iom.html"},
       {name:"NSEA",date:"2026-11-21",url:"olympiads/nsea.html"},
-      {name:"NSEP",date:"2026-11-22",url:"olympiads/nsep.html"},
-      {name:"CREST L1",date:"2026-12-01",url:"olympiads/crest.html"}
+      {name:"NSEP / NSEC / NSEB",date:"2026-11-22",url:"olympiads/nsep.html"},
+      {name:"SOF IMO",date:"2026-11-26",url:"olympiads/sof-imo.html"},
+      {name:"CREST L1",date:"2026-12-01",url:"olympiads/crest.html"},
+      {name:"SilverZone iOM (3rd)",date:"2026-12-07",url:"olympiads/silverzone-iom.html"},
+      {name:"SOF IMO (3rd)",date:"2026-12-10",url:"olympiads/sof-imo.html"},
+      {name:"INMO",date:"2027-01-17",url:"olympiads/inmo.html"},
+      {name:"REAL Olympiad",date:"2027-04-18",url:"olympiads/real-olympiad.html"},
+      {name:"AMO L1",date:"2027-04-24",url:"olympiads/aryabhatta-maths-olympiad.html"},
+      {name:"RMQ",date:"2027-05-01",url:"olympiads/ramanujan-maths-quiz.html"}
     ];
     var now=new Date();now.setHours(0,0,0,0);
     var upcoming=EXAMS.map(function(e){var d=new Date(e.date+"T00:00:00");e.days=Math.round((d-now)/86400000);return e;}).filter(function(e){return e.days>=0;}).slice(0,5);

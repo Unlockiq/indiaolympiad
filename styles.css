@@ -412,3 +412,25 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
   .qotd-banner .qb-title{font-size:1.15rem}
   .qotd-body{padding:1.3rem 1.4rem 1.5rem !important}
 }
+
+/* v3.1: labelled publisher resources rail */
+.pub-rail{padding:2.2rem 0 2.6rem;background:#F6F7F3;border-top:1px solid #D5D8CF}
+:root[data-theme="dark"] .pub-rail{background:#0d1428;border-top-color:#2a3350}
+.pub-rail .pub-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.pub-rail .pub-tag{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#C9880F;border:1px solid #E8A020;padding:.25rem .6rem;border-radius:999px;font-weight:700}
+.pub-rail h3{font-family:var(--serif,'IBM Plex Serif',Georgia,serif);font-size:1.3rem;margin:.3rem 0 0;color:#0E1A3D}
+:root[data-theme="dark"] .pub-rail h3{color:#F6F7F3}
+.pub-rail .pub-note{font-size:.78rem;color:#5C6278;max-width:620px}
+:root[data-theme="dark"] .pub-rail .pub-note{color:#8b93ad}
+.pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media (max-width:860px){.pub-grid{grid-template-columns:1fr}}
+.pub-card{display:block;background:#FFFFFF;border:1px solid #D5D8CF;border-top:3px solid #E8A020;border-radius:8px;padding:1.15rem 1.25rem 1.2rem;text-decoration:none;color:#1E2438;transition:transform .12s,box-shadow .12s}
+.pub-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(14,26,61,.10);text-decoration:none}
+:root[data-theme="dark"] .pub-card{background:#141c34;border-color:#2a3350;border-top-color:#E8A020;color:#E5E8F0}
+.pub-card .pc-kicker{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#C9880F;margin-bottom:.4rem}
+.pub-card .pc-title{font-family:var(--serif,'IBM Plex Serif',Georgia,serif);font-size:1.08rem;font-weight:600;line-height:1.25;margin-bottom:.4rem}
+.pub-card .pc-desc{font-size:.88rem;line-height:1.5;color:#5C6278;margin-bottom:.7rem}
+:root[data-theme="dark"] .pub-card .pc-desc{color:#b4bace}
+.pub-card .pc-price{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.74rem;letter-spacing:.06em;color:#0E1A3D;font-weight:700}
+:root[data-theme="dark"] .pub-card .pc-price{color:#E8A020}
+.pub-card .pc-cta{display:inline-block;margin-top:.5rem;font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#C9880F;font-weight:700}
