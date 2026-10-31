@@ -593,7 +593,7 @@
         "5 : 8",
         "1 : 2",
         "5 : 12",
-        "15 : 24"
+        "3 : 5"
       ],
       "a": "5 : 8",
       "s": "Make b common: multiply first by 5, second by 4. a : b = 15 : 20; b : c = 20 : 24. So a : c = 15 : 24 = 5 : 8."
