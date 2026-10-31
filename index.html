@@ -698,7 +698,7 @@ footer a:hover{color:var(--marigold)}
 .pub-banner .pb-pill.stock{background:#1A6B45;color:#F6F7F3;border-color:#1A6B45}
 .pub-banner .pb-cta{display:inline-block;background:#E8A020;color:#0E1A3D;font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.6rem 1.05rem;border-radius:5px}
 .pub-banner .pb-fan{position:relative;height:200px;width:250px}
-.pub-banner .pb-fan img{position:absolute;width:112px;height:auto;border-radius:3px;box-shadow:0 10px 24px rgba(0,0,0,.45);transition:transform .2s}
+.pub-banner .pb-fan img{position:absolute;width:118px;height:auto;filter:drop-shadow(0 12px 18px rgba(0,0,0,.55));transition:transform .2s}
 .pub-banner .pb-fan img:nth-child(1){left:0;top:26px;transform:rotate(-10deg);z-index:1}
 .pub-banner .pb-fan img:nth-child(2){left:68px;top:4px;z-index:2}
 .pub-banner .pb-fan img:nth-child(3){left:136px;top:26px;transform:rotate(10deg);z-index:3}
@@ -711,7 +711,8 @@ footer a:hover{color:var(--marigold)}
 .pub-card{display:grid;grid-template-columns:96px 1fr;gap:.9rem;align-items:center;background:#FFFFFF;border:1px solid #D5D8CF;border-radius:10px;padding:.9rem 1rem;text-decoration:none;color:#1E2438;transition:transform .12s,box-shadow .12s}
 .pub-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(14,26,61,.10);text-decoration:none}
 :root[data-theme="dark"] .pub-card{background:#141c34;border-color:#2a3350;color:#E5E8F0}
-.pub-card img{width:96px;height:96px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(14,26,61,.18)}
+.pub-card img{width:96px;height:96px;object-fit:contain;border-radius:6px;box-shadow:0 4px 12px rgba(14,26,61,.18);background:#F6F7F3}
+.pub-card img.cover{box-shadow:none;background:transparent;filter:drop-shadow(0 6px 10px rgba(14,26,61,.3))}
 .pub-card .pc-kicker{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#C9880F;margin-bottom:.25rem}
 .pub-card .pc-title{font-family:var(--serif,'IBM Plex Serif',Georgia,serif);font-size:1rem;font-weight:600;line-height:1.25;margin-bottom:.25rem}
 .pub-card .pc-desc{font-size:.82rem;line-height:1.45;color:#5C6278;margin-bottom:.35rem}
@@ -920,7 +921,7 @@ footer a:hover{color:var(--marigold)}
           <div class="pb-pills"><span class="pb-pill stock">In stock</span><span class="pb-pill">Free shipping · India</span><span class="pb-pill">All 11 classes</span></div>
           <span class="pb-cta">Buy AMO workbook →</span>
         </div>
-        <div class="pb-fan"><img src="assets/books/B3_AMO_c1.jpg" alt="AMO Workbook Class 1" loading="lazy"><img src="assets/books/B3_AMO_c6.jpg" alt="AMO Workbook Class 6" loading="lazy"><img src="assets/books/B3_AMO_c11.jpg" alt="AMO Workbook Class 11" loading="lazy"></div>
+        <div class="pb-fan"><img src="assets/books/B3_AMO_c1.png" alt="AMO Workbook Class 1" loading="lazy"><img src="assets/books/B3_AMO_c6.png" alt="AMO Workbook Class 6" loading="lazy"><img src="assets/books/B3_AMO_c11.png" alt="AMO Workbook Class 11" loading="lazy"></div>
       </a>
       <a class="pub-banner real" href="https://www.unlockiqinstitute.com/books/?utm_source=indiaolympiad&utm_medium=publisher-banner&utm_campaign=home-real-books" target="_blank" rel="noopener">
         <div>
@@ -930,7 +931,7 @@ footer a:hover{color:var(--marigold)}
           <div class="pb-pills"><span class="pb-pill stock">In stock</span><span class="pb-pill">Free shipping · India</span><span class="pb-pill">All 11 classes</span></div>
           <span class="pb-cta">Buy REAL workbook →</span>
         </div>
-        <div class="pb-fan"><img src="assets/books/B3_REAL_c1.jpg" alt="REAL Olympiad Workbook Class 1" loading="lazy"><img src="assets/books/B3_REAL_c6.jpg" alt="REAL Olympiad Workbook Class 6" loading="lazy"><img src="assets/books/B3_REAL_c11.jpg" alt="REAL Olympiad Workbook Class 11" loading="lazy"></div>
+        <div class="pb-fan"><img src="assets/books/B3_REAL_c1.png" alt="REAL Olympiad Workbook Class 1" loading="lazy"><img src="assets/books/B3_REAL_c6.png" alt="REAL Olympiad Workbook Class 6" loading="lazy"><img src="assets/books/B3_REAL_c11.png" alt="REAL Olympiad Workbook Class 11" loading="lazy"></div>
       </a>
     </div>
     <div class="pub-grid">
@@ -942,7 +943,7 @@ footer a:hover{color:var(--marigold)}
           <div class="pc-price">₹220 per set · ₹400 for both</div></div>
       </a>
       <a class="pub-card" href="https://www.unlockiqinstitute.com/books/?utm_source=indiaolympiad&utm_medium=publisher-banner&utm_campaign=home-mathemagica" target="_blank" rel="noopener">
-        <img src="assets/books/B3_MM.jpg" alt="Mathemagica — A Vedic Maths Approach" loading="lazy">
+        <img class="cover" src="assets/books/B3_MM.png" alt="Mathemagica — A Vedic Maths Approach" loading="lazy">
         <div><div class="pc-kicker">Vedic maths · printed</div>
           <div class="pc-title">Mathemagica — A Vedic Maths Approach</div>
           <div class="pc-desc">Mental-maths speed techniques for school and olympiad exams. Free chapter-wise worksheets.</div>
