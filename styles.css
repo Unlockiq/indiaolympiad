@@ -426,7 +426,7 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 /* big banners: two series */
 .pub-hero{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem}
 @media (max-width:900px){.pub-hero{grid-template-columns:1fr}}
-.pub-banner{position:relative;display:grid;grid-template-columns:1fr 250px;gap:.6rem;align-items:center;background:linear-gradient(135deg,#0E1A3D 0%,#1a2650 100%);border:1px solid #2a3350;border-radius:12px;padding:1.4rem 1.5rem;color:#F6F7F3;text-decoration:none;overflow:hidden;min-height:230px;transition:transform .15s,box-shadow .15s}
+.pub-banner{position:relative;display:grid;grid-template-columns:1fr 260px;gap:.6rem;align-items:center;background:linear-gradient(135deg,#0E1A3D 0%,#1a2650 100%);border:1px solid #2a3350;border-radius:12px;padding:1.4rem 1.5rem;color:#F6F7F3;text-decoration:none;overflow:hidden;min-height:230px;transition:transform .15s,box-shadow .15s}
 .pub-banner:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(14,26,61,.28);text-decoration:none}
 .pub-banner.real{background:linear-gradient(135deg,#3b1d6b 0%,#5a2d93 100%);border-color:#6a3fa3}
 .pub-banner .pb-kicker{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#E8A020;margin-bottom:.45rem}
@@ -436,13 +436,9 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 .pub-banner .pb-pill{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;border-radius:999px;background:rgba(232,160,32,.16);color:#E8A020;border:1px solid rgba(232,160,32,.45)}
 .pub-banner .pb-pill.stock{background:#1A6B45;color:#F6F7F3;border-color:#1A6B45}
 .pub-banner .pb-cta{display:inline-block;background:#E8A020;color:#0E1A3D;font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.6rem 1.05rem;border-radius:5px}
-.pub-banner .pb-fan{position:relative;height:200px;width:250px}
-.pub-banner .pb-fan img{position:absolute;width:118px;height:auto;filter:drop-shadow(0 12px 18px rgba(0,0,0,.55));transition:transform .2s}
-.pub-banner .pb-fan img:nth-child(1){left:0;top:26px;transform:rotate(-10deg);z-index:1}
-.pub-banner .pb-fan img:nth-child(2){left:68px;top:4px;z-index:2}
-.pub-banner .pb-fan img:nth-child(3){left:136px;top:26px;transform:rotate(10deg);z-index:3}
-.pub-banner:hover .pb-fan img:nth-child(1){transform:rotate(-13deg) translateX(-6px)}
-.pub-banner:hover .pb-fan img:nth-child(3){transform:rotate(13deg) translateX(6px)}
+.pub-banner .pb-fan{position:relative;height:220px;width:260px;display:flex;align-items:center;justify-content:center}
+.pub-banner .pb-fan img{width:260px;height:auto;max-height:230px;object-fit:contain;filter:drop-shadow(0 14px 18px rgba(0,0,0,.5));transition:transform .2s}
+.pub-banner:hover .pb-fan img{transform:scale(1.04)}
 @media (max-width:560px){.pub-banner{grid-template-columns:1fr;min-height:0}.pub-banner .pb-fan{display:none}}
 /* small image cards */
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
