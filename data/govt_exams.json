@@ -1,0 +1,637 @@
+[
+ {
+  "slug": "maharashtra-scholarship-std-4-7",
+  "name": "Maharashtra Scholarship Exam — Std 4 (PSE) & Std 7 (UPS)",
+  "local_name": "प्राथमिक शिष्यवृत्ती परीक्षा (इ. ४ थी) · उच्च प्राथमिक शिष्यवृत्ती परीक्षा (इ. ७ वी)",
+  "level": "state",
+  "state": "Maharashtra",
+  "body": "Maharashtra State Council of Examination (MSCE), Pune",
+  "official_url": "https://www.mscepune.in",
+  "portal_url": "https://2027.puppssmsce.in",
+  "classes": "4 and 7",
+  "subject": "First language · Maths · Third language · Intelligence",
+  "exam": {
+   "date": "2027-02-21",
+   "label": "Sun 21 Feb 2027",
+   "status": "O",
+   "source": "MSCE notification no. मरापप/शिष्यवृत्ती/2026-27/4857 dated 27 Oct 2026"
+  },
+  "registration": {
+   "open": "2026-10-27",
+   "close": "2026-11-30",
+   "late_close": "2026-12-31",
+   "state": "open",
+   "label": "Open · regular fee till 30 Nov 2026 · late fee till 31 Dec",
+   "status": "O"
+  },
+  "result": {
+   "label": "Expected Jul–Aug 2027 (2026 cycle: provisional 25 Jul, final 11 Aug)",
+   "status": "E"
+  },
+  "fee": "₹200 (entry ₹50 + exam ₹150); ₹125 for reserved categories / divyang in MSCERT-curriculum schools; +₹50 late (1–15 Dec), then +₹10/day (16–23 Dec) and +₹20/day (24–31 Dec). School affiliation ₹200/yr.",
+  "eligibility": "Resident of Maharashtra studying in Std 4 or Std 7 in a recognised school (government, aided, unaided, permanently unaided or self-financed). Age on 1 June 2026: Std 4 ≤10 yrs (divyang ≤14); Std 7 ≤13 yrs (divyang ≤17). Over-age students may appear but receive no scholarship.",
+  "cbse_note": "CBSE / ICSE / other-board students may appear; a separate state top-100 and district top-25 merit list with certificates is prepared for them, but no scholarship money is paid.",
+  "pattern": [
+   [
+    "Paper 1 · 11:00–12:30",
+    "First Language 25 Q / 50 marks + Mathematics 50 Q / 100 marks",
+    "75 Q · 150 marks · 90 min"
+   ],
+   [
+    "Paper 2 · 2:00–3:30",
+    "Third Language 25 Q / 50 marks + Intelligence Test 50 Q / 100 marks",
+    "75 Q · 150 marks · 90 min"
+   ]
+  ],
+  "pattern_notes": "All MCQ, 4 options, exactly one correct; sets A–D; difficulty 30% easy / 40% medium / 30% hard; qualifying 40% in each paper; OMR, no negative marking.",
+  "media": "Marathi, Urdu, Hindi, Gujarati, English, Telugu, Kannada — plus six semi-English options (Maths and Intelligence papers bilingual with English).",
+  "award": "Std 4: ₹500/month for 3 years (16,693 scholarships). Std 7: ₹750/month for 3 years (16,588 scholarships). Allotted district-wise (and taluka-wise for Std 7) across rural/urban, category and Vidarbha-income (< ₹1 lakh) sub-quotas; a limited number of sets, so cut-off applies.",
+  "how_to_apply": "Through the school only, online at puppssmsce.in (school login, UDISE code). No offline forms. Student photo + signature scan ≤100 KB; Aadhaar or enrolment number mandatory.",
+  "transition": "Std 5 and Std 8 scholarship exams were held for the last time on 22 Feb 2026 (final results published). From 2026-27 only Std 4 and Std 7 run, in February.",
+  "papers": [
+   {
+    "label": "April 2026 question papers — Std 4 & 7, Paper I & II, 7 media (Set A)",
+    "url": "https://2026-2.puppssmsce.in/question-paper/april-26",
+    "status": "O"
+   },
+   {
+    "label": "Syllabus (MSCE)",
+    "url": "https://2027.puppssmsce.in/scholarship-syllabus",
+    "status": "O"
+   },
+   {
+    "label": "Scholarship criteria chart — Std 4",
+    "url": "https://mscepuppss.s3.ap-south-1.amazonaws.com/Information/2027/Scholarship_Pradan_Nikash_4th_2026.jpeg",
+    "status": "O"
+   },
+   {
+    "label": "Scholarship criteria chart — Std 7",
+    "url": "https://mscepuppss.s3.ap-south-1.amazonaws.com/Information/2027/Scholarship_Pradan_Nikash_7th_2026.jpeg",
+    "status": "O"
+   }
+  ],
+  "contact": "Helpline 9240275800 · puppsshelpdesk@gmail.com · Commissioner, MSCE, Survey 832-A, Shivajinagar, Pune 411004",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "nmms-maharashtra",
+  "name": "NMMS Maharashtra 2026-27 (Class 8)",
+  "local_name": "राष्ट्रीय आर्थिक दुर्बल घटक विद्यार्थ्यांसाठी शिष्यवृत्ती योजना परीक्षा",
+  "level": "national-state",
+  "state": "Maharashtra",
+  "body": "Maharashtra State Council of Examination (MSCE), Pune — for the Ministry of Education's NMMS scheme",
+  "official_url": "https://www.mscepune.in",
+  "portal_url": "https://2027.mscenmms.in",
+  "classes": "8",
+  "subject": "Mental Ability (MAT) · Scholastic Aptitude (SAT)",
+  "exam": {
+   "date": "2026-12-20",
+   "label": "Sun 20 Dec 2026 · MAT 10:30–12:00 · SAT 1:30–3:00",
+   "status": "O",
+   "source": "MSCE notification no. 3916 dated 7 Sep 2026; press release 4816 dated 21 Oct 2026"
+  },
+  "registration": {
+   "open": "2026-09-08",
+   "close": "2026-10-28",
+   "state": "closed",
+   "label": "Closed · final extended deadline 28 Oct 2026",
+   "status": "O"
+  },
+  "result": {
+   "label": "Expected first/second week of Feb 2027 (per MSCE information sheet)",
+   "status": "O"
+  },
+  "fee": "₹120 regular (8 Sep–7 Oct); ₹240 late (8–14 Oct); ₹360 / ₹480 super-late (15–21 Oct). School affiliation ₹200/yr.",
+  "eligibility": "Regular Class 8 student in a government, government-aided or local-body school in Maharashtra; parents' combined annual income below ₹3,50,000 (certificate for FY 2025-26); minimum 55% in Class 7 (50% for SC/ST).",
+  "cbse_note": "Students of unaided private schools, Kendriya Vidyalayas, Jawahar Navodaya Vidyalayas, Sainik schools and government-hostel beneficiaries may sit the exam but are not eligible for the scholarship.",
+  "pattern": [
+   [
+    "MAT · 10:30–12:00",
+    "Mental Ability Test — reasoning, analysis, synthesis",
+    "90 Q · 90 marks · 90 min"
+   ],
+   [
+    "SAT · 1:30–3:00",
+    "Science 35 (Phy 11 · Chem 11 · Bio 13) + Social Science 35 (Hist 15 · Civics 5 · Geo 15) + Maths 20",
+    "90 Q · 90 marks · 90 min"
+   ]
+  ],
+  "pattern_notes": "MCQ, 4 options, sets A–D; qualifying 40% combined MAT+SAT (32% for SC/ST/divyang); OMR; no negative marking; +30 min per paper for divyang.",
+  "media": "Marathi, Urdu, Hindi, Gujarati, English, Telugu, Kannada — every student also gets the English version of the paper.",
+  "award": "₹1,000/month (₹12,000/year) from Class 9 to Class 12. Maharashtra quota: 11,682 of the national 1,00,000. Continuation needs first-attempt pass in Class 9 and 11 and ≥60% in Class 10 (55% SC/ST).",
+  "how_to_apply": "Through the school online at mscenmms.in; caste/divyang certificates verified by the headmaster; admit cards via school login 10 days before the exam.",
+  "papers": [
+   {
+    "label": "2025-26 question papers — MAT & SAT, 7 media (Marathi sets A–D)",
+    "url": "https://2027.mscenmms.in/question-paper/25-26",
+    "status": "O"
+   },
+   {
+    "label": "2024-25 papers + final answer key",
+    "url": "https://2027.mscenmms.in/question-paper/24-25",
+    "status": "O"
+   },
+   {
+    "label": "2023-24 papers + final answer key",
+    "url": "https://2027.mscenmms.in/question-paper/23-24",
+    "status": "O"
+   },
+   {
+    "label": "2022-23 · 2021-22 · 2020-21 · 2019-20 · 2018-19 papers + keys",
+    "url": "https://2027.mscenmms.in/question-paper/22-23",
+    "status": "O"
+   },
+   {
+    "label": "2015-16 to 2017-18 papers",
+    "url": "https://2027.mscenmms.in/question-paper/15-16-17",
+    "status": "O"
+   },
+   {
+    "label": "Information sheet 2026-27 (Marathi)",
+    "url": "https://mscenmms.s3.ap-south-1.amazonaws.com/Information/Information-2026-27-v1.pdf",
+    "status": "O"
+   },
+   {
+    "label": "Eligibility (अर्हता) 2026-27",
+    "url": "https://mscenmms.s3.ap-south-1.amazonaws.com/Arhata/Aharta-2026-27.pdf",
+    "status": "O"
+   }
+  ],
+  "contact": "020-29709396 · nmms.msce@gmail.com · Help desk 9240275801",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "nmms-national",
+  "name": "NMMS — National Means-cum-Merit Scholarship (all states)",
+  "local_name": "राष्ट्रीय आय एवं योग्यता आधारित छात्रवृत्ति योजना",
+  "level": "national",
+  "state": "All India",
+  "body": "Department of School Education & Literacy, Ministry of Education — exam conducted by each State/UT",
+  "official_url": "https://dsel.education.gov.in/scheme/nmmss",
+  "portal_url": "https://scholarships.gov.in",
+  "classes": "8",
+  "subject": "MAT · SAT",
+  "exam": {
+   "date": null,
+   "label": "State-wise, Nov 2026 – Jan 2027 (see table)",
+   "status": "R",
+   "source": "State notifications as reported; Maharashtra and Gujarat windows seen officially"
+  },
+  "registration": {
+   "state": "mostly closed",
+   "label": "Most state windows closed Sep–Oct 2026; Gujarat open till 5 Nov 2026 (SEB circular 30 Oct)",
+   "status": "O"
+  },
+  "result": {
+   "label": "Jan–Mar 2027 by state; NSP scholarship application follows",
+   "status": "E"
+  },
+  "fee": "Nil to ₹120 depending on state (Maharashtra ₹120; Telangana ₹100/₹50; Tamil Nadu ₹50; Rajasthan and MP nil).",
+  "eligibility": "Regular Class 8 student of a government, government-aided or local-body school; ≥55% in Class 7 (50% SC/ST); parental income ≤ ₹3.5 lakh/yr. KV, JNV, residential and private-school students are not eligible.",
+  "cbse_note": "",
+  "pattern": [
+   [
+    "Paper I",
+    "Mental Ability Test (MAT)",
+    "90 Q · 90 marks · 90 min"
+   ],
+   [
+    "Paper II",
+    "Scholastic Aptitude Test (SAT) — Maths, Science, Social Science of Classes 7–8",
+    "90 Q · 90 marks · 90 min"
+   ]
+  ],
+  "pattern_notes": "Qualifying 40% (32% SC/ST/PwD) — some states apply it per paper, others on the aggregate; no negative marking.",
+  "media": "Set by each state — regional language(s) and English.",
+  "award": "₹12,000 per year (₹1,000/month) for Classes 9–12; 1,00,000 fresh scholarships each year nationally, disbursed through the National Scholarship Portal by DBT.",
+  "how_to_apply": "Through the school on the state board/SCERT portal during the state's window; after selection, apply on scholarships.gov.in (NSP) in the following academic year.",
+  "state_table": [
+   [
+    "Maharashtra",
+    "MSCE Pune · mscenmms.in",
+    "Sun 20 Dec 2026",
+    "closed 28 Oct",
+    "O"
+   ],
+   [
+    "Gujarat",
+    "SEB · sebexam.org",
+    "5 Dec 2026 (tentative)",
+    "open till 5 Nov 2026",
+    "R / O"
+   ],
+   [
+    "Telangana",
+    "DGE · bse.telangana.gov.in",
+    "1 Nov 2026",
+    "closed",
+    "R"
+   ],
+   [
+    "Uttar Pradesh",
+    "Pariksha Niyamak Pradhikari · entdata.co.in",
+    "1 Nov 2026",
+    "closed",
+    "R"
+   ],
+   [
+    "Kerala",
+    "Pareeksha Bhavan · nmmse.kerala.gov.in",
+    "Nov 2026 (7 or 11 — conflicting reports)",
+    "closed",
+    "U"
+   ],
+   [
+    "Andhra Pradesh",
+    "BSEAP · bse.ap.gov.in",
+    "29 Nov 2026",
+    "closed",
+    "R"
+   ],
+   [
+    "Delhi",
+    "Directorate of Education · edudel.nic.in",
+    "5–6 Dec 2026 (reports conflict)",
+    "closed",
+    "U"
+   ],
+   [
+    "Karnataka",
+    "KSEAB · kseab.karnataka.gov.in",
+    "20 Dec 2026",
+    "closed 7 Nov",
+    "R"
+   ],
+   [
+    "Rajasthan",
+    "RSCERT · rajshaladarpan.nic.in",
+    "20 Dec 2026",
+    "30 Oct–30 Nov 2026",
+    "R"
+   ],
+   [
+    "Tamil Nadu",
+    "DGE · dge.tn.gov.in",
+    "Jan 2027 (expected)",
+    "Dec 2026 (expected)",
+    "E"
+   ],
+   [
+    "Madhya Pradesh",
+    "RSK · educationportal.mp.gov.in",
+    "Oct–Nov 2026 (expected)",
+    "—",
+    "E"
+   ]
+  ],
+  "papers": [
+   {
+    "label": "Scheme page — Ministry of Education",
+    "url": "https://dsel.education.gov.in/scheme/nmmss",
+    "status": "O"
+   },
+   {
+    "label": "Maharashtra papers & keys 2015–2026 (MSCE)",
+    "url": "https://2027.mscenmms.in/question-paper/25-26",
+    "status": "O"
+   },
+   {
+    "label": "Delhi answer keys (Directorate of Education)",
+    "url": "https://edudel.nic.in",
+    "status": "O"
+   }
+  ],
+  "contact": "National Scholarship Portal helpdesk 0120-6619540 · helpdesk@nsp.gov.in",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "rajasthan-stse",
+  "name": "Rajasthan State Talent Search Examination (STSE) 2026",
+  "local_name": "राज्य स्तरीय प्रतिभा खोज परीक्षा",
+  "level": "state",
+  "state": "Rajasthan",
+  "body": "Board of Secondary Education Rajasthan (BSER), Ajmer",
+  "official_url": "https://rajeduboard.rajasthan.gov.in",
+  "portal_url": "https://bser-exam.in/stse",
+  "classes": "10 and 12 (Science / Commerce / Arts)",
+  "subject": "MAT · Language (LCT) · Scholastic (SAT)",
+  "exam": {
+   "date": "2026-11-22",
+   "label": "Sun 22 Nov 2026 · 9:00 AM–1:00 PM · all 41 district HQs",
+   "status": "O",
+   "source": "BSER notice सैल-7/STSE-2026/01 dated 14 Sep 2026 and STSE-2026 instruction booklet"
+  },
+  "registration": {
+   "open": "2026-09-15",
+   "close": "2026-09-24",
+   "late_close": "2026-09-28",
+   "state": "closed",
+   "label": "Closed · 15–24 Sep 2026 (late fee till 28 Sep)",
+   "status": "O"
+  },
+  "result": {
+   "label": "Expected Jan 2027 (2025 cycle result ~4 Jan 2026)",
+   "status": "E"
+  },
+  "fee": "₹300 general; ₹175 SC/ST/BPL/divyang/CWSN (certificate upload mandatory); +₹50 late; schools may collect ₹20 forwarding fee.",
+  "eligibility": "Regular students of Class 10 and Class 12 in any recognised school in Rajasthan — central, public, Navodaya, convent, private, government and RMSA model schools — with at least 50% in Class 9 (for Class 10) or Class 11 (for Class 12).",
+  "cbse_note": "Open to all boards. Scholarship money is restricted to students of government schools and Rajasthan model schools; others receive certificates and the top-20 cash incentives.",
+  "pattern": [
+   [
+    "Session 1 · 9:00–9:45",
+    "Mental Ability Test (MAT)",
+    "50 Q · 50 marks · 45 min"
+   ],
+   [
+    "Session 2 · 10:15–11:00",
+    "Language Comprehension Test (LCT) — Hindi or English",
+    "40 Q · 40 marks · 45 min"
+   ],
+   [
+    "Session 3 · 11:30–1:00",
+    "Scholastic Aptitude Test (SAT) — Class 10: Phy 25, Chem 25, Bio 20, Maths 20; Class 12: stream-wise 30/30/30 (Arts 23/23/23/21)",
+    "90 Q · 90 marks · 90 min"
+   ]
+  ],
+  "pattern_notes": "All MCQ, 1 mark each, total 180; no negative marking; merit on MAT+LCT+SAT total; extra time for CWSN candidates. Syllabus: full previous-class syllabus (2025-26) plus current-year syllabus (2026-27).",
+  "media": "Hindi and English.",
+  "award": "Top 50 per category (Class 10; Class 12 Science; Class 12 Arts & Commerce) scoring ≥80%: ₹1,250/month in Classes 11–12 and ₹2,000/month through regular UG/PG study (government and model-school students). Incentives for the top 20 in each merit list: ₹4,000 (rank 1) and ₹2,000 (ranks 2–20). Scholar certificate >90%, Distinction certificate 80–90%.",
+  "how_to_apply": "Online by the school through bser-exam.in/stse using the Board login; fee by ICICI Bank or Rajasthan Gramin Bank challan; hard copies posted to the Board.",
+  "papers": [
+   {
+    "label": "STSE-2026 instructions, rules & syllabus (BSER)",
+    "url": "https://rajeduboard.rajasthan.gov.in",
+    "status": "O"
+   }
+  ],
+  "contact": "stse.bser@gmail.com · Control room 0145-2632866 / 2632867 / 2632868 · Dy Director (Exams) 0145-2425770",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "delhi-mvpp",
+  "name": "Delhi Mukhyamantri Vigyan Pratibha Pariksha (MVPP) 2026-27",
+  "local_name": "मुख्यमंत्री विज्ञान प्रतिभा परीक्षा",
+  "level": "state",
+  "state": "Delhi",
+  "body": "Directorate of Education, Govt of NCT of Delhi (Science Branch)",
+  "official_url": "https://edudel.nic.in",
+  "portal_url": "https://edudel.nic.in",
+  "classes": "9",
+  "subject": "MAT · SAT",
+  "exam": {
+   "date": "2026-11-21",
+   "label": "21 Nov 2026 (tentative — final order awaited)",
+   "status": "R",
+   "source": "DoE notification of 8 Sep 2026 as reported; 2025-26 circular F.No. DE.40(13)/Sc.Br/MVPP/2025/554-561 seen"
+  },
+  "registration": {
+   "open": "2026-09-09",
+   "close": "2026-10-05",
+   "state": "closed",
+   "label": "Closed · 9 Sep–5 Oct 2026 (reported)",
+   "status": "R"
+  },
+  "result": {
+   "label": "Expected Feb 2027 (2025-26 result: 26 Feb 2026)",
+   "status": "E"
+  },
+  "fee": "Nil.",
+  "eligibility": "Class 9 students of any recognised school in Delhi (government, aided, private, KV, JNV, NDMC, Cantonment) with ≥60% in Class 8 (55% for SC/ST/PwD).",
+  "cbse_note": "",
+  "pattern": [
+   [
+    "MAT",
+    "Mental Ability Test",
+    "100 Q · 100 marks · 100 min"
+   ],
+   [
+    "SAT",
+    "Scholastic Aptitude Test — Science and Maths",
+    "100 Q · 100 marks · 100 min"
+   ]
+  ],
+  "pattern_notes": "No negative marking; qualifying 40% in each paper (32% SC/ST/PwD).",
+  "media": "Hindi and English.",
+  "award": "One-time ₹5,000 and a merit certificate to 1,000 qualifying students, allocated category-wise.",
+  "how_to_apply": "Through the school on the DoE portal during the notified window.",
+  "papers": [
+   {
+    "label": "Previous MVPP question papers and answer keys (edudel.nic.in uploads)",
+    "url": "https://edudel.nic.in",
+    "status": "O"
+   }
+  ],
+  "contact": "Science Branch, Directorate of Education, Old Secretariat, Delhi 110054",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "tamil-nadu-cm-talent-search",
+  "name": "Tamil Nadu Chief Minister's Talent Search Examination (TNCMTSE)",
+  "local_name": "முதலமைச்சர் திறனாய்வுத் தேர்வு",
+  "level": "state",
+  "state": "Tamil Nadu",
+  "body": "Directorate of Government Examinations, Tamil Nadu",
+  "official_url": "https://dge.tn.gov.in",
+  "portal_url": "https://dge.tn.gov.in",
+  "classes": "10",
+  "subject": "Maths · Science · Social Science",
+  "exam": {
+   "date": null,
+   "label": "Expected Jan 2027 (2025-26 exam: 31 Jan 2026)",
+   "status": "E",
+   "source": "Previous cycle as reported by DGE/press"
+  },
+  "registration": {
+   "state": "not yet open",
+   "label": "Expected Dec 2026 – Jan 2027 (2025-26: 18 Dec–12 Jan)",
+   "status": "E"
+  },
+  "result": {
+   "label": "Expected May 2027 (2025-26 result: 13 May 2026)",
+   "status": "E"
+  },
+  "fee": "₹50.",
+  "eligibility": "Class 10 students of government schools following the Tamil Nadu state board.",
+  "cbse_note": "",
+  "pattern": [
+   [
+    "Paper 1",
+    "Mathematics",
+    "60 Q"
+   ],
+   [
+    "Paper 2",
+    "Science and Social Science",
+    "60 Q"
+   ]
+  ],
+  "pattern_notes": "OMR-based MCQs; marking scheme to be confirmed from the DGE notification.",
+  "media": "Tamil and English.",
+  "award": "₹1,000/month for 10 months (₹10,000/yr) to 1,000 students — 500 boys and 500 girls.",
+  "how_to_apply": "Through the school on the DGE portal.",
+  "papers": [
+   {
+    "label": "DGE notifications, answer keys and selection lists",
+    "url": "https://dge.tn.gov.in",
+    "status": "O"
+   }
+  ],
+  "contact": "Directorate of Government Examinations, DPI Campus, College Road, Chennai 600006",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "kerala-cm-kids-lss-uss",
+  "name": "Kerala CM KIDS Scholarship — LSS (Class 4) & USS (Class 7)",
+  "local_name": "സി.എം. കിഡ്സ് സ്കോളർഷിപ്പ് (എൽ.എസ്.എസ് / യു.എസ്.എസ്)",
+  "level": "state",
+  "state": "Kerala",
+  "body": "Pareeksha Bhavan (Office of the Commissioner for Government Examinations), Kerala",
+  "official_url": "https://bpekerala.in",
+  "portal_url": "https://bpekerala.in/lss_uss_2026/",
+  "classes": "4 and 7",
+  "subject": "Language · English · Maths · EVS/Science · Social Science",
+  "exam": {
+   "date": null,
+   "label": "Expected late Feb 2027 (2026 exam: 26 Feb 2026)",
+   "status": "E",
+   "source": "Previous cycle; Pareeksha Bhavan circulars 46872 and 49055 of Aug 2026"
+  },
+  "registration": {
+   "state": "not yet open",
+   "label": "Expected Dec 2026 – Jan 2027 via schools (2026: 30 Dec–15/19 Jan)",
+   "status": "E"
+  },
+  "result": {
+   "label": "2026 result published 25 May 2026 (official circular); 2027 expected May",
+   "status": "O"
+  },
+  "fee": "No fee reported.",
+  "eligibility": "Class 4 (LSS) and Class 7 (USS) students in government, aided and recognised unaided Kerala-syllabus schools, meeting the grade conditions in the notification (A grades in core subjects; relaxations for science-fest winners and OEC/SC/ST/CWSN).",
+  "cbse_note": "",
+  "pattern": [
+   [
+    "LSS",
+    "Paper 1: 50 objective Q (language, English, Maths, EVS, GK); Paper 2: 6 descriptive Q",
+    "80 marks"
+   ],
+   [
+    "USS",
+    "Paper I: First language + Maths & Mental Ability; Paper II: English + Basic Science + Social Science",
+    "2 × 50 Q · 100 marks"
+   ]
+  ],
+  "pattern_notes": "2026 cut-offs: LSS 48/80, USS 70/100. Renamed CM KIDS Scholarship from the 2025-26 cycle.",
+  "media": "Malayalam and other first-language media; English.",
+  "award": "Annual scholarship (LSS ≈ ₹1,000/yr for Classes 5–7; USS ≈ ₹1,500/yr for Classes 8–10 — verify against the GO) plus merit certificate; cut-off based, no fixed count.",
+  "how_to_apply": "Through the school on the CM KIDS portal (bpekerala.in) during the December–January window.",
+  "papers": [
+   {
+    "label": "CM KIDS portal — notifications, answer keys, results",
+    "url": "https://bpekerala.in/lss_uss_2026/",
+    "status": "O"
+   }
+  ],
+  "contact": "pareekshabhavanh@gmail.com · lssusshelpdesk@gmail.com · Pareeksha Bhavan, Poojappura, Thiruvananthapuram 695012",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "gujarat-pse-sse",
+  "name": "Gujarat Primary & Secondary Scholarship Exams (PSE Std 6 · SSE Std 9)",
+  "local_name": "પ્રાથમિક / માધ્યમિક શિષ્યવૃત્તિ પરીક્ષા",
+  "level": "state",
+  "state": "Gujarat",
+  "body": "State Examination Board, Gandhinagar",
+  "official_url": "https://www.sebexam.org",
+  "portal_url": "https://www.sebexam.org",
+  "classes": "6 and 9",
+  "subject": "Language & GK · Maths & Science",
+  "exam": {
+   "date": null,
+   "label": "Expected Nov–Dec 2026 (2025-26 exam: 29 Nov 2025) — 2026-27 notification not yet seen",
+   "status": "E",
+   "source": "SEB notification of 24 Sep 2025 as reported"
+  },
+  "registration": {
+   "state": "not yet open",
+   "label": "Expected Oct–Nov 2026 (2025-26: 1–15 Oct)",
+   "status": "E"
+  },
+  "result": {
+   "label": "Expected Dec 2026 – Jan 2027 (2025-26 result: 23 Dec 2025)",
+   "status": "E"
+  },
+  "fee": "₹100 (nil for government, RMSA, model and tribal schools).",
+  "eligibility": "Std 6 (PSE) or Std 9 (SSE) students of government, local-body, grant-in-aid or recognised private schools with ≥50% in the previous class.",
+  "cbse_note": "Some portals list these as Std 5/8 — the SEB notification specifies Std 6 and Std 9.",
+  "pattern": [
+   [
+    "Single paper · 120 min",
+    "Section 1 Language & GK (50) + Section 2 Maths & Science (50)",
+    "100 Q · 100 marks"
+   ]
+  ],
+  "pattern_notes": "OMR MCQs; no negative marking; Gujarati medium; syllabus of the current class up to October.",
+  "media": "Gujarati.",
+  "award": "PSE: 1,000 scholarships; SSE: 2,900 (rural 1,500 / urban 1,000 / tribal 400). Amount per the Commissioner of Higher Education scheme — verify current rate.",
+  "how_to_apply": "Through the school on sebexam.org.",
+  "papers": [
+   {
+    "label": "SEB notice board — papers and provisional/final keys after each exam",
+    "url": "https://www.sebexam.org",
+    "status": "O"
+   }
+  ],
+  "contact": "State Examination Board, Sector 21, Gandhinagar",
+  "last_verified": "2026-10-31"
+ },
+ {
+  "slug": "odisha-pathani-samanta-maths",
+  "name": "Odisha Pathani Samanta Mathematics Scholarship Test (PMST)",
+  "local_name": "ପଠାଣି ସାମନ୍ତ ଗଣିତ ବୃତ୍ତି ପରୀକ୍ଷା",
+  "level": "state",
+  "state": "Odisha",
+  "body": "Board of Secondary Education, Odisha — for the School & Mass Education Department",
+  "official_url": "https://www.bseodisha.ac.in",
+  "portal_url": "https://www.bseodisha.ac.in",
+  "classes": "6 (Stage I) and 9 (Stage II)",
+  "subject": "Mathematics",
+  "exam": {
+   "date": null,
+   "label": "Expected Jan 2027 (2025-26 exam: 28 Jan 2026, 10:00–1:00)",
+   "status": "E",
+   "source": "Previous cycle as reported"
+  },
+  "registration": {
+   "state": "not yet open",
+   "label": "Expected Dec 2026 via headmaster (2025-26: 13–25 Dec)",
+   "status": "E"
+  },
+  "result": {
+   "label": "Expected Feb 2027 (2025-26 result: 25 Feb 2026)",
+   "status": "E"
+  },
+  "fee": "To be confirmed from the BSE notification.",
+  "eligibility": "Odisha domicile; Stage I: Class 6 with >50% in Maths in Class 5; Stage II: Class 9 with >50% in Maths in Class 8; government and aided schools; applications via the headmaster.",
+  "cbse_note": "",
+  "pattern": [
+   [
+    "Single paper · ~3 hrs",
+    "Mathematics",
+    "60 MCQ · 150 marks"
+   ]
+  ],
+  "pattern_notes": "OMR; the only state scholarship exam devoted entirely to mathematics.",
+  "media": "Odia / English (to be confirmed).",
+  "award": "Stage I: 400 awards, ₹200/month for 7 years (Classes 6–12, continuation on 60% aggregate). Stage II: 1,000 awards, ₹300/month for 4 years (Classes 9–12).",
+  "how_to_apply": "Through the school headmaster to BSE Odisha during the December window.",
+  "papers": [
+   {
+    "label": "BSE Odisha — answer keys and merit lists",
+    "url": "https://www.bseodisha.ac.in",
+    "status": "O"
+   }
+  ],
+  "contact": "Board of Secondary Education, Odisha, Bajrakabati Road, Cuttack 753001",
+  "last_verified": "2026-10-31"
+ }
+]
