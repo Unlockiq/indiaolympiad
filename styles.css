@@ -454,3 +454,11 @@ details p{margin-top:.6rem;color:var(--ink-soft);font-size:.89rem;line-height:1.
 :root[data-theme="dark"] .pub-card .pc-desc{color:#b4bace}
 .pub-card .pc-price{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.72rem;letter-spacing:.06em;color:#0E1A3D;font-weight:700}
 :root[data-theme="dark"] .pub-card .pc-price{color:#E8A020}
+
+/* v3.3: nav density for 9 items */
+.topnav{gap:.1rem .35rem !important;flex-wrap:nowrap}
+.topnav a{font-size:.84rem;padding:.45rem .5rem !important}
+.nav-wa{margin-left:.3rem !important;padding:.35rem .6rem !important}
+.theme-toggle{margin-left:.3rem;padding:.3rem .55rem}
+@media (max-width:1180px){.topnav a{font-size:.78rem;padding:.4rem .4rem !important}}
+@media (max-width:1040px){.topnav{flex-wrap:wrap}}
